@@ -67,11 +67,11 @@ https://link.amazon/B00nL5g19
 
 P1-10: Clicker de Adestramento com Pulseira Mola
 
-
-
 Página: /reviews/clicker-para-adestramento-vale-a-pena
 
+
 Bloco 2: Assinaturas de Ração & Infoprodutos
+
 P1-11: Petz Compra Programada
 
 Página: /reviews/assinatura-racao-filhote
