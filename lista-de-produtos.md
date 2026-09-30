@@ -85,6 +85,8 @@ Página: /reviews/assinatura-racao-filhote
 
 P1-13: Amazon Assine e Economize (Ração 15kg)
 
+https://link.amazon/B05ItU4Wb
+
 Página: /reviews/assinatura-racao-filhote
 
 P1-14: Curso Guia Completo de Adestramento Canino (Hotmart)
@@ -93,6 +95,11 @@ Página: /reviews/guia-completo-adestramento-canino
 
 Bloco 3: Produtos Secundários (P2 — Aparecem em CTAs Internos)
 P2-01: Mordedor Nylabone Puppy Chew Toy
+
+https://meli.la/2LQSU4n
+https://link.amazon/B00Evmssi
+
+
 
 P2-02: Bolsa Petisqueira de Adestramento
 
