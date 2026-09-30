@@ -69,6 +69,9 @@ P1-10: Clicker de Adestramento com Pulseira Mola
 
 Página: /reviews/clicker-para-adestramento-vale-a-pena
 
+https://meli.la/1ahRhh2
+https://link.amazon/B00qunTaY
+
 
 Bloco 2: Assinaturas de Ração & Infoprodutos
 
@@ -93,4 +96,10 @@ P2-01: Mordedor Nylabone Puppy Chew Toy
 
 P2-02: Bolsa Petisqueira de Adestramento
 
+https://meli.la/1J9vYQw
+https://link.amazon/B088aQW3G
+
 P2-03: Tapetes Higiênicos Durapads (Pacote 30 un)
+
+https://meli.la/2Sqp9LE
+https://link.amazon/B03swudgY
