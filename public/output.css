@@ -386,9 +386,6 @@
   .hidden {
     display: none;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .inline-flex {
     display: inline-flex;
   }
@@ -1012,9 +1009,6 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[10px\] {
-    font-size: 10px;
-  }
   .text-\[11px\] {
     font-size: 11px;
   }
@@ -1240,20 +1234,11 @@
   .ring-amber-200 {
     --tw-ring-color: var(--color-amber-200);
   }
-  .ring-amber-300 {
-    --tw-ring-color: var(--color-amber-300);
-  }
   .ring-black\/5 {
     --tw-ring-color: color-mix(in srgb, #000 5%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-ring-color: color-mix(in oklab, var(--color-black) 5%, transparent);
     }
-  }
-  .ring-orange-300 {
-    --tw-ring-color: var(--color-orange-300);
-  }
-  .ring-rose-300 {
-    --tw-ring-color: var(--color-rose-300);
   }
   .ring-white {
     --tw-ring-color: var(--color-white);
