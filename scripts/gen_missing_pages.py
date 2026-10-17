@@ -121,6 +121,7 @@ def nav(prefix: str, active: str) -> str:
           <nav class="absolute right-0 top-full z-60 mt-2 w-56 rounded-xl border border-stone-200 bg-white py-1 text-sm shadow-lg" aria-label="Menu principal">
             <a href="/" class="{mcls("home")}">Início</a>
             <a href="/quem-somos" class="{mcls("about")}">Sobre Mim</a>
+            <a href="/metodologia" class="{mcls("metodologia")}">Metodologia</a>
             <a href="/reviews" class="{mcls("reviews")}">Reviews</a>
             <a href="/contato" class="{mcls("contato")}">Contato</a>
           </nav>
@@ -128,6 +129,7 @@ def nav(prefix: str, active: str) -> str:
         <nav class="hidden sm:flex gap-6 text-sm text-stone-600">
           <a href="/" class="{cls("home")}">Início</a>
           <a href="/quem-somos" class="{cls("about")}">Sobre Mim</a>
+          <a href="/metodologia" class="{cls("metodologia")}">Metodologia</a>
           <a href="/reviews" class="{cls("reviews")}">Reviews</a>
           <a href="/contato" class="{cls("contato")}">Contato</a>
         </nav>
