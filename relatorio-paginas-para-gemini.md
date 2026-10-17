@@ -1,388 +1,264 @@
 # Relatório as-built — Guia do Adestramento (site 02)
 
-Use este arquivo para analisar o site **como está no HTML publicado**, não o briefing de planejamento. Compare H1/H2 reais, schema e funil. Não invente páginas fora desta lista. O que não existe no HTML está marcado como **falta fazer**.
+Use este arquivo para analisar o site **como está no HTML local**, cruzando com `PLANEJAMENTO_SEO_KEYWORD_IDEAS.md`. Não invente página, URL, H1 ou produto fora das duas listas. O que não existe no HTML está marcado como **não existe no HTML**. Proposta de página nova tem de repetir essa marca.
 
 **Domínio:** `https://www.guiadoadestramento.com.br`  
-**Data deste relatório:** 9 de outubro de 2026  
-**Relatório anterior:** 11 de setembro de 2026 (substituído por este)  
+**Data deste relatório:** 17 de outubro de 2026, tarde (substitui a versão da manhã do mesmo dia)  
+**Plano de pautas:** `PLANEJAMENTO_SEO_KEYWORD_IDEAS.md` (Ubersuggest, 11 de outubro de 2026, SD ≤ 35)  
 **Padrão:** HTML estático + Tailwind v4 · URLs limpas (Vercel `cleanUrls`) · JSON-LD `@graph`  
-**Intenção do dono:** o site é mais comercial do que informacional. O dinheiro vem de afiliado (Mercado Livre e Amazon) e do curso. Guias de cuidado continuam no ar, mas não lideram a home nem o hub.
+**Funil desejado:** dica grátis → produto com link de loja → curso Hotmart (`https://go.hotmart.com/H107966532E`)
 
-**Fonte editorial:** `02/conteudo base.md` — diário da Maraca (Pitbull Red Nose filhote, quitinete em Volta Redonda).  
-**Lista de ofertas:** `02/lista-de-produtos.md`  
-**Funil desejado:** dica grátis → produto com link de loja → curso Hotmart.
+**Fonte editorial:** diário da Maraca (Pitbull Red Nose filhote, quitinete em Volta Redonda).  
+**Não publicar:** motel, namoradas, maconha, meta-SEO de outro site, sonho, meme, gif, The Sims, coelho, gato, “cachorro mordendo sapo”, “cachorro mordendo porco espinho”. O projeto 01 (LavadorasPro) não entra neste relatório.
 
-**Não publicar:** motel, namoradas, maconha, meta-SEO de outro site. O projeto 01 (LavadorasPro) não entra neste relatório e não foi alterado.
-
----
-
-## Feito agora — checkout do curso (9 out 2026, noite)
-
-Página única: `/reviews/guia-completo-adestramento-canino`  
-Arquivo: `public/reviews/guia-completo-adestramento-canino.html`  
-Link de afiliado, informado pelo dono: `https://go.hotmart.com/H107966532E`
-
-### O que saiu dessa ficha
-
-- As duas ofertas falsas do schema (`seller` Amazon e Mercado Livre, `offers.url` apontando para a própria URL da review).
-- Os botões visíveis de Mercado Livre e Amazon.
-
-### O que está no HTML local agora
-
-Um único botão de compra, no card do topo: **Comprar na Hotmart**.
-
-- `href`: `https://go.hotmart.com/H107966532E`
-- `rel`: `sponsored nofollow noopener noreferrer`
-- `target`: `_blank`
-
-Schema `Product` → `offers` (objeto único, não array):
-
-| Campo | Valor |
-|---|---|
-| `seller.name` | `Hotmart` |
-| `offers.url` | `https://go.hotmart.com/H107966532E` |
-| `price` | `37.00` |
-| `priceCurrency` | `BRL` |
-| `priceValidUntil` | `2026-12-31` |
-| `availability` | `InStock` |
-| `itemCondition` | `NewCondition` |
-
-H1 e H2 dessa ficha não mudaram. A linha de autoria diz “Atualizado em outubro de 2026”. No sitemap, o `lastmod` dessa URL é `2026-10-09`.
-
-Conferido no navegador, no HTML local: o único link de compra da página é o da Hotmart, e o JSON-LD lido no DOM traz `price` `37.00`.
-
-### O que já foi para o `main` e o que ainda não
-
-- Commit `ceabcd7` (`fix: aponta o curso para o checkout da Hotmart`), já em `origin/main`: link, `seller` Hotmart, botão “Comprar na Hotmart” e `lastmod` do curso. Nesse commit o `price` ainda era `197.00`.
-- Alteração **só local, ainda sem commit e sem push**: `price` de `197.00` para `37.00`.
-- Enquanto esse arquivo não for publicado, `https://www.guiadoadestramento.com.br/reviews/guia-completo-adestramento-canino` continua servindo o preço `197.00`.
-
-### O que esta alteração não fez
-
-- O bloco “Quero o Guia Completo em Vídeo” saiu das fichas de produto. Não existe mais guia em vídeo. A ficha do curso na Hotmart continua no ar.
-- A home, o hub e `lista-de-produtos.md` não receberam o link `H107966532E`.
-- O projeto 01 não foi alterado.
+Este relatório descreve o arquivo local. Não afirma o que já está em produção.
 
 ---
 
-## O que já está no ar
+## O que o Gemini deve responder
+
+1. O quick win do planejamento, menos pastor alemão e shih tzu, está no HTML. Dizer se alguma página nova ainda compete com o pilar ou com o guia de xixi, em vez de apoiá-los.
+2. A home não usa mais a chave do pilar no `<title>` nem no `WebPage.name`. O H1 é de Pitbull. O corpo ainda tem um H2 “Como adestrar um filhote de cachorro” e a frase no parágrafo do hero. Dizer se isso ainda canibaliza o pilar ou se é só link interno aceitável.
+3. A fase 2 (pastor alemão e shih tzu) pode começar agora, ou falta algum ajuste nas páginas de 17/10 antes disso.
+4. O `ItemList` do hub tem 36 URLs, mas a ordem do JSON não é a ordem visível. Dizer se vale reordenar ou deixar.
+
+Não sugerir página de raça com volume 0 ou 10. Não sugerir URL própria de Durapads. Não sugerir página de sonho, meme, sapo ou ouriço.
+
+---
+
+## Contagem em 17/10, tarde
 
 | Status | Qtde | O que é |
-|---|---|---|
-| HTML total | 35 | 8 institucionais (inclui home, hub e `/contato-obrigado`) + 27 fichas em `/reviews/` |
-| No sitemap | 34 | `/contato-obrigado` fica de fora (noindex) |
-| Home | 1 | Quadro comparativo de 12 produtos logo após o hero |
-| Hub `/reviews` | 1 | Seção **Produtos testados** é a primeira |
-| Características | 4 | Sem mudança de H1/H2 desde 11/09 |
-| Cuidados | 8 | Assinatura de ração saiu deste bloco e foi para produtos |
-| Produtos / ofertas | 15 | 11 do mapa de setembro + Kong Classic + Kong Extreme + Nylabone + Assinatura |
+|---|---:|---|
+| HTML total | 44 | 8 institucionais (inclui home, hub e `/contato-obrigado`) + 36 fichas em `/reviews/` |
+| No sitemap | 43 | `/contato-obrigado` fica de fora. `lastmod` das páginas desta tarde: `2026-10-17` |
+| Hub `/reviews` | 1 | 17 produtos + 14 cuidados + 5 características. `numberOfItems`: 36 |
+| Pautas do plano no ar | 9 | Pilar, mordida, crianças, autolesão, xixi no lugar certo, xixi dormindo, xixi de alegria, xixi com sangue, quitinete |
+| Pautas do plano ausentes | 2 | Pastor alemão e shih tzu. Fase 2. **Não existem no HTML** |
 
-Infra: `02/vercel.json` com `outputDirectory: public` e `cleanUrls: true`.
+Infra: `vercel.json` com `outputDirectory: public` e `cleanUrls: true`.
 
 ---
 
-## O que entrou depois de 11 de setembro
+## Status do planejamento SEO
 
-### Páginas novas (já no sitemap)
+Volumes são os do Ubersuggest no planejamento. Não somar variantes como se fossem buscas independentes.
 
-| URL | lastmod no sitemap | Papel |
-|---|---|---|
-| `/reviews/kong-classic` | 2026-10-09 | Produto. Borracha vermelha, transição pós-filhote |
-| `/reviews/kong-extreme` | 2026-10-09 | Produto. Borracha preta, mordida destrutiva |
-| `/reviews/nylabone-puppy-chew-toy` | 2026-10-02 | Produto. Nylon no rodízio; não substitui o Kong |
-| `/reviews/assinatura-racao-filhote` | 2026-09-17 | Oferta recorrente Petz, Cobasi e Amazon. Não é anúncio único de ML/Amazon |
+| # | Pauta | URL | HTML |
+|---|---|---|---|
+| 1 | Mordida em pessoas e objetos | `/reviews/filhote-mordendo-tudo` | Feito. H3 “Mordeu criança” aponta para a página de crianças |
+| 2 | Xixi no lugar errado | `/reviews/xixi-e-coco-no-lugar-certo` | Feito. Linka para dormindo, alegria e, na frase de sangue, para a página YMYL |
+| 3 | Xixi dormindo / na cama | `/reviews/cachorro-faz-xixi-dormindo` | No ar. `HowTo` + `FAQPage` |
+| 4 | Autolesão | `/reviews/cachorro-se-mordendo-pata-e-rabo` | No ar. `Article` + `FAQPage`, sem `HowTo`. Kong e Nylabone só depois de “veterinário descartou doença” |
+| 5 | Pilar do silo | `/reviews/como-adestrar-um-filhote-de-cachorro` | Title igual ao plano. H1: “Como adestrar um filhote de cachorro em casa, sem bronca”. Sem H2 “por raça” (D3 e D4 não existem) |
+| 6 | Xixi com sangue | `/reviews/cachorro-faz-xixi-com-sangue` | No ar. `Article` + `FAQPage`. Sem botão de compra. Herbalvet só no final, como limpeza do piso, em link de texto |
+| 7 | Mordida em crianças | `/reviews/cachorro-mordendo-criancas` | No ar. `HowTo` + `FAQPage`. Kong Puppy e curso |
+| 8 | Xixi de alegria | `/reviews/cachorro-faz-xixi-de-alegria` | No ar. `HowTo` + `FAQPage`. Durapads, Herbalvet e curso. O pilar também linka esta URL na chegada |
+| 9 | Apartamento | `/reviews/limites-cao-em-quitinete` | Title novo, lead com “adestrar filhote em apartamento”, caixa do portão `https://link.amazon/B07ea7ffA`, links para pilar, mordida e xixi |
+| 10 | Pastor alemão e shih tzu | `/reviews/como-adestrar-filhote-de-pastor-alemao` e `/reviews/como-adestrar-filhote-de-shih-tzu` | **Não existem no HTML** |
 
-### Home `/` — quadro comercial
-
-- Novo H2, **primeiro da página**, logo abaixo do hero: **Quadro comparativo dos produtos testados com a Maraca em 2026**.
-- Subtítulo: “Compare uso e o que conferir na compra. Clique no produto para ler o review.”
-- Botão do hero: **Ver quadro comparativo** (`#comparativo`).
-- Colunas: Produto · Uso · Conferir · Destaque · Mercado Livre · Amazon.
-- Coluna do produto fica fixa no celular; a tabela rola na horizontal.
-- 12 linhas, nesta ordem: Kong Puppy · Kong Extreme · Kong Classic · Herbalvet T.A. · Portão pet de pressão · Casinha Furacão Pet nº 5 · Premier Filhotes raças grandes · Comedouro lento Pet Games · Guia e peitoral · Nylabone Puppy · Pipi Pode / Educa Cão · Clicker com pulseira.
-- Links de loja são os mesmos das fichas (`meli.la` e `link.amazon`). Não há coluna de preço.
-- O comparativo de três cartões (Rotina · Produto · Curso) **continua** mais abaixo. Não é a tabela.
-- Ranking visual da home passou a ter Kong Extreme em 2º. ItemList da home também: posição 2 agora é `/reviews/kong-extreme` (antes era xixi). São 7 itens, mistura de produto e guia.
-
-### Hub `/reviews` — produtos na frente
-
-- H1 continua **Minhas Avaliações**.
-- Texto de abertura: “Produtos que eu testei com a Maraca e compraria de novo. Mais abaixo, o diário de cuidados e da raça.”
-- Ordem visível dos H2:
-  1. Produtos testados (reviews) — 15 cards
-  2. Características da raça e da fase — 4 cards
-  3. Cuidados e adestramento no dia a dia — 8 cards
-- **Assinatura de ração** saiu de Cuidados e entrou em Produtos, ao lado de Ração porte grande.
-- Meta description do hub passou a abrir pelos produtos.
-
-### Fichas cujo H1/H2 mudou em relação ao relatório de 11/09
-
-- `/reviews/guia-e-peitoral-filhote` — H1 novo: foco em 4 a 6 meses, fita larga, modelo H. O H1 antigo (“filhote de 3 meses”) não vale mais.
-- `/reviews/racao-filhotes-porte-grande` — veredito novo: Minis só na emergência; saco fechado de porte grande.
-- `/reviews/portao-pet-de-pressao` — último H2 de corpo agora é “Grade, extensor e vão mais largo que o portão” (não fala mais do muro de 1,70 m nesse H2).
-- Nas fichas de produto geradas em setembro, **Ficha técnica virou H2** (antes o relatório anotava H3). Vale para Classic vs Puppy, Herbalvet não (essa ficha antiga segue o padrão próprio), Pipi Pode, casinha, portão, guia, ração, comedouro e curso.
+Fora do recorte quick win (SD > 35), o plano manda não otimizar no lançamento: “adestrar cachorro filhote” (110, SD 41), “adestrar filhote” (40, SD 40), “adestrador filhotes” (40, SD 40), “onde cachorro faz xixi” (30, SD 36), “adestrar pug filhote” (10, SD 38). “Adestrador filhotes” continua só como FAQ de preço no pilar.
 
 ---
 
-## Inventário atual
+## Silo: o que o HTML liga
 
-| Pilar | Páginas | Schema principal |
+### Guias
+
+- Pilar → xixi no lugar certo, mordida, pulo nas pessoas, xixi de alegria, quitinete, Kong Puppy, curso.
+- Mordida → pilar, xixi, página de crianças, Kong Puppy, kit de borracha, Nylabone (segunda opção).
+- Xixi no lugar certo → pilar, mordida, xixi dormindo, xixi de alegria, xixi com sangue (na frase clínica), Herbalvet, Educa Cão. Durapads tem botão de loja e **não** tem ficha. O link interno “experiência com o tapete” aponta para `/reviews/pipi-pode-educa-cao`.
+- Xixi dormindo → xixi no lugar certo, pilar e, se houver sangue, a página YMYL.
+- Xixi de alegria → xixi no lugar certo, pilar, quitinete.
+- Xixi com sangue → xixi no lugar certo só em “depois que o veterinário liberar”.
+- Crianças → mordida e pilar.
+- Autolesão → mordida (diferença entre morder gente e morder a si) e pilar.
+- Quitinete → pilar, mordida, xixi, ficha do portão.
+
+### Fichas de dinheiro que devolvem o guia
+
+Bloco no final da página, antes do rodapé:
+
+| Ficha | Âncora | Destino |
 |---|---|---|
-| Home | 1 | `WebPage` + `ItemList` (7 URLs reais) + `FAQPage`. O quadro de 12 **não** está no ItemList |
-| Hub | 1 | `ItemList` com `numberOfItems: 27` |
-| Características | 4 | `Article` + `FAQPage` |
-| Cuidados | 8 | `HowTo` + `FAQPage` |
-| Produtos e ofertas | 15 | `Product` + `FAQPage` (assinatura é oferta recorrente, não um SKU de loja) |
-| Institucional | 6 | `AboutPage`, metodologia `WebPage`, `ContactPage`, `WebPage` noindex, `PrivacyPolicy`, `TermsOfService` |
+| Kong Puppy, Kong Classic, Kong Extreme, Kong Classic vs Puppy, Nylabone, kit de borracha | guia de filhote mordendo tudo | `/reviews/filhote-mordendo-tudo` |
+| Herbalvet, Pipi Pode / Educa Cão | guia de xixi e cocô no lugar certo | `/reviews/xixi-e-coco-no-lugar-certo` |
+| Portão | guia de limites na quitinete e apartamento | `/reviews/limites-cao-em-quitinete` |
+| Curso | guia completo de adestramento de filhotes | `/reviews/como-adestrar-um-filhote-de-cachorro` |
 
-ItemList da **home** (ordem real):
+Kong Extreme e Kong Classic vs Puppy também devolvem o guia de mordida. No mesmo bloco, o Extreme aponta para o comparativo e o comparativo aponta para o Extreme.
 
-1. `/reviews/kong-puppy`
-2. `/reviews/kong-extreme`
-3. `/reviews/xixi-e-coco-no-lugar-certo`
-4. `/reviews/filhote-mordendo-tudo`
-5. `/reviews/herbalvet-eliminador-enzimatico`
-6. `/reviews/limites-cao-em-quitinete`
-7. `/reviews/guia-completo-adestramento-canino`
+### O que o silo ainda não faz
 
-ItemList do **hub** tem as 27 fichas, mas a ordem do JSON-LD ainda começa por características. A ordem **visível** começa por produtos. Quantidade bate; a ordem não.
+- Não há H2 “por raça” no pilar. Correto enquanto pastor alemão e shih tzu não existirem.
+- A home lista o pilar no corpo. O `ItemList` da home (8 URLs) não inclui o pilar nem as cinco páginas novas.
 
 ---
 
-## Home — `/` — estado em 9/10
+## Home — `/`
 
-**Arquivo:** `public/index.html`  
+**Title:** Guia do Adestramento: Produtos e Dicas Práticas para Filhotes | Guia do Adestramento  
+**`WebPage.name` no JSON-LD:** Guia do Adestramento: Produtos e Dicas Práticas para Filhotes  
 **H1:** Adestramento de Pitbull filhote na prática: o que funciona em casa (2026)
 
-**H2, nesta ordem**
+O `<title>` e o `WebPage.name` não repetem mais “Como adestrar um filhote de cachorro”.
 
-1. Quadro comparativo dos produtos testados com a Maraca em 2026
-2. Um guia feito no chão da quitinete — não em teoria de manual
-3. Comparativo do que realmente segura móvel, xixi e limites
-4. Como escolher método, produto e rotina para filhote de porte grande
-5. Ranking das soluções testadas com a Maraca em 2026
-6. Prós e contras de treinar um Pitbull em espaço pequeno
-7. Perguntas frequentes (xixi, Kong, vacina, 8 h sozinha, latido)
-8. Outras análises que valem a sua atenção
-9. Todas as análises do Guia do Adestramento
+O que ainda usa a chave no corpo:
 
-**H3 do ranking (7 cards, não são os 12 do quadro)**
+- Parágrafo do hero: “Quem pergunta como adestrar um filhote de cachorro…”
+- H2: “Como adestrar um filhote de cachorro”, com link para o pilar
+- Outro link no bloco de prós e contras, âncora “como adestrar um filhote de cachorro”
 
-1. Kong Puppy
-2. Kong Extreme
-3. Xixi e cocô no lugar certo
-4. Filhote mordendo tudo
-5. Herbalvet T.A.
-6. Limites na quitinete
-7. Guia Completo de Adestramento
+**H2, nesta ordem:** quadro comparativo · guia feito no chão da quitinete · comparativo rotina/produto/curso · como adestrar um filhote de cachorro · ranking · prós e contras · FAQ · outras análises · todas as análises.
 
-**H3 do comparativo de três frentes (não é a tabela):** Rotina · Produto · Curso · e mais abaixo Prós · Contras.
+**ItemList (8):** Kong Puppy · Kong Classic · Kong Extreme · xixi · mordida · Herbalvet · quitinete · curso. O quadro de produtos da home não entra nesse ItemList.
 
-**Schema:** Organization, WebSite, WebPage, ItemList (7), FAQPage. Sem `Product` na home.
+Sitemap `lastmod`: 2026-10-17.
 
 ---
 
-## Hub — `/reviews` — estado em 9/10
+## Hub — `/reviews`
 
-**Arquivo:** `public/reviews.html`  
-**H1:** Minhas Avaliações
+**H1:** Minhas Avaliações  
+**`numberOfItems`:** 36
 
-**H2**
+**Ordem visível**
 
-1. Produtos testados (reviews)
-2. Características da raça e da fase
-3. Cuidados e adestramento no dia a dia
+1. Produtos testados — 17 cards (Kong Puppy até Nylabone, incluindo kit e guia unificada)
+2. Cuidados — 14 cards. Os 9 antigos mais, no fim da seção: xixi dormindo, xixi de alegria, xixi com sangue, mordendo crianças, cachorro se mordendo
+3. Características — 5 cards, começando por “Como adestrar um Pitbull”
 
-**H3 — produtos (15)**
+O JSON-LD tem as 36 URLs. A ordem não é a visível: as cinco páginas novas estão nas posições 32 a 36, depois de características e dos itens que já ficavam no fim (“como adestrar um filhote”, “como adestrar um Pitbull”, “guia unificada”). Quantidade bate; a ordem não.
 
-Kong Puppy · Kong Classic · Kong Extreme · Kong Classic vs Puppy · Herbalvet T.A. · Pipi Pode / Educa Cão · Casinha plástica nº 5 · Portão de pressão · Guia e peitoral · Ração porte grande · Assinatura de ração · Comedouro lento · Guia Completo · Clicker · Nylabone Puppy
-
-**H3 — características (4)**
-
-Pitbull filhote de 2 meses · Temperamento · Crescimento e castração · Pitbull e outros cães
-
-**H3 — cuidados (8)**
-
-Xixi e cocô no lugar certo · Filhote mordendo tudo · Pular nas pessoas · Limites na quitinete · Alimentação · Vacinas e vermífugo · Socialização · Enriquecimento
-
-O card do Clicker ainda diz “Ficha extra já no ar.”
+Sitemap `lastmod`: 2026-10-17.
 
 ---
 
-## Por que o quadro tem 12 e o hub tem 15
+## Páginas novas em 17/10 — H1 e H2 reais
 
-Os 12 do quadro são produtos com botão de Mercado Livre **e** Amazon na própria linha. Os 3 que estão só no hub:
+Todas no sitemap com `lastmod` 2026-10-17. Nenhuma é proposta.
 
-| Ficha | Por que não entrou no quadro |
-|---|---|
-| Kong Classic vs Puppy | Compara dois Kongs que já têm linha própria |
-| Assinatura de ração | CTAs são Petz, Cobasi e Amazon Assine, não um anúncio |
-| Guia Completo | Curso na Hotmart (`https://go.hotmart.com/H107966532E`). Não é anúncio de ML/Amazon |
+### `/reviews/cachorro-faz-xixi-dormindo`
 
-Rótulos diferentes para o mesmo produto: “Premier Filhotes raças grandes” (quadro) = “Ração porte grande” (hub). O mesmo acontece com casinha, portão, comedouro e clicker.
+**Title:** Cachorro faz xixi dormindo ou na cama: causas e o que fazer | Guia do Adestramento  
+**H1:** Cachorro faz xixi dormindo ou na cama: filhote, emoção ou incontinência  
+**Schema:** `HowTo` + `FAQPage`
 
----
+**H2:** Filhote que faz xixi dormindo · Xixi na cama do dono e na própria caminha · Xixi sem perceber · O que fazer esta noite · Quando não é treino · Perguntas frequentes
 
-## Páginas novas ou reescritas — H1/H2 atuais
+Caixa: Herbalvet `https://link.amazon/B0hqXqFp3` e Durapads `https://link.amazon/B03swudgY`, com a frase de que não tratam incontinência.
 
-### `/reviews/kong-classic` — NOVA
+### `/reviews/cachorro-faz-xixi-de-alegria`
 
-**H1:** Kong Classic vale a pena? Avaliação do brinquedo Kong vermelho para cães adultos
+**Title:** Cachorro faz xixi de alegria quando vê o dono: o que fazer | Guia do Adestramento  
+**H1:** Cachorro faz xixi de alegria quando vê o dono: como cumprimentar sem poça  
+**Schema:** `HowTo` + `FAQPage`
 
-**H2**
+**H2:** Alegria, felicidade e quando fica feliz · Quando eu chego, quando vê o dono, quando recebe carinho · Xixi de medo · Protocolo de 7 dias na porta · O que não fazer · Perguntas frequentes
 
-1. O que torna o Kong Classic vermelho o padrão para cão adulto de mordida moderada?
-2. Medium, Large ou XL: qual tamanho escolher por peso e abertura de mandíbula?
-3. Rosa, vermelho, preto e roxo: onde o Classic entra na linha KONG?
-4. Ração seca, patê e freezer: como rechear o vermelho
-5. Perguntas frequentes sobre o Kong Classic vermelho (FAQ)
+Caixa: Durapads, Herbalvet e e-book Hotmart.
 
-**H3:** Medium · Large · XL · Ficha técnica · Mordida moderada · Mordida que abre o vermelho · tabela vs Puppy vs Extreme · petisqueira · curso
+### `/reviews/cachorro-faz-xixi-com-sangue`
 
-### `/reviews/kong-extreme` — NOVA
+**Title:** Cachorro faz xixi com sangue: o que pode ser e quando ir ao vet | Guia do Adestramento  
+**H1:** Cachorro faz xixi com sangue: o que pode ser e quando ir ao veterinário  
+**Schema:** `Article` + `FAQPage`. Sem `HowTo`.
 
-**H1:** Kong Extreme vale a pena? Avaliação do brinquedo Kong preto para mordida forte
+**H2:** O que pode ser · Sinais que não esperam · Cor da urina sem transformar a página num laboratório · O que não fazer · Depois que o veterinário liberar · Perguntas frequentes
 
-**H2**
+**H3:** Vermelho, rosa e sangue · Beterraba e alimento que muda a cor · Amarelo forte, transparente e o chão esbranquiçado
 
-1. O que torna o Kong Extreme preto a escolha para mordida destrutiva?
-2. Kong Extreme Large, XL ou XXL: qual tamanho para cão adulto de porte grande?
-3. Rosa, vermelho, preto e roxo: qual linha do Kong comprar?
-4. Kong Extreme vs Kong Classic vs Nylabone Durável: qual aguenta o morde-morde?
-5. Como rechear o Kong Extreme sem somar lanche em cima da tigela
-6. Perguntas frequentes sobre o Kong Extreme preto (FAQ)
+Sem botão de compra. No último H2, link de texto para Herbalvet na Amazon e para a ficha, com a frase de que limpeza não trata sangue.
 
-### `/reviews/nylabone-puppy-chew-toy` — NOVA
+### `/reviews/cachorro-mordendo-criancas`
 
-**H1:** Nylabone Puppy vale a pena? Mordedor de nylon para filhote de Pitbull
+**Title:** Cachorro mordendo crianças e bebê: como proteger a casa | Guia do Adestramento  
+**H1:** Cachorro mordendo crianças e bebê: como proteger sem punir o filhote  
+**Schema:** `HowTo` + `FAQPage`
 
-**H2**
+**H2:** Por que o filhote morde criança e bebê · O que fazer na hora · Regra única para a casa · O que não fazer · Quando a mordida deixou marca · Perguntas frequentes
 
-1. O que é o Nylabone Puppy Chew Toy e por que ele existe?
-2. Nylabone Puppy ou Kong Puppy: qual escolher primeiro?
-3. Como o nylon se desgasta — e quando trocar
-4. Qual Nylabone comprar para Pitbull filhote?
-5. Nylabone com supervisão: a regra que não tem exceção
-6. Nylabone vs Benebone: qual nylon para filhote?
-7. Perguntas frequentes sobre o Nylabone Puppy (FAQ)
+**H3:** Bebê no colo ou no chão · Criança que corre e agita · Visita e menino que chega gritando
 
-**H3:** Ficha técnica · Troca de dentes · Sozinho em casa · tabela vs Kong Puppy · curso
+Caixa: Kong Puppy `https://link.amazon/B08zoNPdv` e e-book Hotmart.
 
-### `/reviews/assinatura-racao-filhote` — NOVA
+### `/reviews/cachorro-se-mordendo-pata-e-rabo`
 
-**H1:** Vale a Pena Fazer Assinatura de Ração Online? Como Nunca Deixar Faltar Comida pro Filhote (e Evitar Diarreia)
+**Title:** Cachorro se mordendo: pata, rabo e ferida — o que pode ser | Guia do Adestramento  
+**H1:** Cachorro se mordendo: pata, rabo e ferida, e quando ir ao veterinário  
+**Schema:** `Article` + `FAQPage`. Sem `HowTo`.
 
-**H2**
+**H2:** Pata, rabo e se mordendo não são a mesma causa · O que observar antes de decidir · Quando ir ao veterinário no mesmo dia · Se o veterinário descartou doença: o que mudar na rotina · Cachorro mordendo o ar · Perguntas frequentes
 
-1. Ficha rápida — assinatura de ração
-2. Veredito: sim — se a marca some no bairro e o filhote come de verdade
-3. O perrengue de ficar sem ração (e por que isso não é “só um detalhe”)
-4. Fome, má absorção e coprofagia: quando a tigela vazia vira comportamento
-5. A solução: assinatura de ração recorrente (compra programada)
-6. Como criar a primeira assinatura online em 3 passos
-7. Perguntas frequentes (FAQ)
-8. Conclusão: saúde de filhote é consistência — não heroísmo de última hora
-9. Ative a assinatura agora
+**H3:** Coceira, pulga, alergia e coxim · Dor e unha · Tédio e compulsão · Filhote perseguindo o próprio rabo
 
-**CTAs reais:** Petz Compra Programada, Cobasi Assinatura, Amazon Programe e Poupe. Sem botão único de Mercado Livre.
-
-### `/reviews/guia-e-peitoral-filhote` — H1/H2 REESCRITOS
-
-**H1:** Guia e peitoral para Pitbull filhote de 4 a 6 meses: fita larga, não a baratinha
-
-**H2**
-
-1. Ficha técnica – peitoral modelo H + guia reforçada
-2. Veredito: fita 25–30 mm e modelo H agora; fita fina, nunca
-3. Guia lisa 1,5 a 2 m: fita 25–30 mm e mosquetão de aço com trava
-4. Por que guia retrátil é péssima para treino (e perigosa no Pitbull)
-5. Peitoral modelo H reforçado vs coleira fina no Pitbull de 4 a 6 meses
-6. Passeio só depois da V10: o que a guia faz em casa até lá
-7. Perguntas frequentes (FAQ)
-
-### `/reviews/racao-filhotes-porte-grande` — VEREDITO REESCRITO
-
-**H1:** Melhor ração para filhote de Pitbull: NutriSano, Golden ou Premier?
-
-**H2**
-
-1. Ficha técnica
-2. Veredito: Minis só na emergência; porte grande em saco fechado
-3. Por que Dog Chow Minis é emergência de balcão — e falha no Pitbull filhote
-4. NutriSano, Multidog, Golden Filhotes/Mega e Premier Fórmula
-5. Saco de 3 kg vs 10–15 kg: preço, oxigênio e o papo do balcão
-6. Quantidade em colheres e o cocô como medidor
-7. Perguntas frequentes (FAQ)
-
-### `/reviews/portao-pet-de-pressao` — UM H2 MUDOU
-
-**H1:** Portão pet de pressão vale a pena em apartamento pequeno?
-
-**H2**
-
-1. Ficha técnica
-2. Veredito: sim, se a casa não tem porta no vão
-3. Como impedir a passagem da sala para a cozinha sem porta
-4. Altura, força do filhote e o que muda no adulto
-5. Ferro de pressão vs papelão e móvel improvisado
-6. Grade, extensor e vão mais largo que o portão
-7. Perguntas frequentes (FAQ)
-
-### `/reviews/guia-completo-adestramento-canino` — CHECKOUT HOTMART
-
-**H1:** Guia Completo de Adestramento Canino 2026: vale a pena?
-
-**H2**
-
-1. Ficha técnica
-2. Veredito: vale se você quer o método amarrado, não um frasco a mais
-3. O programa fecha o que o diário da Maraca não cobre sozinho?
-4. Xixi, limites e mordedura: o que é método e o que é produto
-5. Garantia, suporte e o que não é milagre em 7 dias
-6. Curso vs Kong + enzimático vs aula particular
-7. Perguntas frequentes (FAQ)
-
-**Schema `offers`:** uma oferta, `seller` Hotmart, `url` `https://go.hotmart.com/H107966532E`, `price` `37.00`, `priceCurrency` `BRL`. O botão visível “Comprar na Hotmart” usa o mesmo link. O preço `37.00` está no arquivo local e ainda não foi publicado; o `main` publicado ainda tem `197.00`.
+Caixa de Kong Puppy e Nylabone só depois do H2 em que o veterinário já descartou doença. Título da caixa: “Se a causa for boca sem ofício, não se for ferida”.
 
 ---
 
-## Páginas sem mudança de H1/H2 desde 11/09
+## Páginas do plano que já existiam e foram ajustadas hoje
 
-Conferidas de novo em 9/10. O outline do relatório antigo continua válido:
+### `/reviews/como-adestrar-um-filhote-de-cachorro`
 
-- Características: `pitbull-filhote-2-meses`, `temperamento-pitbull-filhote`, `crescimento-peso-e-castracao`, `pitbull-e-outros-caes`
-- Cuidados: `xixi-e-coco-no-lugar-certo`, `filhote-mordendo-tudo`, `filhote-pulando-nas-pessoas`, `limites-cao-em-quitinete`, `alimentacao-filhote-porte-grande`, `vacinas-v8-v10-e-vermifugo`, `socializacao-filhote-com-outros-caes`, `enriquecimento-ambiental-filhote`
-- Produtos antigos: `kong-puppy`, `kong-classic-vs-puppy` (só a posição da Ficha técnica, que agora é H2), `herbalvet-eliminador-enzimatico`, `pipi-pode-educa-cao`, `casinha-plastico-furacao-pet`, `comedouro-lento`, `clicker-para-adestramento-vale-a-pena`
-- Institucionais: `quem-somos`, `metodologia`, `contato`, `contato-obrigado`, `politica-de-privacidade`, `termos-e-condicoes`
+**Title:** Como adestrar um filhote de cachorro: rotina da primeira semana | Guia do Adestramento  
+**H1:** Como adestrar um filhote de cachorro em casa, sem bronca
+
+O H3 “Não pular e a chegada em casa” linka para `/reviews/filhote-pulando-nas-pessoas` e para `/reviews/cachorro-faz-xixi-de-alegria`.
+
+### `/reviews/filhote-mordendo-tudo`
+
+**Title:** Cachorro mordendo: o que fazer com dono, pé, mão e móveis  
+**H1:** Cachorro mordendo: o que fazer quando o filhote morde dono, pé e móveis
+
+O H3 “Mordeu criança” resume a regra e linka para `/reviews/cachorro-mordendo-criancas`.
+
+### `/reviews/xixi-e-coco-no-lugar-certo`
+
+**Title:** Cachorro faz xixi no lugar errado: como ensinar o lugar certo  
+**H1:** Como ensinar o filhote a fazer xixi e cocô no lugar certo
+
+### `/reviews/limites-cao-em-quitinete`
+
+**Title:** Como Adestrar Filhote em Apartamento e Quitinete: Limites e Rotina | Guia do Adestramento  
+**H1:** Como criar um Pitbull em quitinete sem ele invadir quarto e cozinha  
+**Lead:** contém “adestrar filhote em apartamento”.
+
+**H2** (não mudaram): Restrição de ambiente · Portão de pressão · Oito horas fora · Choro na porta e chegada neutra · Perguntas frequentes
+
+A caixa do portão entrou depois do primeiro parágrafo do H2 do portão. O H1 não foi trocado.
+
+---
+
+## Páginas no ar que o mapa de keywords não pediu
+
+Não apagar por causa deste relatório. Não transformar nenhuma das duas em pastor alemão ou shih tzu.
+
+- `/reviews/como-adestrar-pitbull` — H1: Como adestrar um Pitbull filhote em casa. Aponta para o pilar.
+- `/reviews/melhores-acessorios-adestramento` — H1: Guia unificada e acessórios para adestrar filhotes. Cobre a petisqueira. A petisqueira não tem URL exclusiva.
+
+---
+
+## Curso — HTML local
+
+**URL:** `/reviews/guia-completo-adestramento-canino`  
+**H1:** Guia Completo de Adestramento Canino 2026: vale a pena?  
+**Oferta:** `https://go.hotmart.com/H107966532E?dp=1`, `price` `37.00`, `priceCurrency` `BRL`  
+Há bloco de retorno para o pilar.
 
 ---
 
 ## Falta fazer
 
-Itens abaixo **não estão resolvidos no HTML**. Proposta do Gemini deve dizer o que muda em página que já existe e o que seria página nova.
+1. Publicar `/reviews/como-adestrar-filhote-de-pastor-alemao` e `/reviews/como-adestrar-filhote-de-shih-tzu`. **Não existem no HTML.** Outline, H1 e produtos estão no planejamento, seções D3 e D4. Pastor belga entra como H2 do pastor alemão, sem URL própria. Pinscher, yorkshire, lulu e dachshund entram como H2 do shih tzu, sem URL própria.
+2. Quando essas duas existirem, o pilar ganha o H2 “por raça” com link para as duas. Não criar esse H2 antes.
+3. Decidir se o H2 e o parágrafo do hero da home, que ainda citam “como adestrar um filhote de cachorro”, devem continuar como estão (o link já vai para o pilar) ou se o H2 muda de texto.
+4. Opcional: reordenar o `ItemList` do hub para a ordem visível. A quantidade 36 já está certa.
 
-### Comercial — alinhar o que vende
+### Não fazer
 
-1. Decidir o quadro da home: manter 12 (só SKU com ML + Amazon) ou chegar nos 15 do hub. Se entrar curso e assinatura, o CTA não pode ser o botão azul/âmbar de loja.
-2. Decidir se o ranking de 7 cards e o ItemList de 7 URLs continuam misturando guia e produto, ou se passam a espelhar o quadro.
-3. Unificar rótulos entre quadro e hub (Premier vs “Ração porte grande”, etc.).
-4. Publicar o `price` `37.00` (está só no HTML local; o `main` ainda tem `197.00`). O CTA “Quero o Guia Completo em Vídeo” foi removido das fichas; não haverá guia em vídeo.
-5. Reordenar o ItemList do hub para a ordem visível (produtos primeiro) ou marcar a lista como não ordenada de propósito. Hoje `numberOfItems` é 27 e a ordem do JSON ainda é a de setembro.
-6. Atualizar `lastmod` de `/` e `/reviews` no sitemap. Os dois estão em 2026-10-02; o quadro e a reordem do hub são de 2026-10-09. Várias fichas reescritas (guia, ração, portão) ainda têm lastmod 2026-09-11.
-7. Trocar o texto do card do Clicker no hub (“Ficha extra já no ar.”).
-
-### Ofertas da lista que não têm ficha
-
-Em `lista-de-produtos.md`, bloco P2. Existem só como CTA dentro de outras páginas. **Proposta, não existe como URL própria:**
-
-- Petisqueira de adestramento (`meli.la/1J9vYQw`, `link.amazon/B088aQW3G`) — citada em Kong e Clicker
-- Tapete Durapads (`meli.la/2Sqp9LE`, `link.amazon/B03swudgY`) — citado em Pipi Pode e Herbalvet
-
-### Análise que o relatório de setembro pediu e o HTML ainda não fechou
-
-1. Canibalização: xixi vs Pipi Pode vs Herbalvet; quatro páginas de Kong (Puppy, Classic, Extreme, Classic vs Puppy) mais Nylabone; alimentação vs ração vs assinatura.
-2. Funil dica grátis → produto → curso: o quadro e o hub agora abrem pelo produto. O curso continua sem link de compra. Dizer se o H2 do funil está explícito ou só no corpo.
-3. E-E-A-T / YMYL (vacina, castração, ração, assinatura, vermífugo): o tom de diário basta ou falta disclaimer de veterinário mais visível no H1/H2?
-4. Clicker: manter ficha própria no bloco comercial ou só como apoio do curso e da petisqueira.
-
-Não sugerir página nova sem marcar **proposta, não existe no HTML**.
+- Página de sonho, livro dos sonhos, meme, gif, figurinha, The Sims ou Galinha Pintadinha.
+- Página de “cachorro mordendo sapo” ou “cachorro mordendo porco espinho”.
+- Página de coelho ou gato.
+- Página por raça de volume 0 ou 10, fora os H2 previstos dentro de pastor alemão e shih tzu.
+- URL própria de Durapads.
+- Otimizar o pilar agora para “adestrar filhote” (SD 40) ou “adestrar cachorro filhote” (SD 41).

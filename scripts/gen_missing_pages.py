@@ -1234,15 +1234,6 @@ def build_products():
 def build_hub():
     groups = [
         (
-            "Características da raça e da fase",
-            [
-                ("/reviews/pitbull-filhote-2-meses", "Pitbull filhote de 2 meses", "Peso, Red Nose, janela de 8 a 12 semanas."),
-                ("/reviews/temperamento-pitbull-filhote", "Temperamento", "Energia, mouthing, latido, rosnar no pote."),
-                ("/reviews/crescimento-peso-e-castracao", "Crescimento e castração", "14–23 kg, escore, cio."),
-                ("/reviews/pitbull-e-outros-caes", "Pitbull e outros cães", "Nina, Poodle, visitas."),
-            ],
-        ),
-        (
             "Cuidados e adestramento no dia a dia",
             [
                 ("/reviews/xixi-e-coco-no-lugar-certo", "Xixi e cocô no lugar certo", "Quintal, relógio, enzimático."),
@@ -1253,6 +1244,15 @@ def build_hub():
                 ("/reviews/vacinas-v8-v10-e-vermifugo", "Vacinas e vermífugo", "V8/V10, raiva, 15 dias."),
                 ("/reviews/socializacao-filhote-com-outros-caes", "Socialização", "Cheiro, Deixa, rua depois."),
                 ("/reviews/enriquecimento-ambiental-filhote", "Enriquecimento", "Rodízio, pano, overdose."),
+            ],
+        ),
+        (
+            "Características da raça e da fase",
+            [
+                ("/reviews/pitbull-filhote-2-meses", "Pitbull filhote de 2 meses", "Peso, Red Nose, janela de 8 a 12 semanas."),
+                ("/reviews/temperamento-pitbull-filhote", "Temperamento", "Energia, mouthing, latido, rosnar no pote."),
+                ("/reviews/crescimento-peso-e-castracao", "Crescimento e castração", "14–23 kg, escore, cio."),
+                ("/reviews/pitbull-e-outros-caes", "Pitbull e outros cães", "Nina, Poodle, visitas."),
             ],
         ),
         (
