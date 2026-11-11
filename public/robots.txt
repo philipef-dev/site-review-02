@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /contato-obrigado
-Sitemap: https://www.guiadoadestramento.com.br/sitemap.xml
+Sitemap: https://www.guiadoadestrador.com.br/sitemap.xml

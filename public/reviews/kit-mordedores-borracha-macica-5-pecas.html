@@ -6,26 +6,48 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../output.css" as="style">
   <link rel="stylesheet" href="../output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <style>
+    .swiper-main { width: 100%; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide { display: flex; align-items: center; justify-content: center; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide img { image-orientation: from-image; display: block; width: auto; max-width: 100%; height: auto; max-height: 500px; margin-inline: auto; object-fit: contain; }
+    .swiper-thumbs { height: 80px; box-sizing: border-box; padding: 10px 0; }
+    .swiper-thumbs .swiper-slide { display: flex; align-items: center; justify-content: center; width: 20%; height: 100%; opacity: 0.4; cursor: pointer; }
+    .swiper-thumbs .swiper-slide-thumb-active { opacity: 1; border: 2px solid #d97706; border-radius: 6px; }
+    .swiper-thumbs .swiper-slide img { image-orientation: from-image; width: 100%; height: 100%; max-height: none; object-fit: contain; }
+    .swiper-button-next, .swiper-button-prev { color: #d97706; }
+    @media (max-width: 640px) { .swiper-main .swiper-slide img { max-height: 320px; } }
+  </style>
   <title>Kit de 5 mordedores de borracha maciça vale a pena?</title>
-  <link rel="canonical" href="https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas" />
+  <link rel="canonical" href="https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
   <meta property="og:title" content="Kit de 5 mordedores de borracha maciça vale a pena?">
   <meta property="og:description" content="Kit de 5 mordedores de borracha maciça para rodízio e limpeza de dentes na troca de dentes. Não substitui o Kong Extreme quando o cão adulto destrutivo fica sozinho.">
-  <meta property="og:url" content="https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas">
+  <meta property="og:url" content="https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas">
+  <meta property="og:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-1.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kit de 5 mordedores de borracha maciça vale a pena?">
   <meta name="twitter:description" content="Kit de 5 mordedores de borracha maciça para rodízio e limpeza de dentes na troca de dentes. Não substitui o Kong Extreme quando o cão adulto destrutivo fica sozinho.">
+  <meta name="twitter:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-1.webp">
   <meta name="description" content="Kit de 5 mordedores de borracha maciça para rodízio e limpeza de dentes na troca de dentes. Não substitui o Kong Extreme quando o cão adulto destrutivo fica sozinho.">
   <script type="application/ld+json">
-    {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.guiadoadestramento.com.br/#organization",
-      "name": "Guia do Adestramento",
-      "url": "https://www.guiadoadestramento.com.br/",
+      "@id": "https://www.guiadoadestrador.com.br/#organization",
+      "name": "Guia do Adestrador",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.guiadoadestrador.com.br/#logo",
+        "url": "https://www.guiadoadestrador.com.br/imagens-marca/logo-guia-do-adestrador.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Guia do Adestrador"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -35,13 +57,13 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.guiadoadestramento.com.br/#philipe",
+      "@id": "https://www.guiadoadestrador.com.br/#philipe",
       "name": "Philipe Ferreira",
-      "jobTitle": "Tutor e editor do Guia do Adestramento",
+      "jobTitle": "Tutor e editor do Guia do Adestrador",
       "description": "Tutor da Maraca, Pitbull Red Nose, em Volta Redonda. Testa rotina e produto de filhote em quitinete. Não é médico-veterinário.",
-      "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
+      "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
       "email": "philipefdev@gmail.com",
-      "url": "https://www.guiadoadestramento.com.br/quem-somos",
+      "url": "https://www.guiadoadestrador.com.br/quem-somos",
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -55,69 +77,93 @@
         "addressCountry": "BR"
       },
       "worksFor": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.guiadoadestramento.com.br/#website",
-      "url": "https://www.guiadoadestramento.com.br/",
-      "name": "Guia do Adestramento",
+      "@id": "https://www.guiadoadestrador.com.br/#website",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "name": "Guia do Adestrador",
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#webpage",
-      "url": "https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#webpage",
+      "url": "https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas",
       "name": "Kit de Brinquedos Mordedores de Borracha Maciça (5 Unidades) Vale a Pena? Análise para Cães Grandes e Filhotes Ativos",
       "description": "Kit de 5 mordedores de borracha maciça para rodízio e limpeza de dentes na troca de dentes. Não substitui o Kong Extreme quando o cão adulto destrutivo fica sozinho.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-1.webp",
+        "width": 1200,
+        "height": 1200
+      },
       "isPartOf": {
-        "@id": "https://www.guiadoadestramento.com.br/#website"
+        "@id": "https://www.guiadoadestrador.com.br/#website"
       },
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
+      },
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://www.guiadoadestrador.com.br/#philipe"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#breadcrumb",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Início",
-          "item": "https://www.guiadoadestramento.com.br/"
+          "item": "https://www.guiadoadestrador.com.br/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Reviews",
-          "item": "https://www.guiadoadestramento.com.br/reviews"
+          "item": "https://www.guiadoadestrador.com.br/reviews"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Kit de mordedores de borracha maciça",
-          "item": "https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas"
+          "item": "https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas"
         }
       ]
     },
     {
       "@type": "Product",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#product",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#product",
       "name": "Kit de 5 Brinquedos Mordedores de Borracha Maciça",
+      "image": [
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-1.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-2.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-3.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-4.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-5.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-6.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-7.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-8.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-9.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-10.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-11.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-12.webp"
+      ],
       "description": "Kit com 5 mordedores de borracha maciça, cores sortidas, textura com cravos e ranhuras. Serve para rodízio e sessão guiada na troca de dentes. Não recheia, não congela e não substitui o Kong Extreme em cão adulto de mordida destrutiva.",
       "review": {
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "@id": "https://www.guiadoadestramento.com.br/#philipe",
+          "@id": "https://www.guiadoadestrador.com.br/#philipe",
           "name": "Philipe Ferreira",
-          "jobTitle": "Tutor e editor do Guia do Adestramento",
-          "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
-          "url": "https://www.guiadoadestramento.com.br/quem-somos"
+          "jobTitle": "Tutor e editor do Guia do Adestrador",
+          "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
+          "url": "https://www.guiadoadestrador.com.br/quem-somos"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -135,7 +181,9 @@
           "seller": {
             "@type": "Organization",
             "name": "Mercado Livre"
-          }
+          },
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31"
         }
       ],
       "additionalProperty": [
@@ -163,7 +211,7 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#faq",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/kit-mordedores-borracha-macica-5-pecas#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -209,7 +257,7 @@
     }
   ]
 }
-  </script>
+</script>
 <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 {
           "@type": "Offer",
@@ -230,7 +278,7 @@
       <a href="../" class="font-semibold tracking-tight text-stone-900">
         <span class="inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-amber-950 text-sm">🐾</span>
-          <span>Guia do Adestramento</span>
+          <span>Guia do Adestrador</span>
         </span>
       </a>
       <div class="flex items-center gap-2">
@@ -318,14 +366,14 @@
               <a href="https://meli.la/1aU9pwx" rel="nofollow noopener sponsored" target="_blank"
                 title="Ver no Mercado Livre"
                 class="flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-4 text-base font-bold text-white shadow-md transition-all hover:bg-blue-700 hover:shadow-lg active:scale-95">
-                <img src="../img/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
+                <img src="/imagens-marca/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
                 Ver no Mercado Livre
               </a>
               <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <a href="https://link.amazon/B00ZzUFcW" rel="sponsored noopener noreferrer" target="_blank"
                 title="Ver kit de mordedores de borracha maciça na Amazon"
                 class="flex items-center justify-center gap-2 rounded-xl bg-amber-500 px-6 py-4 text-base font-bold text-stone-900 shadow-md transition-all hover:bg-amber-400 hover:shadow-lg active:scale-95">
-                <img src="../img/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
+                <img src="/imagens-marca/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
                 Ver na Amazon
               </a>
 -->
@@ -333,7 +381,7 @@
           </div>
           <div class="flex items-center gap-2 border-t border-stone-100 bg-stone-50/60 px-5 py-3 text-xs text-stone-500 sm:px-6">
             <div class="h-5 w-5 shrink-0 overflow-hidden rounded-full border border-stone-300 bg-stone-200">
-              <img src="../img/philipe_ferreira.webp" alt="Foto de Philipe Ferreira" class="h-full w-full object-cover">
+              <img src="/imagens-marca/philipe-ferreira.webp" alt="Foto de Philipe Ferreira" class="h-full w-full object-cover">
             </div>
             <span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:text-amber-800 hover:underline transition-colors">Philipe Ferreira</a> • Atualizado em outubro de 2026</span>
           </div>
@@ -377,7 +425,7 @@
               <div class="relative flex items-start justify-between gap-4">
                 <div class="min-w-0">
                   <div class="flex flex-wrap items-center gap-2">
-                    <img src="../img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
+                    <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
                     <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-blue-900">
                       Kit de 5 peças
                     </span>
@@ -403,7 +451,7 @@
               <div class="relative flex items-start justify-between gap-4">
                 <div class="min-w-0">
                   <div class="inline-flex items-center gap-2">
-                    <img src="../img/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
+                    <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
                     <span class="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-900">
                       Kit maciço
                     </span>
@@ -432,6 +480,43 @@
 
     <section class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
 
+      <figure class="mb-10 overflow-hidden rounded-xl border border-stone-200 bg-white p-2 shadow-sm">
+        <div class="swiper swiper-main">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img fetchpriority="high" src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-1.webp" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Kit de cinco mordedores pretos de borracha maciça: osso, anel, pneu, bola e disco"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-2.webp" loading="lazy" width="675" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="As cinco peças do kit de mordedores pretos sobre uma mesa"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-3.webp" loading="lazy" width="1174" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Kit de mordedores pretos com corda, ao lado de um pastor alemão"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-4.webp" loading="lazy" width="1155" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Osso de borracha maciça com corda e detalhe da textura que ajuda a tirar o tártaro"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-5.webp" loading="lazy" width="1044" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Pneu de borracha maciça resistente, indicado para a limpeza dos dentes"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-6.webp" loading="lazy" width="1090" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Bola cravada de borracha maciça com 7,5 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-7.webp" loading="lazy" width="1131" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Argola de borracha maciça com corda"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-8.webp" loading="lazy" width="1114" height="1192" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Pneu de borracha maciça com 12 cm de diâmetro"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-9.webp" loading="lazy" width="1200" height="1142" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Osso de borracha maciça com corda, medindo 15,5 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-10.webp" loading="lazy" width="992" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Argola dentada de borracha maciça com 19 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-11.webp" loading="lazy" width="1086" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Bola de borracha maciça com 7,5 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-12.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Quadro das peças da linha black: material atóxico e uso para saúde bucal"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper swiper-thumbs mt-2">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-1.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do kit de cinco mordedores pretos"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-2.webp" loading="lazy" width="675" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura das peças do kit sobre a mesa"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-3.webp" loading="lazy" width="1174" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do kit com corda e do pastor alemão"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-4.webp" loading="lazy" width="1155" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do osso de borracha com corda"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-5.webp" loading="lazy" width="1044" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do pneu de borracha maciça"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-6.webp" loading="lazy" width="1090" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da bola cravada de 7,5 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-7.webp" loading="lazy" width="1131" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da argola de borracha com corda"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-8.webp" loading="lazy" width="1114" height="1192" class="mx-auto h-full w-full object-contain" alt="Miniatura do pneu de 12 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-9.webp" loading="lazy" width="1200" height="1142" class="mx-auto h-full w-full object-contain" alt="Miniatura do osso de 15,5 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-10.webp" loading="lazy" width="992" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da argola dentada de 19 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-11.webp" loading="lazy" width="1086" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da bola de borracha de 7,5 cm"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/kit-mordedores-borracha-macica/kit-mordedores-borracha-macica-12.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do quadro da linha black"></div>
+          </div>
+        </div>
+        <figcaption class="px-2 pb-1 pt-2 text-sm text-stone-500">Kit de cinco mordedores de borracha maciça: peças, medidas e textura.</figcaption>
+      </figure>
       <div class="mb-10 overflow-hidden border border-stone-200 rounded-lg bg-white shadow-sm">
         <div class="bg-stone-100 px-4 py-3 border-b border-stone-200">
           <h2 class="font-bold text-stone-800 italic">Ficha técnica – Kit 05 Mordedores de Borracha Maciça</h2>
@@ -525,13 +610,13 @@
           <div class="flex flex-col sm:flex-row gap-3">
             <a href="https://meli.la/1aU9pwx" rel="nofollow noopener sponsored" target="_blank"
               class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3.5 text-sm font-bold text-white shadow-md hover:bg-blue-700">
-              <img src="../img/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
+              <img src="/imagens-marca/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
               Ver no Mercado Livre
             </a>
             <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <a href="https://link.amazon/B00ZzUFcW" rel="sponsored noopener noreferrer" target="_blank"
               class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-amber-500 px-5 py-3.5 text-sm font-bold text-stone-900 shadow-md hover:bg-amber-400">
-              <img src="../img/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
+              <img src="/imagens-marca/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
               Ver na Amazon
             </a>
 -->
@@ -569,7 +654,7 @@
           <div class="flex flex-col gap-3 sm:flex-row">
             <a href="https://go.hotmart.com/H107966532E?dp=1" rel="sponsored nofollow noopener noreferrer" target="_blank"
               class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-amber-400 px-5 py-3.5 text-sm font-bold text-amber-950 shadow-md hover:bg-amber-300">
-              <img src="../img/icon-hotmart.svg" alt="" class="h-5 w-5" width="20" height="20">
+              <img src="/imagens-marca/icon-hotmart.svg" alt="" class="h-5 w-5" width="20" height="20">
               Ver o Guia Completo na Hotmart
             </a>
             <a href="./guia-completo-adestramento-canino"
@@ -646,14 +731,14 @@
                       title="Ver o kit no Mercado Livre"
                       class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-blue-700"
                       aria-label="Ver no Mercado Livre">
-                      <img src="../img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                     <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <a href="https://link.amazon/B00ZzUFcW" rel="sponsored noopener noreferrer" target="_blank"
                       title="Ver o kit na Amazon"
                       class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm hover:bg-amber-400"
                       aria-label="Ver na Amazon">
-                      <img src="../img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
 -->
                   </div>
@@ -771,7 +856,7 @@
             <div class="relative flex items-start justify-between gap-4">
               <div class="min-w-0">
                 <div class="flex flex-wrap items-center gap-2">
-                  <img src="../img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
+                  <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
                   <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-blue-900">
                     Kit de 5 peças
                   </span>
@@ -797,7 +882,7 @@
             <div class="relative flex items-start justify-between gap-4">
               <div class="min-w-0">
                 <div class="inline-flex items-center gap-2">
-                  <img src="../img/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
+                  <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
                   <span class="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-900">
                     Kit maciço
                   </span>
@@ -847,7 +932,7 @@
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
       <div class="flex flex-col items-center gap-3 sm:items-start">
-        <p>© 2026 Guia do Adestramento. Todos os direitos reservados.</p>
+        <p>© 2026 Guia do Adestrador. Todos os direitos reservados.</p>
         <div class="flex items-center gap-4">
           <a href="https://www.linkedin.com/in/philipef-dev/" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-stone-900" aria-label="LinkedIn">LinkedIn</a>
           <a href="https://x.com/radarofertas_ph" target="_blank" rel="noopener noreferrer"
@@ -883,6 +968,24 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+      spaceBetween: 8,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiperMain = new Swiper(".swiper-main", {
+      spaceBetween: 10,
+      autoHeight: true,
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      thumbs: { swiper: swiperThumbs },
+    });
+    swiperMain.on("slideChange", function () {
+      swiperThumbs.slideTo(swiperMain.activeIndex);
+    });
+  </script>
   <script src="../scripts/scroll-to-top.js" defer></script>
 
 </body>

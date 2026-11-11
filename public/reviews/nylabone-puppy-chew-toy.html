@@ -6,16 +6,30 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../output.css" as="style">
   <link rel="stylesheet" href="../output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <style>
+    .swiper-main { width: 100%; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide { display: flex; align-items: center; justify-content: center; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide img { image-orientation: from-image; display: block; width: auto; max-width: 100%; height: auto; max-height: 500px; margin-inline: auto; object-fit: contain; }
+    .swiper-thumbs { height: 80px; box-sizing: border-box; padding: 10px 0; }
+    .swiper-thumbs .swiper-slide { display: flex; align-items: center; justify-content: center; width: 20%; height: 100%; opacity: 0.4; cursor: pointer; }
+    .swiper-thumbs .swiper-slide-thumb-active { opacity: 1; border: 2px solid #d97706; border-radius: 6px; }
+    .swiper-thumbs .swiper-slide img { image-orientation: from-image; width: 100%; height: 100%; max-height: none; object-fit: contain; }
+    .swiper-button-next, .swiper-button-prev { color: #d97706; }
+    @media (max-width: 640px) { .swiper-main .swiper-slide img { max-height: 320px; } }
+  </style>
   <title>Nylabone Puppy vale a pena? Mordedor de nylon para filhote de Pitbull</title>
-  <link rel="canonical" href="https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy" />
+  <link rel="canonical" href="https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
   <meta property="og:title" content="Nylabone Puppy vale a pena? Mordedor de nylon para filhote de Pitbull">
   <meta property="og:description" content="Nylabone Puppy Chew Toy: mordedor de nylon durável para filhote de Pitbull na troca de dentes. Dura mais que borracha, não recheia. Quando usar, quando evitar e onde comprar no Mercado Livre.">
-  <meta property="og:url" content="https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy">
+  <meta property="og:url" content="https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy">
+  <meta property="og:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-1.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nylabone Puppy vale a pena? Mordedor de nylon para filhote de Pitbull">
   <meta name="twitter:description" content="Nylabone Puppy Chew Toy: mordedor de nylon durável para filhote de Pitbull na troca de dentes. Dura mais que borracha, não recheia. Quando usar, quando evitar e onde comprar no Mercado Livre.">
+  <meta name="twitter:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-1.webp">
   <meta name="description" content="Nylabone Puppy Chew Toy: mordedor de nylon durável para filhote de Pitbull na troca de dentes. Dura mais que borracha, não recheia. Quando usar, quando evitar e onde comprar no Mercado Livre.">
   <script type="application/ld+json">
 {
@@ -23,9 +37,17 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.guiadoadestramento.com.br/#organization",
-      "name": "Guia do Adestramento",
-      "url": "https://www.guiadoadestramento.com.br/",
+      "@id": "https://www.guiadoadestrador.com.br/#organization",
+      "name": "Guia do Adestrador",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.guiadoadestrador.com.br/#logo",
+        "url": "https://www.guiadoadestrador.com.br/imagens-marca/logo-guia-do-adestrador.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Guia do Adestrador"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -35,13 +57,13 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.guiadoadestramento.com.br/#philipe",
+      "@id": "https://www.guiadoadestrador.com.br/#philipe",
       "name": "Philipe Ferreira",
-      "jobTitle": "Tutor e editor do Guia do Adestramento",
+      "jobTitle": "Tutor e editor do Guia do Adestrador",
       "description": "Tutor da Maraca, Pitbull Red Nose, em Volta Redonda. Testa rotina e produto de filhote em quitinete. Não é médico-veterinário.",
-      "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
+      "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
       "email": "philipefdev@gmail.com",
-      "url": "https://www.guiadoadestramento.com.br/quem-somos",
+      "url": "https://www.guiadoadestrador.com.br/quem-somos",
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -55,59 +77,83 @@
         "addressCountry": "BR"
       },
       "worksFor": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.guiadoadestramento.com.br/#website",
-      "url": "https://www.guiadoadestramento.com.br/",
-      "name": "Guia do Adestramento",
+      "@id": "https://www.guiadoadestrador.com.br/#website",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "name": "Guia do Adestrador",
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy#webpage",
-      "url": "https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy#webpage",
+      "url": "https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy",
       "name": "Nylabone Puppy vale a pena? Mordedor de nylon para filhote de Pitbull",
       "description": "Nylabone Puppy Chew Toy: mordedor de nylon durável para filhote de Pitbull na troca de dentes. Dura mais que borracha, não recheia. Quando usar, quando evitar e onde comprar no Mercado Livre.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-1.webp",
+        "width": 638,
+        "height": 1200
+      },
       "isPartOf": {
-        "@id": "https://www.guiadoadestramento.com.br/#website"
+        "@id": "https://www.guiadoadestrador.com.br/#website"
       },
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
+      },
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://www.guiadoadestrador.com.br/#philipe"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy#breadcrumb",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Início",
-          "item": "https://www.guiadoadestramento.com.br/"
+          "item": "https://www.guiadoadestrador.com.br/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Reviews",
-          "item": "https://www.guiadoadestramento.com.br/reviews"
+          "item": "https://www.guiadoadestrador.com.br/reviews"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Nylabone Puppy",
-          "item": "https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy"
+          "item": "https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy"
         }
       ]
     },
     {
       "@type": "Product",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy#product",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy#product",
       "name": "Nylabone Puppy Chew Toy — Mordedor de Nylon para Filhote",
+      "image": [
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-1.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-2.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-3.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-4.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-5.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-6.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-7.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-8.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-9.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-10.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-11.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/nylabone-puppy/nylabone-puppy-12.webp"
+      ],
       "brand": {
         "@type": "Brand",
         "name": "Nylabone"
@@ -117,11 +163,11 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "@id": "https://www.guiadoadestramento.com.br/#philipe",
+          "@id": "https://www.guiadoadestrador.com.br/#philipe",
           "name": "Philipe Ferreira",
-          "jobTitle": "Tutor e editor do Guia do Adestramento",
-          "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
-          "url": "https://www.guiadoadestramento.com.br/quem-somos"
+          "jobTitle": "Tutor e editor do Guia do Adestrador",
+          "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
+          "url": "https://www.guiadoadestrador.com.br/quem-somos"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -131,7 +177,7 @@
         "reviewBody": "O Nylabone Puppy Chew Toy é o mordedor de nylon que eu colocaria no rodízio da Maraca junto com o Kong Puppy. Dura mais que borracha macia, não solta fiapo grande e a textura alivia a gengiva na troca de dentes. O porém: não recheia, não congela e não ocupa 15 minutos sozinho. É complemento, não substituto do Kong."
       },
       "offers": [
-                {
+        {
           "@type": "Offer",
           "url": "https://meli.la/2LQSU4n",
           "itemCondition": "https://schema.org/NewCondition",
@@ -139,6 +185,16 @@
           "seller": {
             "@type": "Organization",
             "name": "Mercado Livre"
+          },
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "price": "40.00",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "40.00",
+            "minPrice": "40.00",
+            "maxPrice": "70.00",
+            "priceCurrency": "BRL"
           }
         }
       ],
@@ -167,7 +223,7 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/nylabone-puppy-chew-toy#faq",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/nylabone-puppy-chew-toy#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -213,7 +269,7 @@
     }
   ]
 }
-  </script>
+</script>
 <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 {
           "@type": "Offer",
@@ -234,7 +290,7 @@
       <a href="../" class="font-semibold tracking-tight text-stone-900">
         <span class="inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-amber-950 text-sm">🐾</span>
-          <span>Guia do Adestramento</span>
+          <span>Guia do Adestrador</span>
         </span>
       </a>
       <div class="flex items-center gap-2">
@@ -314,14 +370,14 @@
               <a href="https://meli.la/2LQSU4n" rel="nofollow noopener sponsored" target="_blank"
                 title="Ver no Mercado Livre"
                 class="flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-4 text-base font-bold text-white shadow-md transition-all hover:bg-blue-700 hover:shadow-lg active:scale-95">
-                <img src="../img/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
+                <img src="/imagens-marca/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
                 Ver no Mercado Livre
               </a>
               <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <a href="https://link.amazon/B00Evmssi" rel="sponsored noopener noreferrer" target="_blank"
                 title="Ver na Amazon"
                 class="flex items-center justify-center gap-2 rounded-xl bg-amber-500 px-6 py-4 text-base font-bold text-stone-900 shadow-md transition-all hover:bg-amber-400 hover:shadow-lg active:scale-95">
-                <img src="../img/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
+                <img src="/imagens-marca/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
                 Ver na Amazon
               </a>
 -->
@@ -329,7 +385,7 @@
           </div>
           <div class="flex items-center gap-2 border-t border-stone-100 bg-stone-50/60 px-5 py-3 text-xs text-stone-500 sm:px-6">
             <div class="h-5 w-5 shrink-0 overflow-hidden rounded-full border border-stone-300 bg-stone-200">
-              <img src="../img/philipe_ferreira.webp" alt="Foto de Philipe Ferreira" class="h-full w-full object-cover">
+              <img src="/imagens-marca/philipe-ferreira.webp" alt="Foto de Philipe Ferreira" class="h-full w-full object-cover">
             </div>
             <span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:text-amber-800 hover:underline transition-colors">Philipe Ferreira</a> • Atualizado em outubro de 2026</span>
           </div>
@@ -349,7 +405,7 @@
               <div class="relative flex items-start justify-between gap-4">
                 <div class="min-w-0">
                   <div class="flex flex-wrap items-center gap-2">
-                    <img src="../img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
+                    <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
                     <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-blue-900">
                       Mais Prático
                     </span>
@@ -375,7 +431,7 @@
               <div class="relative flex items-start justify-between gap-4">
                 <div class="min-w-0">
                   <div class="inline-flex items-center gap-2">
-                    <img src="../img/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
+                    <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
                     <span class="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-900">
                       Original Nylabone
                     </span>
@@ -404,6 +460,43 @@
 
     <section class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
 
+      <figure class="mb-10 overflow-hidden rounded-xl border border-stone-200 bg-white p-2 shadow-sm">
+        <div class="swiper swiper-main">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img fetchpriority="high" src="/imagens-produtos/nylabone-puppy/nylabone-puppy-1.webp" width="638" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Embalagem do Nylabone Puppy Chew sabor frango, no formato de osso"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-2.webp" loading="lazy" width="960" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Filhote deitado mordendo o osso Nylabone Puppy"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-3.webp" loading="lazy" width="1054" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Comparação da embalagem antiga e da nova do Nylabone Puppy"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-4.webp" loading="lazy" width="1174" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Osso Nylabone Puppy para gengiva sensível, com a dica de congelar"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-5.webp" loading="lazy" width="1183" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Quadro de resistência do Nylabone: Puppy Chew é o material mais macio"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-6.webp" loading="lazy" width="1155" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Tabela de tamanho do Nylabone Puppy, do XX-Small ao X-Small"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-7.webp" loading="lazy" width="1153" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Usos do Nylabone: dentição, tédio, treino e ansiedade"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-8.webp" loading="lazy" width="901" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Osso Nylabone Puppy sabor frango, fora da embalagem"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-9.webp" loading="lazy" width="1200" height="1178" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Cartaz da doação de mordedores Nylabone para abrigos"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-10.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Cão na grama com bandana Nylabone"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-11.webp" loading="lazy" width="639" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Verso da embalagem do Nylabone Puppy"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-12.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Três cães na toalha com o texto Nylabone feito em Nova Jersey"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper swiper-thumbs mt-2">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-1.webp" loading="lazy" width="638" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da embalagem do Nylabone Puppy"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-2.webp" loading="lazy" width="960" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do filhote mordendo o Nylabone"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-3.webp" loading="lazy" width="1054" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da embalagem nova do Nylabone"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-4.webp" loading="lazy" width="1174" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do osso para gengiva"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-5.webp" loading="lazy" width="1183" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do quadro de resistência Puppy Chew"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-6.webp" loading="lazy" width="1155" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da tabela de tamanho"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-7.webp" loading="lazy" width="1153" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura dos usos do Nylabone"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-8.webp" loading="lazy" width="901" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do osso Nylabone fora da embalagem"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-9.webp" loading="lazy" width="1200" height="1178" class="mx-auto h-full w-full object-contain" alt="Miniatura do cartaz de doação da Nylabone"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-10.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do cão com bandana Nylabone"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-11.webp" loading="lazy" width="639" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do verso da embalagem"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/nylabone-puppy/nylabone-puppy-12.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura dos cães com o Nylabone"></div>
+          </div>
+        </div>
+        <figcaption class="px-2 pb-1 pt-2 text-sm text-stone-500">Nylabone Puppy Chew sabor frango: embalagem, tamanho de filhote e o osso.</figcaption>
+      </figure>
       <div class="mb-10 overflow-hidden border border-stone-200 rounded-lg bg-white shadow-sm">
         <div class="bg-stone-100 px-4 py-3 border-b border-stone-200">
           <h3 class="font-bold text-stone-800 italic">Ficha técnica – Nylabone Puppy Chew Toy</h3>
@@ -497,13 +590,13 @@
           <div class="flex flex-col sm:flex-row gap-3">
             <a href="https://meli.la/2LQSU4n" rel="nofollow noopener sponsored" target="_blank"
               class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3.5 text-sm font-bold text-white shadow-md hover:bg-blue-700">
-              <img src="../img/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
+              <img src="/imagens-marca/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
               Ver no Mercado Livre
             </a>
             <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <a href="https://link.amazon/B00Evmssi" rel="sponsored noopener noreferrer" target="_blank"
               class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-amber-500 px-5 py-3.5 text-sm font-bold text-stone-900 shadow-md hover:bg-amber-400">
-              <img src="../img/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
+              <img src="/imagens-marca/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
               Ver na Amazon
             </a>
 -->
@@ -608,14 +701,14 @@
                       title="Ver Nylabone Puppy no Mercado Livre"
                       class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm hover:bg-blue-700"
                       aria-label="Ver no Mercado Livre">
-                      <img src="../img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                     <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <a href="https://link.amazon/B00Evmssi" rel="sponsored noopener noreferrer" target="_blank"
                       title="Ver Nylabone Puppy na Amazon"
                       class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm hover:bg-amber-400"
                       aria-label="Ver na Amazon">
-                      <img src="../img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
 -->
                   </div>
@@ -662,13 +755,13 @@
           <div class="mt-6 flex flex-col sm:flex-row gap-3">
             <a href="https://meli.la/2LQSU4n" rel="nofollow noopener sponsored" target="_blank"
               class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3.5 text-sm font-bold text-white hover:bg-blue-700">
-              <img src="../img/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
+              <img src="/imagens-marca/icon-mercadolivre.webp" alt="" class="h-5 w-5" width="20" height="20">
               Ver no Mercado Livre
             </a>
             <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <a href="https://link.amazon/B00Evmssi" rel="sponsored noopener noreferrer" target="_blank"
               class="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-amber-400 px-5 py-3.5 text-sm font-bold text-amber-950 hover:bg-amber-300">
-              <img src="../img/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
+              <img src="/imagens-marca/icon-amazon.webp" alt="" class="h-5 w-5" width="20" height="20">
               Ver na Amazon
             </a>
 -->
@@ -775,7 +868,7 @@
             <div class="relative flex items-start justify-between gap-4">
               <div class="min-w-0">
                 <div class="flex flex-wrap items-center gap-2">
-                  <img src="../img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
+                  <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-5 w-5" width="20" height="20">
                   <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-1 text-[11px] font-semibold text-blue-900">
                     Mais Prático
                   </span>
@@ -801,7 +894,7 @@
             <div class="relative flex items-start justify-between gap-4">
               <div class="min-w-0">
                 <div class="inline-flex items-center gap-2">
-                  <img src="../img/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
+                  <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-5 w-5" width="20" height="20">
                   <span class="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-900">
                     Original Nylabone
                   </span>
@@ -853,7 +946,7 @@
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
       <div class="flex flex-col items-center gap-3 sm:items-start">
-        <p>© 2026 Guia do Adestramento. Todos os direitos reservados.</p>
+        <p>© 2026 Guia do Adestrador. Todos os direitos reservados.</p>
         <div class="flex items-center gap-4">
           <a href="https://www.linkedin.com/in/philipef-dev/" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-stone-900" aria-label="LinkedIn">LinkedIn</a>
           <a href="https://x.com/radarofertas_ph" target="_blank" rel="noopener noreferrer"
@@ -889,6 +982,24 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+      spaceBetween: 8,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiperMain = new Swiper(".swiper-main", {
+      spaceBetween: 10,
+      autoHeight: true,
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      thumbs: { swiper: swiperThumbs },
+    });
+    swiperMain.on("slideChange", function () {
+      swiperThumbs.slideTo(swiperMain.activeIndex);
+    });
+  </script>
   <script src="../scripts/scroll-to-top.js" defer></script>
 
 </body>

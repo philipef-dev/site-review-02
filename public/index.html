@@ -6,16 +6,76 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="output.css" as="style">
   <link rel="stylesheet" href="output.css">
-  <title>Guia do Adestramento: Produtos e Dicas Práticas para Filhotes | Guia do Adestramento</title>
-  <link rel="canonical" href="https://www.guiadoadestramento.com.br/" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <style>
+    .swiper-main {
+      width: 100%;
+      height: auto;
+      background: #fffbeb;
+    }
+    .swiper-main .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      background: #fffbeb;
+    }
+    .swiper-main .swiper-slide img {
+      image-orientation: from-image;
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 450px;
+      margin-inline: auto;
+      object-fit: contain;
+    }
+    .swiper-thumbs {
+      height: 80px;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .swiper-thumbs .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      height: 100%;
+      opacity: 0.4;
+      cursor: pointer;
+    }
+    .swiper-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+      border: 2px solid #d97706;
+      border-radius: 6px;
+    }
+    .swiper-thumbs .swiper-slide img {
+      image-orientation: from-image;
+      width: 100%;
+      height: 100%;
+      max-height: none;
+      object-fit: contain;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #d97706;
+    }
+    @media (max-width: 640px) {
+      .swiper-main .swiper-slide img { max-height: 320px; }
+    }
+  </style>
+  <title>Guia do Adestrador: Produtos e Dicas Práticas para Filhotes | Guia do Adestrador</title>
+  <link rel="canonical" href="https://www.guiadoadestrador.com.br/" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Guia do Adestramento">
-  <meta property="og:title" content="Guia do Adestramento: Produtos e Dicas Práticas para Filhotes | Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
+  <meta property="og:title" content="Guia do Adestrador: Produtos e Dicas Práticas para Filhotes | Guia do Adestrador">
   <meta property="og:description" content="Produtos testados com a Maraca e dicas práticas para filhotes: o que segurou móvel, xixi e limite em quitinete.">
-  <meta property="og:url" content="https://www.guiadoadestramento.com.br/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Guia do Adestramento: Produtos e Dicas Práticas para Filhotes | Guia do Adestramento">
+  <meta property="og:url" content="https://www.guiadoadestrador.com.br/">
+  <meta property="og:image" content="https://www.guiadoadestrador.com.br/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-3.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guia do Adestrador: Produtos e Dicas Práticas para Filhotes | Guia do Adestrador">
   <meta name="twitter:description" content="Produtos testados com a Maraca e dicas práticas para filhotes: o que segurou móvel, xixi e limite em quitinete.">
+  <meta name="twitter:image" content="https://www.guiadoadestrador.com.br/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-3.webp">
   <meta name="description" content="Produtos testados com a Maraca e dicas práticas para filhotes: o que segurou móvel, xixi e limite em quitinete.">
   <script type="application/ld+json">
 {
@@ -23,9 +83,9 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.guiadoadestramento.com.br/#organization",
-      "name": "Guia do Adestramento",
-      "url": "https://www.guiadoadestramento.com.br/",
+      "@id": "https://www.guiadoadestrador.com.br/#organization",
+      "name": "Guia do Adestrador",
+      "url": "https://www.guiadoadestrador.com.br/",
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -35,13 +95,13 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.guiadoadestramento.com.br/#philipe",
+      "@id": "https://www.guiadoadestrador.com.br/#philipe",
       "name": "Philipe Ferreira",
-      "jobTitle": "Tutor e editor do Guia do Adestramento",
+      "jobTitle": "Tutor e editor do Guia do Adestrador",
       "description": "Tutor da Maraca, Pitbull Red Nose, em Volta Redonda. Testa rotina e produto de filhote em quitinete. Não é médico-veterinário.",
-      "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
+      "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
       "email": "philipefdev@gmail.com",
-      "url": "https://www.guiadoadestramento.com.br/quem-somos",
+      "url": "https://www.guiadoadestrador.com.br/quem-somos",
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -55,41 +115,42 @@
         "addressCountry": "BR"
       },
       "worksFor": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.guiadoadestramento.com.br/#website",
-      "url": "https://www.guiadoadestramento.com.br/",
-      "name": "Guia do Adestramento",
+      "@id": "https://www.guiadoadestrador.com.br/#website",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "name": "Guia do Adestrador",
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       },
       "description": "Adestramento de Pitbull filhote na prática: diário da Maraca, reviews de produtos e rotina em quitinete."
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.guiadoadestramento.com.br/#webpage",
-      "url": "https://www.guiadoadestramento.com.br/",
-      "name": "Guia do Adestramento: Produtos e Dicas Práticas para Filhotes",
+      "@id": "https://www.guiadoadestrador.com.br/#webpage",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "name": "Guia do Adestrador: Produtos e Dicas Práticas para Filhotes",
       "description": "Produtos testados com a Maraca e dicas práticas para filhotes: o que segurou móvel, xixi e limite em quitinete.",
+      "image": "https://www.guiadoadestrador.com.br/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-3.webp",
       "isPartOf": {
-        "@id": "https://www.guiadoadestramento.com.br/#website"
+        "@id": "https://www.guiadoadestrador.com.br/#website"
       },
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       },
       "mainEntity": {
-        "@id": "https://www.guiadoadestramento.com.br/#itemlist"
+        "@id": "https://www.guiadoadestrador.com.br/#itemlist"
       }
     },
     {
       "@type": "ItemList",
-      "@id": "https://www.guiadoadestramento.com.br/#itemlist",
+      "@id": "https://www.guiadoadestrador.com.br/#itemlist",
       "name": "O que realmente segura móvel, xixi e limites em 2026",
       "description": "Soluções testadas com a Maraca, Pitbull Red Nose em quitinete em Volta Redonda.",
-      "url": "https://www.guiadoadestramento.com.br/",
+      "url": "https://www.guiadoadestrador.com.br/",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -97,7 +158,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Kong Puppy",
-            "url": "https://www.guiadoadestramento.com.br/reviews/kong-puppy",
+            "url": "https://www.guiadoadestrador.com.br/reviews/kong-puppy",
             "description": "Hero da dentição na quitinete: recheio, freezer e boca fora do sofá."
           }
         },
@@ -107,7 +168,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Kong Classic",
-            "url": "https://www.guiadoadestramento.com.br/reviews/kong-classic",
+            "url": "https://www.guiadoadestrador.com.br/reviews/kong-classic",
             "description": "Vermelho da transição: borracha firme depois dos 6–9 meses, antes do preto."
           }
         },
@@ -117,7 +178,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Kong Extreme",
-            "url": "https://www.guiadoadestramento.com.br/reviews/kong-extreme",
+            "url": "https://www.guiadoadestrador.com.br/reviews/kong-extreme",
             "description": "Preto para mordida destrutiva: Large, XL ou XXL quando o vermelho já abriu."
           }
         },
@@ -127,7 +188,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Xixi e cocô no lugar certo",
-            "url": "https://www.guiadoadestramento.com.br/reviews/xixi-e-coco-no-lugar-certo",
+            "url": "https://www.guiadoadestrador.com.br/reviews/xixi-e-coco-no-lugar-certo",
             "description": "Cachorro faz xixi no lugar errado: leve depois de acordar, comer e brincar e limpe com enzimático."
           }
         },
@@ -137,7 +198,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Filhote mordendo tudo",
-            "url": "https://www.guiadoadestramento.com.br/reviews/filhote-mordendo-tudo",
+            "url": "https://www.guiadoadestrador.com.br/reviews/filhote-mordendo-tudo",
             "description": "Cachorro mordendo dono, pé e móvel: tire a mão, ofereça borracha e só volte com as patas no chão."
           }
         },
@@ -147,7 +208,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Herbalvet T.A.",
-            "url": "https://www.guiadoadestramento.com.br/reviews/herbalvet-eliminador-enzimatico",
+            "url": "https://www.guiadoadestrador.com.br/reviews/herbalvet-eliminador-enzimatico",
             "description": "Veja não apaga ureia. Enzimático na marca da sala, não perfume."
           }
         },
@@ -157,7 +218,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Limites na quitinete",
-            "url": "https://www.guiadoadestramento.com.br/reviews/limites-cao-em-quitinete",
+            "url": "https://www.guiadoadestrador.com.br/reviews/limites-cao-em-quitinete",
             "description": "Portão, toca e 8 h sozinha sem teatro. Espaço pequeno pede mapa claro."
           }
         },
@@ -167,7 +228,7 @@
           "item": {
             "@type": "WebPage",
             "name": "Guia Completo de Adestramento",
-            "url": "https://www.guiadoadestramento.com.br/reviews/guia-completo-adestramento-canino",
+            "url": "https://www.guiadoadestrador.com.br/reviews/guia-completo-adestramento-canino",
             "description": "Quando o diário e o produto não fecham o caso: curso, suporte e o que não é milagre."
           }
         }
@@ -175,8 +236,8 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.guiadoadestramento.com.br/#faq",
-      "url": "https://www.guiadoadestramento.com.br/#faq",
+      "@id": "https://www.guiadoadestrador.com.br/#faq",
+      "url": "https://www.guiadoadestrador.com.br/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -230,7 +291,7 @@
       <a href="./" class="font-semibold tracking-tight text-stone-900">
         <span class="inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-amber-950 text-sm">🐾</span>
-          <span>Guia do Adestramento</span>
+          <span>Guia do Adestrador</span>
         </span>
       </a>
       <div class="flex items-center gap-2">
@@ -267,6 +328,31 @@
           <a href="reviews" class="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-50">Ver todas as análises</a>
           <a href="#ranking" class="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-50">O que eu usaria de novo</a>
         </div>
+        <figure class="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-amber-200 bg-amber-50 p-2 shadow-sm">
+          <div class="swiper swiper-main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-3.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, sentada no concreto olhando para o tutor durante o adestramento de Pitbull em casa"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-11.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Close da Maraca, cadela Pitbull Red Nose de olhos claros, olhando para o tutor no adestramento"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-5.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, sentada de língua de fora e atenta ao tutor no adestramento"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-6.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, olhando para cima para o tutor no treino de adestramento em casa"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-10.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, sentada com o olhar para cima no adestramento de Pitbull"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-1.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, deitada dentro de um pneu no chão da sala após o adestramento em casa"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper swiper-thumbs mt-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-3.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull Red Nose, sentada de frente no adestramento"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-11.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-full w-full object-contain" alt="Miniatura do close da Maraca, Pitbull Red Nose, no adestramento com o tutor"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-5.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull Red Nose, de língua de fora no adestramento"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-6.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull Red Nose, olhando para cima no adestramento"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-10.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull Red Nose, sentada atenta no adestramento de Pitbull"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-1.webp" loading="lazy" width="1000" height="1334" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull Red Nose, deitada no pneu depois do adestramento"></div>
+            </div>
+          </div>
+          <figcaption class="px-2 pb-1 pt-2 text-center text-sm text-stone-500">Maraca, Pitbull Red Nose, no adestramento em casa em Volta Redonda: atenção ao tutor e descanso no chão da quitinete.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -304,13 +390,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Recheia, congela e tira a boca do sofá</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1z9qycd" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B08zoNPdv" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -327,13 +413,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Borracha firme depois dos 6–9 meses; evitar o roxo</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/26uY1EP" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B0cGwDCbm" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -350,13 +436,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Borracha preta para quando o vermelho já abriu</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1gJE4XQ" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B03fwJLik" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -373,13 +459,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Concentrado na marca; Veja não apaga a ureia</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1gFZ9Wh" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B0hqXqFp3" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -396,13 +482,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Fecha cozinha e quarto sem furar a parede</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/2DXGVuU" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B07ea7ffA" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -411,21 +497,21 @@
                   <td class="sticky left-0 z-10 bg-white px-6 py-4 shadow-[8px_0_12px_-12px_rgba(0,0,0,0.18)] group-hover:bg-amber-50">
                     <div class="flex items-baseline gap-2">
                       <span class="shrink-0 font-bold text-amber-700">6º</span>
-                      <a href="reviews/casinha-plastico-furacao-pet" class="font-bold text-stone-900 underline-offset-2 transition-colors hover:text-amber-700 hover:underline">Casinha Furacão Pet nº 5</a>
+                      <a href="reviews/casinha-plastico-furacao-pet" class="font-bold text-stone-900 underline-offset-2 transition-colors hover:text-amber-700 hover:underline">Casinha iglu N6 Furacão Pet</a>
                     </div>
                   </td>
                   <td class="whitespace-nowrap px-6 py-4 text-center text-stone-600">Toca</td>
-                  <td class="whitespace-nowrap px-6 py-4 text-center text-stone-600">Plástico nº 5</td>
+                  <td class="whitespace-nowrap px-6 py-4 text-center text-stone-600">Interna 55×78×75 cm</td>
                   <td class="px-6 py-4 italic text-stone-600">Toca para as 8 h sozinha; plástico no lugar de madeira</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1Ar62qy" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B0ixpWi7Y" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -442,13 +528,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Linha de porte grande; minis e granel ficam de fora</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1MbFsx5" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B06R2RFSt" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -465,13 +551,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Desacelera a refeição; o Kong é o que congela</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1mi6bBw" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B00nL5g19" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -488,13 +574,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Fita larga e mosquetão de aço; retrátil não</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1o6G2hz" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B0gWqhc7V" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -511,13 +597,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Para dente de leite; não substitui o Kong recheável</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/2LQSU4n" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B00Evmssi" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -534,13 +620,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Ajuda no lugar certo; entra depois do enzimático</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/2VFzijj" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B0gE4N6w3" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -557,13 +643,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Marca o acerto na hora; sessão de 3 a 5 minutos</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1ahRhh2" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B00qunTaY" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -580,13 +666,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Sessão guiada e gengiva; não ocupa as 8 h sozinho</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1aU9pwx" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B00ZzUFcW" rel="sponsored noopener noreferrer" target="_blank" title="Ver kit de mordedores de borracha maciça na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -595,7 +681,7 @@
                   <td class="sticky left-0 z-10 bg-white px-6 py-4 shadow-[8px_0_12px_-12px_rgba(0,0,0,0.18)] group-hover:bg-amber-50">
                     <div class="flex items-baseline gap-2">
                       <span class="shrink-0 font-bold text-amber-700">14º</span>
-                      <a href="reviews/melhores-acessorios-adestramento" class="font-bold text-stone-900 underline-offset-2 transition-colors hover:text-amber-700 hover:underline">Guia unificada</a>
+                      <a href="reviews/melhores-acessorios-adestramento-caes#guia-unificada" class="font-bold text-stone-900 underline-offset-2 transition-colors hover:text-amber-700 hover:underline">Guia unificada</a>
                     </div>
                   </td>
                   <td class="whitespace-nowrap px-6 py-4 text-center text-stone-600">Puxão</td>
@@ -603,13 +689,13 @@
                   <td class="px-6 py-4 italic text-stone-600">Alça curta corta o impulso; a ponta longa é o passo</td>
                   <td class="px-6 py-4 text-center">
                     <a href="https://meli.la/1edLagp" rel="nofollow noopener sponsored" target="_blank" title="Ver no Mercado Livre" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-3 py-1.5 text-xs font-bold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95" aria-label="Ver no Mercado Livre">
-                      <img src="/img/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-mercadolivre.webp" alt="Mercado Livre" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
                   <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 <td class="px-6 py-4 text-center">
                     <a href="https://link.amazon/B0hxiPApA" rel="sponsored noopener noreferrer" target="_blank" title="Ver na Amazon" class="inline-flex items-center justify-center rounded-full bg-amber-500 px-3 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95" aria-label="Ver na Amazon">
-                      <img src="/img/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
+                      <img src="/imagens-marca/icon-amazon.webp" alt="Amazon" class="h-4 w-4" width="16" height="16">
                     </a>
                   </td>
 -->
@@ -622,7 +708,7 @@
                         <a href="reviews/guia-completo-adestramento-canino" class="font-bold text-stone-900 underline-offset-2 transition-colors hover:text-amber-700 hover:underline">Guia Completo</a>
                       </div>
                       <a href="https://go.hotmart.com/H107966532E?dp=1" rel="sponsored nofollow noopener noreferrer" target="_blank" title="Comprar na Hotmart" class="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-amber-500 px-4 py-1.5 text-xs font-bold text-stone-900 shadow-sm transition-all hover:bg-amber-400 hover:shadow-md active:scale-95">
-                        <img src="/img/icon-hotmart.svg" alt="" class="h-4 w-4" width="16" height="16">
+                        <img src="/imagens-marca/icon-hotmart.svg" alt="" class="h-4 w-4" width="16" height="16">
                         Comprar na Hotmart
                       </a>
                     </div>
@@ -668,6 +754,16 @@
       <h2 class="text-3xl font-bold tracking-tight text-stone-900">Um guia feito no chão da quitinete — não em teoria de manual</h2>
       <p class="mt-5 max-w-3xl text-lg leading-relaxed text-stone-600">Eu sou o Philipe. A Maraca chegou com 2 meses, patas grandes e energia de porte que a casa não tem. O que você lê aqui nasceu de acidente na área, sofá roído, 8 h fora e vizinho no corredor — não de script de Hotmart.</p>
       <p class="mt-4 max-w-3xl text-lg leading-relaxed text-stone-600">Cada ficha diz o que funcionou, o que foi gasto inútil e quando o próximo passo é produto, rotina ou curso. Comissão de afiliado não escreve o veredito.</p>
+      <div class="mt-8 grid items-center gap-6 sm:grid-cols-2">
+        <figure class="flex flex-col items-center">
+          <img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-2.webp" loading="lazy" width="1000" height="1334" class="mx-auto my-6 h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, descansando dentro de um pneu ao lado do sofá na quitinete do adestramento">
+          <figcaption class="max-w-sm text-center text-sm text-stone-500">O pneu virou cama. Na quitinete, o descanso também faz parte do adestramento da Maraca.</figcaption>
+        </figure>
+        <figure class="flex flex-col items-center">
+          <img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-7.webp" loading="lazy" width="1000" height="750" class="mx-auto my-6 h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, deitada no canto da sala da quitinete depois da sessão de adestramento">
+          <figcaption class="max-w-sm text-center text-sm text-stone-500">Canto da sala, patas esticadas: o mapa da casa pequena cabe no corpo dela.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="bg-white py-16">
@@ -693,7 +789,17 @@
 
     <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
       <h2 class="text-3xl font-bold tracking-tight text-stone-900">Como adestrar um filhote de cachorro</h2>
-      <p class="mt-5 max-w-3xl text-lg leading-relaxed text-stone-600">A primeira semana cabe num mapa curto, o mesmo que eu usei com a Maraca aos 2 meses. O passo a passo está em <a class="font-semibold underline" href="reviews/como-adestrar-um-filhote-de-cachorro">como adestrar um filhote de cachorro</a>. Pitbull cresce rápido: o que cabe na boca aos 3 meses não cabe aos 7. Comece pelo problema do dia, leia o cuidado e só então abra a ficha de produto. Ração e vacina não são extra. Sem saúde, o treino não pega.</p>
+      <p class="mt-5 max-w-3xl text-lg leading-relaxed text-stone-600">A primeira semana cabe num mapa curto, o mesmo que eu usei com a Maraca aos 2 meses. O passo a passo está em <a class="font-semibold underline" href="reviews/como-adestrar-um-filhote-de-cachorro">como adestrar um filhote de cachorro</a>. Pitbull cresce rápido: o que cabe na boca aos 3 meses não cabe aos 7. Comece pelo problema do dia, leia o cuidado e só então abra a ficha de produto. Os acessórios dessa rotina estão no <a class="font-semibold underline" href="reviews/melhores-acessorios-adestramento-caes">guia dos melhores acessórios para adestrar filhotes e cães adultos</a>. Ração e vacina não são extra. Sem saúde, o treino não pega.</p>
+      <div class="mt-8 grid items-center gap-6 sm:grid-cols-2">
+        <figure class="flex flex-col items-center">
+          <img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-4.webp" loading="lazy" width="1000" height="1334" class="mx-auto my-6 h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, sentada de boca aberta e focada no tutor durante o adestramento">
+          <figcaption class="max-w-sm text-center text-sm text-stone-500">Boca aberta e olhar no tutor: o foco do adestramento de Pitbull começa sentada.</figcaption>
+        </figure>
+        <figure class="flex flex-col items-center">
+          <img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-9.webp" loading="lazy" width="1000" height="1334" class="mx-auto my-6 h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, sentada de perfil com a língua de fora no adestramento em casa">
+          <figcaption class="max-w-sm text-center text-sm text-stone-500">A mesma sessão, de lado. O critério do treino está na <a class="font-semibold underline" href="metodologia">metodologia</a>.</figcaption>
+        </figure>
+      </div>
       <h3 class="mt-8 text-xl font-bold text-stone-900">Fazer xixi no lugar certo</h3>
       <p class="mt-3 max-w-3xl text-lg leading-relaxed text-stone-600">Fazer xixi no lugar certo é relógio, não bronca. Depois de acordar, comer e brincar, o filhote vai ao mesmo banheiro. O detalhe do quintal, do tapete e da limpeza está em <a class="font-semibold underline" href="reviews/xixi-e-coco-no-lugar-certo">xixi e cocô no lugar certo</a>.</p>
       <h3 class="mt-8 text-xl font-bold text-stone-900">Filhote de cachorro mordendo</h3>
@@ -796,14 +902,21 @@
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-stone-900">Outras análises que valem a sua atenção</h2>
         <ul class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-stone-700">
-          <li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/pitbull-filhote-2-meses">Pitbull filhote de 2 meses</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/temperamento-pitbull-filhote">Temperamento</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/crescimento-peso-e-castracao">Crescimento e castração</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/pitbull-e-outros-caes">Pitbull e outros cães</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/filhote-pulando-nas-pessoas">Pular nas pessoas</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/alimentacao-filhote-porte-grande">Alimentação porte grande</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/assinatura-racao-filhote">Assinatura de ração</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/vacinas-v8-v10-e-vermifugo">Vacinas V8/V10</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/socializacao-filhote-com-outros-caes">Socialização</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/enriquecimento-ambiental-filhote">Enriquecimento</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/kong-classic-vs-puppy">Kong Classic vs Puppy</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/pipi-pode-educa-cao">Pipi Pode</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/casinha-plastico-furacao-pet">Casinha plástica</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/portao-pet-de-pressao">Portão pet</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/guia-e-peitoral-filhote">Guia e peitoral</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/racao-filhotes-porte-grande">Ração filhotes</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/comedouro-lento">Comedouro lento</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/clicker-para-adestramento-vale-a-pena">Clicker</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/nylabone-puppy-chew-toy">Nylabone Puppy</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/kit-mordedores-borracha-macica-5-pecas">Kit 5 mordedores maciços</a></li>
+          <li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/melhores-acessorios-adestramento-caes">7 melhores acessórios para adestrar</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/pitbull-filhote-2-meses">Pitbull filhote de 2 meses</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/temperamento-pitbull-filhote">Temperamento</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/crescimento-peso-e-castracao">Crescimento e castração</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/pitbull-e-outros-caes">Pitbull e outros cães</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/filhote-pulando-nas-pessoas">Pular nas pessoas</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/alimentacao-filhote-porte-grande">Alimentação porte grande</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/assinatura-racao-filhote">Assinatura de ração</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/vacinas-v8-v10-e-vermifugo">Vacinas V8/V10</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/socializacao-filhote-com-outros-caes">Socialização</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/enriquecimento-ambiental-filhote">Enriquecimento</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/kong-classic-vs-puppy">Kong Classic vs Puppy</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/pipi-pode-educa-cao">Pipi Pode</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/casinha-plastico-furacao-pet">Casinha iglu N6</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/portao-pet-de-pressao">Portão pet</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/guia-e-peitoral-filhote">Guia e peitoral</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/racao-filhotes-porte-grande">Ração filhotes</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/comedouro-lento">Comedouro lento</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/clicker-para-adestramento-vale-a-pena">Clicker</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/nylabone-puppy-chew-toy">Nylabone Puppy</a></li><li><a class="text-amber-800 underline hover:text-amber-950" href="reviews/kit-mordedores-borracha-macica-5-pecas">Kit 5 mordedores maciços</a></li>
         </ul>
       </div>
     </section>
 
+    <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-16">
+      <figure class="flex flex-col items-center">
+        <img src="/imagens-pitbull/home-adestramento-pitbull/pitbull-maraca-adestramento-8.webp" loading="lazy" width="1000" height="1334" class="mx-auto my-6 h-auto w-auto max-h-[450px] max-w-full rounded-2xl object-contain shadow-md" alt="Maraca, Pitbull Red Nose, em pé junto à parede no quintal durante o adestramento de Pitbull ao ar livre">
+        <figcaption class="max-w-md text-center text-sm text-stone-500">Fora da sala o treino continua: Maraca em pé no quintal, no mesmo adestramento de Pitbull da quitinete.</figcaption>
+      </figure>
+    </section>
+
     <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
       <div class="rounded-3xl bg-amber-500 px-8 py-12 text-center sm:px-16">
-        <h2 class="text-3xl font-bold tracking-tight text-amber-950">Todas as análises do Guia do Adestramento</h2>
+        <h2 class="text-3xl font-bold tracking-tight text-amber-950">Todas as análises do Guia do Adestrador</h2>
         <p class="mx-auto mt-4 max-w-xl text-lg text-amber-950/80">Características da raça, cuidados do dia a dia e produtos testados com a Maraca.</p>
         <a href="reviews" class="mt-8 inline-flex items-center justify-center rounded-full bg-stone-950 px-10 py-4 text-lg font-bold text-white hover:bg-black">Abrir o hub de reviews</a>
       </div>
@@ -815,7 +928,7 @@
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
       <div class="flex flex-col items-center gap-3 sm:items-start">
-        <p>© 2026 Guia do Adestramento. Todos os direitos reservados.</p>
+        <p>© 2026 Guia do Adestrador. Todos os direitos reservados.</p>
         
         <div class="flex items-center gap-4">
           <a href="https://www.linkedin.com/in/philipef-dev/" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-stone-900" aria-label="LinkedIn">LinkedIn</a>
@@ -834,6 +947,21 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+      spaceBetween: 8,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiperMain = new Swiper(".swiper-main", {
+      spaceBetween: 10,
+      autoHeight: true,
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      thumbs: { swiper: swiperThumbs },
+    });
+  </script>
   <script src="scripts/scroll-to-top.js" defer></script>
 </body>
 </html>

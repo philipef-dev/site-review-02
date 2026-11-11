@@ -1,8 +1,8 @@
-# Relatório as-built — Guia do Adestramento (site 02)
+# Relatório as-built — Guia do Adestrador (site 02)
 
 Use este arquivo para analisar o site **como está no HTML local**, cruzando com `PLANEJAMENTO_SEO_KEYWORD_IDEAS.md`. Não invente página, URL, H1 ou produto fora das duas listas. O que não existe no HTML está marcado como **não existe no HTML**. Proposta de página nova tem de repetir essa marca.
 
-**Domínio:** `https://www.guiadoadestramento.com.br`  
+**Domínio:** `https://www.guiadoadestrador.com.br`  
 **Data deste relatório:** 17 de outubro de 2026, tarde (substitui a versão da manhã do mesmo dia)  
 **Plano de pautas:** `PLANEJAMENTO_SEO_KEYWORD_IDEAS.md` (Ubersuggest, 11 de outubro de 2026, SD ≤ 35)  
 **Padrão:** HTML estático + Tailwind v4 · URLs limpas (Vercel `cleanUrls`) · JSON-LD `@graph`  
@@ -97,8 +97,8 @@ Kong Extreme e Kong Classic vs Puppy também devolvem o guia de mordida. No mesm
 
 ## Home — `/`
 
-**Title:** Guia do Adestramento: Produtos e Dicas Práticas para Filhotes | Guia do Adestramento  
-**`WebPage.name` no JSON-LD:** Guia do Adestramento: Produtos e Dicas Práticas para Filhotes  
+**Title:** Guia do Adestrador: Produtos e Dicas Práticas para Filhotes | Guia do Adestrador  
+**`WebPage.name` no JSON-LD:** Guia do Adestrador: Produtos e Dicas Práticas para Filhotes  
 **H1:** Adestramento de Pitbull filhote na prática: o que funciona em casa (2026)
 
 O `<title>` e o `WebPage.name` não repetem mais “Como adestrar um filhote de cachorro”.
@@ -140,7 +140,7 @@ Todas no sitemap com `lastmod` 2026-10-17. Nenhuma é proposta.
 
 ### `/reviews/cachorro-faz-xixi-dormindo`
 
-**Title:** Cachorro faz xixi dormindo ou na cama: causas e o que fazer | Guia do Adestramento  
+**Title:** Cachorro faz xixi dormindo ou na cama: causas e o que fazer | Guia do Adestrador  
 **H1:** Cachorro faz xixi dormindo ou na cama: filhote, emoção ou incontinência  
 **Schema:** `HowTo` + `FAQPage`
 
@@ -150,7 +150,7 @@ Caixa: Herbalvet `https://link.amazon/B0hqXqFp3` e Durapads `https://link.amazon
 
 ### `/reviews/cachorro-faz-xixi-de-alegria`
 
-**Title:** Cachorro faz xixi de alegria quando vê o dono: o que fazer | Guia do Adestramento  
+**Title:** Cachorro faz xixi de alegria quando vê o dono: o que fazer | Guia do Adestrador  
 **H1:** Cachorro faz xixi de alegria quando vê o dono: como cumprimentar sem poça  
 **Schema:** `HowTo` + `FAQPage`
 
@@ -160,7 +160,7 @@ Caixa: Durapads, Herbalvet e e-book Hotmart.
 
 ### `/reviews/cachorro-faz-xixi-com-sangue`
 
-**Title:** Cachorro faz xixi com sangue: o que pode ser e quando ir ao vet | Guia do Adestramento  
+**Title:** Cachorro faz xixi com sangue: o que pode ser e quando ir ao vet | Guia do Adestrador  
 **H1:** Cachorro faz xixi com sangue: o que pode ser e quando ir ao veterinário  
 **Schema:** `Article` + `FAQPage`. Sem `HowTo`.
 
@@ -172,7 +172,7 @@ Sem botão de compra. No último H2, link de texto para Herbalvet na Amazon e pa
 
 ### `/reviews/cachorro-mordendo-criancas`
 
-**Title:** Cachorro mordendo crianças e bebê: como proteger a casa | Guia do Adestramento  
+**Title:** Cachorro mordendo crianças e bebê: como proteger a casa | Guia do Adestrador  
 **H1:** Cachorro mordendo crianças e bebê: como proteger sem punir o filhote  
 **Schema:** `HowTo` + `FAQPage`
 
@@ -184,7 +184,7 @@ Caixa: Kong Puppy `https://link.amazon/B08zoNPdv` e e-book Hotmart.
 
 ### `/reviews/cachorro-se-mordendo-pata-e-rabo`
 
-**Title:** Cachorro se mordendo: pata, rabo e ferida — o que pode ser | Guia do Adestramento  
+**Title:** Cachorro se mordendo: pata, rabo e ferida — o que pode ser | Guia do Adestrador  
 **H1:** Cachorro se mordendo: pata, rabo e ferida, e quando ir ao veterinário  
 **Schema:** `Article` + `FAQPage`. Sem `HowTo`.
 
@@ -200,7 +200,7 @@ Caixa de Kong Puppy e Nylabone só depois do H2 em que o veterinário já descar
 
 ### `/reviews/como-adestrar-um-filhote-de-cachorro`
 
-**Title:** Como adestrar um filhote de cachorro: rotina da primeira semana | Guia do Adestramento  
+**Title:** Como adestrar um filhote de cachorro: rotina da primeira semana | Guia do Adestrador  
 **H1:** Como adestrar um filhote de cachorro em casa, sem bronca
 
 O H3 “Não pular e a chegada em casa” linka para `/reviews/filhote-pulando-nas-pessoas` e para `/reviews/cachorro-faz-xixi-de-alegria`.
@@ -219,7 +219,7 @@ O H3 “Mordeu criança” resume a regra e linka para `/reviews/cachorro-morden
 
 ### `/reviews/limites-cao-em-quitinete`
 
-**Title:** Como Adestrar Filhote em Apartamento e Quitinete: Limites e Rotina | Guia do Adestramento  
+**Title:** Como Adestrar Filhote em Apartamento e Quitinete: Limites e Rotina | Guia do Adestrador  
 **H1:** Como criar um Pitbull em quitinete sem ele invadir quarto e cozinha  
 **Lead:** contém “adestrar filhote em apartamento”.
 
@@ -234,7 +234,7 @@ A caixa do portão entrou depois do primeiro parágrafo do H2 do portão. O H1 n
 Não apagar por causa deste relatório. Não transformar nenhuma das duas em pastor alemão ou shih tzu.
 
 - `/reviews/como-adestrar-pitbull` — H1: Como adestrar um Pitbull filhote em casa. Aponta para o pilar.
-- `/reviews/melhores-acessorios-adestramento` — H1: Guia unificada e acessórios para adestrar filhotes. Cobre a petisqueira. A petisqueira não tem URL exclusiva.
+- `/reviews/melhores-acessorios-adestramento-caes` — H1: Melhores Acessórios para Adestrar Filhotes (e Cães Adultos): Guia de Compras Definitivo. A URL antiga `/reviews/melhores-acessorios-adestramento` redireciona para esta.
 
 ---
 

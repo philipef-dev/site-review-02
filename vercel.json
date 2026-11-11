@@ -1,4 +1,16 @@
 {
   "outputDirectory": "public",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/reviews/melhores-acessorios-adestramento",
+      "destination": "/reviews/melhores-acessorios-adestramento-caes",
+      "statusCode": 301
+    },
+    {
+      "source": "/reviews/melhores-acessorios-adestramento.html",
+      "destination": "/reviews/melhores-acessorios-adestramento-caes",
+      "statusCode": 301
+    }
+  ]
 }

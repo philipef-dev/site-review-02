@@ -1,8 +1,8 @@
-# Guia do Adestramento
+# Guia do Adestrador
 
-Site estático do **Guia do Adestramento** — um diário prático sobre adestramento de Pitbull filhote, com reviews de produtos, guias de comportamento e dicas de convivência em apartamento/quitinete.
+Site estático do **Guia do Adestrador** — um diário prático sobre adestramento de Pitbull filhote, com reviews de produtos, guias de comportamento e dicas de convivência em apartamento/quitinete.
 
-**URL de produção:** [https://www.guiadoadestramento.com.br](https://www.guiadoadestramento.com.br)
+**URL de produção:** [https://www.guiadoadestrador.com.br](https://www.guiadoadestrador.com.br)
 
 ## Estrutura do projeto
 

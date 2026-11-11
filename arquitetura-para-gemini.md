@@ -1,4 +1,4 @@
-# Briefing para o Gemini — Arquitetura do Guia do Adestramento
+# Briefing para o Gemini — Arquitetura do Guia do Adestrador
 
 Use este arquivo como especificação fechada. Não invente páginas, URLs, H1, H2 nem produtos fora desta lista. O conteúdo editorial vem do diário de campo da Maraca (Pitbull Red Nose filhote, quitinete em Volta Redonda). O site é de reviews, no mesmo padrão do LavadorasPro: HTML estático + Tailwind, URLs limpas (sem `.html`), JSON-LD Schema.org em `@graph`.
 
@@ -8,9 +8,9 @@ Não publicar trechos pessoais fora de adestramento (motel, namoradas, maconha) 
 
 ---
 
-# Arquitetura de páginas — Guia do Adestramento (site 02)
+# Arquitetura de páginas — Guia do Adestrador (site 02)
 
-Domínio: `https://www.guiadoadestramento.com.br`  
+Domínio: `https://www.guiadoadestrador.com.br`  
 URLs limpas, no padrão do site 01 (`/` + `/reviews` + `/reviews/{slug}` + institucionais).
 
 ## Fonte
@@ -148,7 +148,7 @@ Todo `@graph` inclui `Organization` `#organization` e, nas fichas, `WebSite` + `
 5. Prós e contras de treinar um Pitbull em espaço pequeno  
 6. Perguntas frequentes (xixi, Kong, vacina, 8 h sozinha, latido)  
 7. Outras análises que valem a sua atenção  
-8. Todas as análises do Guia do Adestramento
+8. Todas as análises do Guia do Adestrador
 
 **JSON-LD:** `Organization` + `WebSite` + `WebPage` + `ItemList` (6 itens acima) + `FAQPage`.  
 O `Product` do curso e do Kong vive na ficha, não na home (padrão do site 01).
@@ -387,7 +387,7 @@ H2 padrão: veredito, o que isso significa na prática, comparativo, FAQ.
 - **H2:** Curso vs Kong + enzimático vs aula particular  
 - **H2:** Perguntas frequentes (FAQ)
 
-Product: brand `Guia do Adestramento`; nota 4.9 / 1.200 só se a oferta real confirmar (hoje está na home). `offers.url` aponta para a ficha até existir checkout Hotmart.
+Product: brand `Guia do Adestrador`; nota 4.9 / 1.200 só se a oferta real confirmar (hoje está na home). `offers.url` aponta para a ficha até existir checkout Hotmart.
 
 ---
 
@@ -395,14 +395,14 @@ Product: brand `Guia do Adestramento`; nota 4.9 / 1.200 só se a oferta real con
 
 ### `/quem-somos`
 
-- **H1:** Sobre o projeto “Guia do Adestramento”  
+- **H1:** Sobre o projeto “Guia do Adestrador”  
 - **H2:** Meu objetivo · Como faço minhas recomendações · Compromisso de qualidade · Transparência e links de afiliado · Para quem este site é indicado · Fale comigo  
 
 Critério de E-E-A-T: diário da Maraca (quitinete, Volta Redonda), não laboratório.
 
 ### `/metodologia`
 
-- **H1:** Guia do Adestramento — nossa metodologia de análise  
+- **H1:** Guia do Adestrador — nossa metodologia de análise  
 - **H2:** Como escolho o que analisar · Fonte e critério · Passo a passo · Veredito · Imparcialidade · Revisão e atualização  
 
 Eixos no lugar de PSI/vazão: ética (sem aversivo), teste real com filhote de porte grande, custo-benefício, segurança (dente de leite, supervisão).

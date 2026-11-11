@@ -6,16 +6,30 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../output.css" as="style">
   <link rel="stylesheet" href="../output.css">
-  <title>Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestramento</title>
-  <link rel="canonical" href="https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <style>
+    .swiper-main { width: 100%; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide { display: flex; align-items: center; justify-content: center; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide img { image-orientation: from-image; display: block; width: auto; max-width: 100%; height: auto; max-height: 500px; margin-inline: auto; object-fit: contain; }
+    .swiper-thumbs { height: 80px; box-sizing: border-box; padding: 10px 0; }
+    .swiper-thumbs .swiper-slide { display: flex; align-items: center; justify-content: center; width: 20%; height: 100%; opacity: 0.4; cursor: pointer; }
+    .swiper-thumbs .swiper-slide-thumb-active { opacity: 1; border: 2px solid #d97706; border-radius: 6px; }
+    .swiper-thumbs .swiper-slide img { image-orientation: from-image; width: 100%; height: 100%; max-height: none; object-fit: contain; }
+    .swiper-button-next, .swiper-button-prev { color: #d97706; }
+    @media (max-width: 640px) { .swiper-main .swiper-slide img { max-height: 320px; } }
+  </style>
+  <title>Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestrador</title>
+  <link rel="canonical" href="https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Guia do Adestramento">
-  <meta property="og:title" content="Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
+  <meta property="og:title" content="Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestrador">
   <meta property="og:description" content="Atrativo sanitário Pipi Pode e Educa Cão: o que o olfato entende, por que não substitui rotina e enzimático, e o papel do tapete Durapads.">
-  <meta property="og:url" content="https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestramento">
+  <meta property="og:url" content="https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao">
+  <meta property="og:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-1.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestrador">
   <meta name="twitter:description" content="Atrativo sanitário Pipi Pode e Educa Cão: o que o olfato entende, por que não substitui rotina e enzimático, e o papel do tapete Durapads.">
+  <meta name="twitter:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-1.webp">
   <meta name="description" content="Atrativo sanitário Pipi Pode e Educa Cão: o que o olfato entende, por que não substitui rotina e enzimático, e o papel do tapete Durapads.">
   <script type="application/ld+json">
 {
@@ -23,9 +37,17 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.guiadoadestramento.com.br/#organization",
-      "name": "Guia do Adestramento",
-      "url": "https://www.guiadoadestramento.com.br/",
+      "@id": "https://www.guiadoadestrador.com.br/#organization",
+      "name": "Guia do Adestrador",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.guiadoadestrador.com.br/#logo",
+        "url": "https://www.guiadoadestrador.com.br/imagens-marca/logo-guia-do-adestrador.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Guia do Adestrador"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -35,13 +57,13 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.guiadoadestramento.com.br/#philipe",
+      "@id": "https://www.guiadoadestrador.com.br/#philipe",
       "name": "Philipe Ferreira",
-      "jobTitle": "Tutor e editor do Guia do Adestramento",
+      "jobTitle": "Tutor e editor do Guia do Adestrador",
       "description": "Tutor da Maraca, Pitbull Red Nose, em Volta Redonda. Testa rotina e produto de filhote em quitinete. Não é médico-veterinário.",
-      "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
+      "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
       "email": "philipefdev@gmail.com",
-      "url": "https://www.guiadoadestramento.com.br/quem-somos",
+      "url": "https://www.guiadoadestrador.com.br/quem-somos",
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -55,59 +77,77 @@
         "addressCountry": "BR"
       },
       "worksFor": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.guiadoadestramento.com.br/#website",
-      "url": "https://www.guiadoadestramento.com.br/",
-      "name": "Guia do Adestramento",
+      "@id": "https://www.guiadoadestrador.com.br/#website",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "name": "Guia do Adestrador",
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao#webpage",
-      "url": "https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao#webpage",
+      "url": "https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao",
       "name": "Pipi Pode / Educa Cão funciona sozinho?",
       "description": "Atrativo sanitário Pipi Pode e Educa Cão: o que o olfato entende, por que não substitui rotina e enzimático, e o papel do tapete Durapads.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-1.webp",
+        "width": 677,
+        "height": 988
+      },
       "isPartOf": {
-        "@id": "https://www.guiadoadestramento.com.br/#website"
+        "@id": "https://www.guiadoadestrador.com.br/#website"
       },
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
+      },
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://www.guiadoadestrador.com.br/#philipe"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao#breadcrumb",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Início",
-          "item": "https://www.guiadoadestramento.com.br/"
+          "item": "https://www.guiadoadestrador.com.br/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Reviews",
-          "item": "https://www.guiadoadestramento.com.br/reviews"
+          "item": "https://www.guiadoadestrador.com.br/reviews"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Pipi Pode",
-          "item": "https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao"
+          "item": "https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao"
         }
       ]
     },
     {
       "@type": "Product",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao#product",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao#product",
       "name": "Atrativo sanitário Pipi Pode / Educa Cão",
+      "image": [
+        "https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-1.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-2.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-3.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-4.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-5.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-6.webp"
+      ],
       "brand": {
         "@type": "Brand",
         "name": "Educa Cão"
@@ -117,11 +157,11 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "@id": "https://www.guiadoadestramento.com.br/#philipe",
+          "@id": "https://www.guiadoadestrador.com.br/#philipe",
           "name": "Philipe Ferreira",
-          "jobTitle": "Tutor e editor do Guia do Adestramento",
-          "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
-          "url": "https://www.guiadoadestramento.com.br/quem-somos"
+          "jobTitle": "Tutor e editor do Guia do Adestrador",
+          "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
+          "url": "https://www.guiadoadestrador.com.br/quem-somos"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -131,7 +171,7 @@
         "reviewBody": "Na Maraca o enzimático e o horário pesaram mais. Pipi Pode é extra se o alvo é o quintal. Não compre antes do Herbalvet."
       },
       "offers": [
-                {
+        {
           "@type": "Offer",
           "url": "https://meli.la/2VFzijj",
           "itemCondition": "https://schema.org/NewCondition",
@@ -139,13 +179,15 @@
           "seller": {
             "@type": "Organization",
             "name": "Mercado Livre"
-          }
+          },
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31"
         }
       ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pipi-pode-educa-cao#faq",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pipi-pode-educa-cao#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -183,7 +225,7 @@
     }
   ]
 }
-  </script>
+</script>
 <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 {
           "@type": "Offer",
@@ -203,7 +245,7 @@
       <a href="../" class="font-semibold tracking-tight text-stone-900">
         <span class="inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-amber-950 text-sm">🐾</span>
-          <span>Guia do Adestramento</span>
+          <span>Guia do Adestrador</span>
         </span>
       </a>
       <div class="flex items-center gap-2">
@@ -262,11 +304,36 @@
 -->
             </div>
           </div>
-          <div class="flex items-center gap-2 border-t border-stone-100 bg-stone-50/60 px-5 py-3 text-xs text-stone-500"><img src="../img/philipe_ferreira.webp" alt="Foto de Philipe Ferreira" width="20" height="20" class="h-5 w-5 shrink-0 rounded-full border border-stone-300 object-cover"><span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:underline">Philipe Ferreira</a> • Atualizado em setembro de 2026</span></div>
+          <div class="flex items-center gap-2 border-t border-stone-100 bg-stone-50/60 px-5 py-3 text-xs text-stone-500"><img src="/imagens-marca/philipe-ferreira.webp" alt="Foto de Philipe Ferreira" width="20" height="20" class="h-5 w-5 shrink-0 rounded-full border border-stone-300 object-cover"><span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:underline">Philipe Ferreira</a> • Atualizado em novembro de 2026</span></div>
         </div>
       </div>
     </section>
     <section class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <figure class="mb-10 overflow-hidden rounded-xl border border-stone-200 bg-white p-2 shadow-sm">
+        <div class="swiper swiper-main">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img fetchpriority="high" src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-1.webp" width="677" height="988" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Kit Procão com os frascos Não Pode e Pode, de 200 ml"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-2.webp" loading="lazy" width="1176" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Infográfico do kit Procão: o Não Pode afasta e o Pode atrai para o lugar certo"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-3.webp" loading="lazy" width="1200" height="1157" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Frascos Procão Não Pode e Pode, com a indicação de 200 ml cada"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-4.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Golden retriever ao lado do frasco Procão Pode e de um tapete higiênico"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-5.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Aplicação do spray Procão Não Pode no sofá, com um gato por perto"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-6.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Cartaz do kit completo Procão, com os dois frascos de 200 ml"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper swiper-thumbs mt-2">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-1.webp" loading="lazy" width="677" height="988" class="mx-auto h-full w-full object-contain" alt="Miniatura dos frascos Procão Não Pode e Pode"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-2.webp" loading="lazy" width="1176" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do infográfico do kit Procão"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-3.webp" loading="lazy" width="1200" height="1157" class="mx-auto h-full w-full object-contain" alt="Miniatura do kit com 200 ml em cada frasco"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-4.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do golden com o frasco Procão Pode"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-5.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do spray Procão no sofá"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/pipi-pode-educa-cao/pipi-pode-educa-cao-6.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do cartaz do kit Procão"></div>
+          </div>
+        </div>
+        <figcaption class="px-2 pb-1 pt-2 text-sm text-stone-500">Kit Procão Não Pode e Pode, frascos de 200 ml para marcar o lugar do xixi.</figcaption>
+      </figure>
       <div class="mb-10 overflow-hidden border border-stone-200 rounded-lg bg-white">
         <div class="bg-stone-100 px-4 py-3 border-b border-stone-200"><h2 class="font-bold text-stone-800 italic">Ficha técnica</h2></div>
         <div class="grid grid-cols-1 md:grid-cols-2 text-sm"><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Tipo</span><span class="text-stone-600 w-1/2">Atrativo / repelente sanitário</span></div><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Uso</span><span class="text-stone-600 w-1/2">Complemento da rotina</span></div><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Prioridade</span><span class="text-stone-600 w-1/2">Depois do enzimático</span></div><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Tapete</span><span class="text-stone-600 w-1/2">Durapads só como apoio</span></div></div>
@@ -277,13 +344,27 @@
       </div>
       <article class="space-y-10">
         <h2 class="text-2xl font-bold text-stone-900">Atrativo sanitário: o que o olfato do filhote entende</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">Essência que marca “faça aqui”. O cérebro associa o cheiro ao ato se você já a leva no horário. Sem o ato, é só cheiro no cimento.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">O Pipi Pode, e a linha que o mercado chama de Educa Cão, é essência. Marca um canto com cheiro de “faça aqui”. O nariz do filhote lê isso se, no mesmo minuto, o corpo faz o xixi naquele chão e você paga o acerto. Sem o ato, o frasco só perfuma o cimento. A Maraca chegou com cerca de 2 meses numa quitinete com corredor curto e quintal cimentado. Nessa idade o erro não era falta de spray. Era bexiga de filhote, a cada janela de acordar, comer e brincar, num espaço em que a sala e o banheiro ficam a quatro passos.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Aos 2 meses eu não bati, não esfreguei o focinho e não isolei no banheiro. Bronca ensina a fazer escondido. Escondido na kitnet é atrás do sofá, do lado da cozinha, no tapete que eu ainda não tinha decidido se era cama ou banheiro. O relógio era simples: acordou, colo no quintal. Comeu, quintal. Brincou cinco minutos, quintal. Acertou no cimento, petisco na hora e voz baixa. Errou na sala, eu limpava depois, sem plateia. O frasco, quando entrou, foi em cima desse relógio, não no lugar dele.</p>
         <h2 class="text-2xl font-bold text-stone-900">Por que não substitui rotina, quintal e enzimático</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">Acordou, comeu, brincou: quintal. Sala marcada: <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./herbalvet-eliminador-enzimatico">Herbalvet</a>. O spray atrativo não apaga ureia velha nem ensina o relógio.</p>
-        <h2 class="text-2xl font-bold text-stone-900">Kit Pipi Pode + Pipi Não Pode: quando vale o dinheiro</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">Apartamento só com tapete: o “não pode” na sala e o “pode” no tapete ajudam. Quitinete com quintal: o “não pode” na sala compete com o enzimático. Eu priorizaria um só sistema.</p>
-        <h2 class="text-2xl font-bold text-stone-900">Tapete higiênico Durapads: apoio, não banheiro eterno</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">Longe da ração e da água. Se o alvo é quintal, o tapete é plano B de noite, não carreira. Senão você treina plástico para a vida.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Acordou, comeu, brincou: quintal. Sala marcada com xixi velho: primeiro o <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./herbalvet-eliminador-enzimatico">Herbalvet</a>, que apaga a ureia. O spray atrativo não desfaz cheiro antigo e não ensina hora. Se os dois caem no mesmo metro, o nariz recebe “faça” e “não faça” juntos. Na minha casa o alvo era o cimento. O dinheiro do erro na sala foi para o enzimático. O Pode só faria sentido se ela ainda não lesse o quintal como banheiro.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Chuva mudou essa leitura. O quintal é cimento liso. Molhado, a Maraca evitava pisar. O xixi voltava para a sala, não porque o spray tinha falhado, e sim porque o chão certo estava desconfortável. Eu não gritava e não fechava ela num cômodo. Limpava o piso sem ela olhando o pano, para o cheiro não virar aula. Na janela seguinte eu ia junto, com um trecho mais seco ou um guarda-chuva, e o petisco saía no segundo em que ela agachava no cimento. Reforço no acerto, silêncio no erro. O passo a passo desse relógio está em <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./xixi-e-coco-no-lugar-certo">xixi e cocô no lugar certo</a>.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Aos 4 e 5 meses o banheiro já tinha endereço</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">O diário que eu consigo contar com cena é o dos meses 4 e 5, quando o colo já tinha virado corpo de Pitbull e a quitinete continuava do mesmo tamanho. A planta estava fechada: portão de pressão na cozinha, porta do quarto fechada, sala como área dela. Banheiro continuou sendo o quintal, não a sala “porque choveu ontem”. O spray não segurou essa planta. O que segurou foi o mesmo horário, todo dia, e eu não ceder “só hoje” abrindo a cozinha no meio do xixi.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Quando eu trabalhava no quarto, ela ficava na sala. Às vezes batia a pata na porta e largava. Isso é limite, não bexiga. Se eu abrisse no choro, o choro virava a chave, e o xixi vinha junto da ansiedade da porta. Eu esperava o silêncio. Na saída, sem despedida longa. Na chegada do mês 5, sem festa no pulo: quatro patas no chão, petisco na altura do focinho, e em seguida o quintal ou o <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./kong-puppy">Kong Puppy</a> recheado. Pular e receber carinho ensina euforia. Euforia na kitnet acaba em poça no tapete, mesmo com o frasco cheiroso no quintal.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">O <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./clicker-para-adestramento-vale-a-pena">clicker</a> entrou para marcar o agachar no cimento, não o spray. O estalo cabe entre o xixi certo e o petisco. Se eu elogio quando ela já voltou para a sala, o crédito vai para a volta, não para o lugar. A comida sai da cintura, na hora. Ida à cozinha no meio do acerto atravessa o portão e mistura banheiro com panela.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Levar até o cimento sem virar perseguição</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">Quatro passos de corredor parecem nada até o filhote decidir que o caminho é brincadeira. Aos 4 e 5 meses a Maraca já tinha tração. Eu não puxava pelo pescoço. O peitoral modelo H e a guia curta levavam até o quintal com o corpo inteiro, não com um tranco na garganta. A fita e o que eu não uso de retrátil estão na <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./guia-e-peitoral-filhote">ficha da guia e do peitoral</a>. No vão da porta, a <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./melhores-acessorios-adestramento-caes#guia-unificada">guia unificada</a> segura o arranque: alça curta no peito, ponta longa só quando ela já está no cimento e o corpo baixou. Retrátil nesse corredor aumenta a linha justo quando ela dispara para o lugar errado.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Depois do acerto, a boca precisava de emprego. No mês 4 a gengiva coçava. O Kong Puppy ia para o freezer com ração no fundo e uma camada de patê, trinta a quarenta minutos no tapete da sala, que já não era banheiro. Rodela de cenoura congelada era petisco, não segunda refeição. Papelão e pano só comigo olhando. Brinquedo espalhado no chão molhado de xixi velho não ensina canto. Ensina que a sala inteira é território de focinho.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Kit Pipi Pode e Pipi Não Pode: quando vale o dinheiro</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">Apartamento só com tapete: o “não pode” na sala e o “pode” no tapete ajudam o nariz a separar dois plásticos. Quitinete com quintal de cimento, como a minha: o “não pode” na sala compete com o enzimático, e o “pode” no quintal compete com o cheiro real de xixi que ela mesma deixou ontem. Eu ficaria com um sistema. Enzimático no erro. Horário no acerto. Spray só se, depois disso, ela ainda não escolhe o cimento.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Não borrife os dois frascos no mesmo palmo. Não borrife em cima de xixi fresco esperando que o atrativo vença a ureia. Primeiro limpa, seca, espera. Atrativo no banheiro certo, num dia em que você vai estar ali na janela seguinte para ela repetir o ato. Frasco sem gente do lado é aromatizador.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Tapete higiênico: apoio de noite, não banheiro eterno</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">Longe da ração e da água. Aos 2 meses, se a madrugada era longa demais para a bexiga, um tapete num canto fixo da sala servia de plano B. O alvo da Maraca continuou o quintal. Se o tapete vira carreira, você treina plástico para a vida, e o Pitbull adulto da kitnet passa a avisar no mesmo retângulo. Eu recolhia o tapete de manhã, levava ao cimento na primeira saída e não deixava o plano B competir com o sol.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Firmeza, aqui, não é mão. É o mesmo canto, a mesma hora, a mesma limpeza, sem castigo. Paciência é repetir isso com um filhote de 2 meses que erra porque a bexiga é pequena, e de novo aos 5 meses quando a chuva muda o piso. O spray entra por último. O mapa da casa, que impede a cozinha de virar banheiro escondido, está em <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./limites-cao-em-quitinete">limites na quitinete</a>.</p>
+        <h2 class="text-2xl font-bold text-stone-900">O que eu faria de manhã, na ordem, sem o frasco na frente</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">Acordo, não acendo a cozinha inteira e não começo o dia no tapete conversando. Abro o caminho do quintal e saio com ela. Se agacha no cimento, clicker e petisco. Se fica só cheirando, eu espero mais um minuto em silêncio, sem puxar para a sala de volta no meio do foco. Volta para dentro só depois do acerto ou do tempo estourado. Aí sim água, e uma parte da refeição. O resto pode ir no Kong, mais tarde, quando a bexiga já esvaziou. Rechear antes do quintal, aos 2 meses, era poça garantida no meio da sala.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Depois de comer, o mesmo caminho, de novo, antes de eu sentar para trabalhar. Porta do quarto só fecha quando ela já foi ao cimento. Se eu fecho primeiro e ela chora com a bexiga cheia, o choro e o xixi viram a mesma coisa, e eu acabo abrindo os dois. Aos 5 meses essa ordem já estava no corpo: quintal, sala, emprego da boca, porta. O frasco de Pipi Pode, se um dia voltar à mão, entra borrifado no cimento na véspera de uma janela em que eu vou estar lá. Não entra borrifado na pressa, em cima do erro, enquanto eu procuro o pano.</p>
         <section>
           <h2 class="text-2xl font-bold text-stone-900 mb-6">Perguntas frequentes (FAQ)</h2>
           <div class="space-y-4">        <details class="group rounded-2xl border border-stone-200 bg-white p-6 shadow-sm open:border-amber-200">
@@ -319,7 +400,7 @@
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
       <div class="flex flex-col items-center gap-3 sm:items-start">
-        <p>© 2026 Guia do Adestramento. Todos os direitos reservados.</p>
+        <p>© 2026 Guia do Adestrador. Todos os direitos reservados.</p>
         
         <div class="flex items-center gap-4">
           <a href="https://www.linkedin.com/in/philipef-dev/" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-stone-900" aria-label="LinkedIn">LinkedIn</a>
@@ -338,6 +419,24 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+      spaceBetween: 8,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiperMain = new Swiper(".swiper-main", {
+      spaceBetween: 10,
+      autoHeight: true,
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      thumbs: { swiper: swiperThumbs },
+    });
+    swiperMain.on("slideChange", function () {
+      swiperThumbs.slideTo(swiperMain.activeIndex);
+    });
+  </script>
   <script src="../scripts/scroll-to-top.js" defer></script>
 </body>
 </html>

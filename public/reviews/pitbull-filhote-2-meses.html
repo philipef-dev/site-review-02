@@ -6,16 +6,76 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../output.css" as="style">
   <link rel="stylesheet" href="../output.css">
-  <title>Características de um Pitbull filhote de 2 meses | Guia do Adestramento</title>
-  <link rel="canonical" href="https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <style>
+    .swiper-main {
+      width: 100%;
+      height: auto;
+      background: #fafaf9;
+    }
+    .swiper-main .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      background: #fafaf9;
+    }
+    .swiper-main .swiper-slide img {
+      image-orientation: from-image;
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 500px;
+      margin-inline: auto;
+      object-fit: contain;
+    }
+    .swiper-thumbs {
+      height: 80px;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .swiper-thumbs .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      height: 100%;
+      opacity: 0.4;
+      cursor: pointer;
+    }
+    .swiper-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+      border: 2px solid #d97706;
+      border-radius: 6px;
+    }
+    .swiper-thumbs .swiper-slide img {
+      image-orientation: from-image;
+      width: 100%;
+      height: 100%;
+      max-height: none;
+      object-fit: contain;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #d97706;
+    }
+    @media (max-width: 640px) {
+      .swiper-main .swiper-slide img { max-height: 320px; }
+    }
+  </style>
+  <title>Características de um Pitbull filhote de 2 meses | Guia do Adestrador</title>
+  <link rel="canonical" href="https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Guia do Adestramento">
-  <meta property="og:title" content="Características de um Pitbull filhote de 2 meses | Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
+  <meta property="og:title" content="Características de um Pitbull filhote de 2 meses | Guia do Adestrador">
   <meta property="og:description" content="Peso, patas grandes, cabeça, orelhas em rosa, pelagem Red Nose e a janela de socialização de 8 a 12 semanas — o que o corpo de um Pitbull filhote já antecipa.">
-  <meta property="og:url" content="https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Características de um Pitbull filhote de 2 meses | Guia do Adestramento">
+  <meta property="og:url" content="https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses">
+  <meta property="og:image" content="https://www.guiadoadestrador.com.br/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-blaze-trufa-rosada.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Características de um Pitbull filhote de 2 meses | Guia do Adestrador">
   <meta name="twitter:description" content="Peso, patas grandes, cabeça, orelhas em rosa, pelagem Red Nose e a janela de socialização de 8 a 12 semanas — o que o corpo de um Pitbull filhote já antecipa.">
+  <meta name="twitter:image" content="https://www.guiadoadestrador.com.br/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-blaze-trufa-rosada.webp">
   <meta name="description" content="Peso, patas grandes, cabeça, orelhas em rosa, pelagem Red Nose e a janela de socialização de 8 a 12 semanas — o que o corpo de um Pitbull filhote já antecipa.">
   <script type="application/ld+json">
 {
@@ -23,9 +83,17 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.guiadoadestramento.com.br/#organization",
-      "name": "Guia do Adestramento",
-      "url": "https://www.guiadoadestramento.com.br/",
+      "@id": "https://www.guiadoadestrador.com.br/#organization",
+      "name": "Guia do Adestrador",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.guiadoadestrador.com.br/#logo",
+        "url": "https://www.guiadoadestrador.com.br/imagens-marca/logo-guia-do-adestrador.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Guia do Adestrador"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -35,13 +103,13 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.guiadoadestramento.com.br/#philipe",
+      "@id": "https://www.guiadoadestrador.com.br/#philipe",
       "name": "Philipe Ferreira",
-      "jobTitle": "Tutor e editor do Guia do Adestramento",
+      "jobTitle": "Tutor e editor do Guia do Adestrador",
       "description": "Tutor da Maraca, Pitbull Red Nose, em Volta Redonda. Testa rotina e produto de filhote em quitinete. Não é médico-veterinário.",
-      "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
+      "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
       "email": "philipefdev@gmail.com",
-      "url": "https://www.guiadoadestramento.com.br/quem-somos",
+      "url": "https://www.guiadoadestrador.com.br/quem-somos",
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -55,77 +123,82 @@
         "addressCountry": "BR"
       },
       "worksFor": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.guiadoadestramento.com.br/#website",
-      "url": "https://www.guiadoadestramento.com.br/",
-      "name": "Guia do Adestramento",
+      "@id": "https://www.guiadoadestrador.com.br/#website",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "name": "Guia do Adestrador",
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses#webpage",
-      "url": "https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses#webpage",
+      "url": "https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses",
       "name": "Características de um Pitbull filhote de 2 meses",
       "description": "Peso, patas grandes, cabeça, orelhas em rosa, pelagem Red Nose e a janela de socialização de 8 a 12 semanas — o que o corpo de um Pitbull filhote já antecipa.",
       "isPartOf": {
-        "@id": "https://www.guiadoadestramento.com.br/#website"
+        "@id": "https://www.guiadoadestrador.com.br/#website"
       },
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
+      },
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://www.guiadoadestrador.com.br/#philipe"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses#breadcrumb",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Início",
-          "item": "https://www.guiadoadestramento.com.br/"
+          "item": "https://www.guiadoadestrador.com.br/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Reviews",
-          "item": "https://www.guiadoadestramento.com.br/reviews"
+          "item": "https://www.guiadoadestrador.com.br/reviews"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Pitbull 2 meses",
-          "item": "https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses"
+          "item": "https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses"
         }
       ]
     },
     {
       "@type": "Article",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses#article",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses#article",
       "headline": "Características de um Pitbull filhote de 2 meses",
+      "image": "https://www.guiadoadestrador.com.br/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-blaze-trufa-rosada.webp",
       "author": {
         "@type": "Person",
-        "@id": "https://www.guiadoadestramento.com.br/#philipe",
+        "@id": "https://www.guiadoadestrador.com.br/#philipe",
         "name": "Philipe Ferreira",
-        "jobTitle": "Tutor e editor do Guia do Adestramento",
-        "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
-        "url": "https://www.guiadoadestramento.com.br/quem-somos"
+        "jobTitle": "Tutor e editor do Guia do Adestrador",
+        "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
+        "url": "https://www.guiadoadestrador.com.br/quem-somos"
       },
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       },
       "mainEntityOfPage": {
-        "@id": "https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses#webpage"
+        "@id": "https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses#webpage"
       }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/pitbull-filhote-2-meses#faq",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/pitbull-filhote-2-meses#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -163,7 +236,7 @@
     }
   ]
 }
-  </script>
+</script>
 </head>
 <body class="antialiased bg-stone-50 text-stone-900">
   <header class="sticky top-0 z-50 border-b border-stone-200 bg-white/80 backdrop-blur">
@@ -171,7 +244,7 @@
       <a href="../" class="font-semibold tracking-tight text-stone-900">
         <span class="inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-amber-950 text-sm">🐾</span>
-          <span>Guia do Adestramento</span>
+          <span>Guia do Adestrador</span>
         </span>
       </a>
       <div class="flex items-center gap-2">
@@ -203,22 +276,82 @@
         <p class="text-xs font-semibold tracking-[0.2em] text-amber-800 uppercase mb-3">Características · Raça · Filhote</p>
         <h1 class="text-3xl sm:text-4xl font-semibold tracking-tight text-stone-900 mb-3">Características de um Pitbull filhote de 2 meses</h1>
         <p class="text-base sm:text-lg text-stone-600 max-w-2xl">Com cerca de 8 semanas a Maraca já mostrava o recado da raça: 3 a 6 kg, patas grossas, cabeça começando a quadrar e uma janela de socialização que não espera o “quando ela crescer”.</p>
-        <p class="mt-4 flex items-center gap-2 text-xs text-stone-500"><img src="../img/philipe_ferreira.webp" alt="Foto de Philipe Ferreira" width="20" height="20" class="h-5 w-5 shrink-0 rounded-full border border-stone-300 object-cover"><span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:underline">Philipe Ferreira</a> · Atualizado em setembro de 2026 · Diário da Maraca, quitinete em Volta Redonda</span></p>
+        <p class="mt-4 flex items-center gap-2 text-xs text-stone-500"><img src="/imagens-marca/philipe-ferreira.webp" alt="Philipe Ferreira, tutor da Maraca, Pitbull filhote Red Nose" width="20" height="20" class="h-5 w-5 shrink-0 rounded-full border border-stone-300 object-cover"><span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:underline">Philipe Ferreira</a> · Atualizado em novembro de 2026 · Diário da Maraca, quitinete em Volta Redonda</span></p>
       </div>
     </section>
     <article class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+        <figure class="overflow-hidden rounded-xl border border-stone-200 bg-white p-2 shadow-sm">
+          <div class="swiper swiper-main">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img fetchpriority="high" src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-blaze-trufa-rosada.webp" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote Red Nose de 2 meses, com blaze branco na testa, trufa rosada e orelhas em rosa"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-olhar-na-cama.webp" loading="lazy" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Pitbull filhote de 2 meses deitada na cama, Maraca com blaze branco, olhos claros e orelhas caídas"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-orelhas-semi-eretas.webp" loading="lazy" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote de 2 meses em pé, com orelhas semi-eretas e peito branco"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-patas-brancas.webp" loading="lazy" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Filhote de Pitbull de 2 meses sentada, Maraca com patas brancas grandes para o corpo pequeno"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-porte-pequeno.webp" loading="lazy" width="1000" height="563" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Porte pequeno da Maraca, Pitbull filhote de 2 meses deitada no concreto"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-corpo-compacto.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca enrolada dormindo, corpo compacto de Pitbull filhote com cerca de 2 meses"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-pata-na-caixa.webp" loading="lazy" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote de 2 meses, com a pata branca sobre uma caixa de papelão no concreto"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-perfil-peito-branco.webp" loading="lazy" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote de 2 meses, de perfil no concreto com peito branco e orelhas caídas"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-olhar-para-cima.webp" loading="lazy" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote Red Nose de 2 meses, olhando para cima com trufa rosada e peito branco"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-blaze-olhos-claros.webp" loading="lazy" width="1000" height="750" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote de 2 meses, com blaze branco na testa e olhos claros"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-em-pe-patas-brancas.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca em pé, Pitbull filhote de 2 meses, com patas brancas e faixa branca na testa"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-no-beco-com-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote, em pé no beco ao lado de mangueiras coloridas"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-focinho-na-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote, com o focinho apoiado nas mangueiras do beco"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-cheirando-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote, cheirando um rolo de mangueira colorida"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-caminhando-ao-lado-da-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote, caminhando no concreto ao lado das mangueiras"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-deitada-entre-cobertores.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote de 2 meses, deitada entre cobertores na cama"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-sentada-de-lado.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote, sentada de lado no canto com peito branco"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-sentada-de-frente.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote, sentada de frente com blaze branco e patas brancas"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-sentada-orelhas-erguidas.webp" loading="lazy" width="750" height="1000" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Maraca, Pitbull filhote, sentada no concreto com orelhas semi-eretas"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper swiper-thumbs mt-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-blaze-trufa-rosada.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote de 2 meses, com blaze, trufa rosada e orelhas em rosa"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-olhar-na-cama.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote de 2 meses deitada na cama olhando para a câmera"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-orelhas-semi-eretas.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura das orelhas semi-eretas da Maraca, Pitbull filhote de 2 meses"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-patas-brancas.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura das patas brancas da Maraca, Pitbull filhote de 2 meses sentada"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-porte-pequeno.webp" loading="lazy" width="1000" height="563" class="mx-auto h-full w-full object-contain" alt="Miniatura do porte pequeno da Maraca, Pitbull filhote de 2 meses no concreto"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-corpo-compacto.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca enrolada dormindo, Pitbull filhote de 2 meses"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-pata-na-caixa.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote de 2 meses, com a pata na caixa de papelão"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-perfil-peito-branco.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote de 2 meses, de perfil com peito branco"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-olhar-para-cima.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote de 2 meses, olhando para cima"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-blaze-olhos-claros.webp" loading="lazy" width="1000" height="750" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote de 2 meses, com blaze e olhos claros"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-em-pe-patas-brancas.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca em pé, Pitbull filhote de 2 meses, com patas brancas"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-no-beco-com-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote, no beco com mangueiras"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-focinho-na-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote, com o focinho na mangueira"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-cheirando-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote, cheirando a mangueira"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-caminhando-ao-lado-da-mangueira.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote, caminhando ao lado da mangueira"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-deitada-entre-cobertores.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote de 2 meses, deitada entre cobertores"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-sentada-de-lado.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote, sentada de lado"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-sentada-de-frente.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote, sentada de frente"></div>
+              <div class="swiper-slide"><img src="/imagens-pitbull/pitbull-filhote-2-meses/maraca-filhote-2-meses-sentada-orelhas-erguidas.webp" loading="lazy" width="750" height="1000" class="mx-auto h-full w-full object-contain" alt="Miniatura da Maraca, Pitbull filhote, sentada com orelhas semi-eretas"></div>
+            </div>
+          </div>
+          <figcaption class="px-2 pb-1 pt-2 text-sm text-stone-500">Maraca com cerca de 2 meses, em Volta Redonda: blaze, trufa rosada e patas ainda grandes demais para o corpo.</figcaption>
+        </figure>
         <h2 class="text-2xl font-bold text-stone-900">Peso, porte e patas grandes: o que o corpo já antecipa</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">Aos 2 meses um Pitbull filhote pesa em média entre 3 kg e 6 kg, conforme sexo e linhagem (APBT, American Bully, Red Nose, Blue Nose). A Maraca chegou perto dos 2,9 kg na primeira pesagem comigo e ganhou cerca de 3 kg no mês seguinte — fermento puro.</p>
-        <p class="mt-4 text-stone-700 leading-relaxed">Patas visivelmente grandes em proporção ao corpo não são defeito: são antecipação de porte. O peito ainda é compacto, mas já largo o bastante para você entender que o adulto não cabe debaixo do sofá da quitinete.</p>
-        <h2 class="text-2xl font-bold text-stone-900">Cabeça, orelhas em rosa e pelagem (Red Nose, blaze, brindle)</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">A cabeça tem formato levemente quadrado, bochechas começando a marcar. Orelhas caídas ou semi-eretas (“em rosa”) são o padrão do filhote — não precisa cortar nada.</p>
-        <p class="mt-4 text-stone-700 leading-relaxed">Pelagem curta, lisa, brilhante. Na Maraca o recado visual é Red Nose: trufa rosada/amarronzada, pelagem chocolate e uma faixa branca (blaze) subindo do peito à cabeça. Brindle e sólido também existem na raça.</p>
-        <h2 class="text-2xl font-bold text-stone-900">APBT, American Bully e Blue Nose: o que muda no filhote</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">O mercado mistura nome. APBT tende a estrutura atlétic; Bully, mais massa. Blue Nose é pigmentação, não outro manual de adestramento. O que muda no dia a dia da quitinete é energia e mandíbula — não a cor do nariz.</p>
-        <p class="mt-4 text-stone-700 leading-relaxed">Trato a Maraca como Pitbull de porte médio/grande em crescimento: ração de filhote de raça grande, brinquedo que a boca não engole, portão que o adulto de 20 kg não vira.</p>
-        <h2 class="text-2xl font-bold text-stone-900">Janela de 8 a 12 semanas: por que essa fase não espera</h2>
-        <p class="mt-4 text-stone-700 leading-relaxed">Entre 8 e 12 semanas o cérebro está no pico de receptividade: barulho, piso, gente, o cheiro da Nina do outro lado do muro. É agora que reforço positivo cola. Depois, o mesmo susto vira medo cristalizado.</p>
-        <p class="mt-4 text-stone-700 leading-relaxed">Passeio na rua espera a V10. Socializar em casa — sons, superfícies, visita no corredor com distância — não espera. Essa janela fecha quer você treine ou não.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Aos 2 meses um Pitbull filhote pesa em média entre 3 kg e 6 kg, conforme sexo e linhagem. A Maraca chegou perto dos 2,9 kg na primeira pesagem comigo, em Volta Redonda, e ganhou cerca de 3 kg no mês seguinte. Patas grandes demais para o corpo não são defeito. São o adulto anunciado. O peito ainda cabia no colo, mas já era largo o bastante para eu entender que a quitinete não ia crescer junto.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Nessa fase o preconceito chega antes do dente. Vizinho olha o blaze, a trufa rosada, e já fala em “cão de briga” para um filhote que dorme entre cobertores e tropeça na própria pata. O que eu vi em casa foi boca de bebê, xixi frequente e sono curto. Firmeza, aos 2 meses, foi horário e canto, não força. Paciência foi limpar a sala de novo sem transformar o erro em lição de medo.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Xixi de filhote de 2 meses na sala pequena</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">A bexiga dessa idade não espera discurso. Acordou, eu ia ao quintal cimentado. Comeu, quintal. Brincou um pouco, quintal. O corredor da kitnet é curto, então o erro e o acerto ficam a poucos passos. Se eu demorava para calçar o chinelo, a poça nascia no tapete. Não houve tapa, focinho esfregado nem banheiro fechado como castigo. Bronca ensina a fazer atrás do sofá, que na planta pequena é o único esconderijo.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Acertou no cimento, petisco na hora. Errou dentro, eu limpava depois, sem ela assistindo o pano, para o cheiro não virar marcação. À noite, se a janela era longa demais, um canto fixo servia de apoio, longe da água e da ração. De manhã o alvo voltava a ser o quintal. O relato completo desse relógio, inclusive a chuva que mais tarde mudou o piso, está em <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./xixi-e-coco-no-lugar-certo">xixi e cocô no lugar certo</a>. Spray de atrativo não substitui essa ida. Eu conto o frasco em <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./pipi-pode-educa-cao">Pipi Pode e Educa Cão</a>.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Cabeça, orelhas em rosa e pelagem</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">A cabeça começa quadrada, a bochecha ainda é mole. Orelha caída ou semi-ereta, a tal orelha em rosa, é o padrão do filhote. Não cortei nada e não “treino” orelha com esparadrapo. Pelagem curta, lisa. Na Maraca o recado visual é Red Nose: trufa rosada, pelagem chocolate, faixa branca do peito à testa. Brindle e sólido existem no mesmo tipo de cão. A cor do nariz não muda o manejo da sala.</p>
+        <h2 class="text-2xl font-bold text-stone-900">APBT, American Bully e Blue Nose não trocam o manual</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">O anúncio mistura nome. APBT tende a osso mais atlético. Bully, mais massa. Blue Nose é pigmento, não outro jeito de educar. O que muda na quitinete é energia e, daqui a pouco, mandíbula. Aos 2 meses eu tratei a Maraca como porte grande em miniatura: ração de filhote de raça grande, brinquedo que a boca não engole, e a ideia de que o portão teria de aguentar o peito que ainda não existia.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">A rua esperou o veterinário. Socializar em casa não esperou. Barulho de panela, piso frio do cimento, gente no corredor, o cheiro da Nina do outro lado do muro. Sessão curta, eu junto, petisco quando o corpo ficava solto. Susto repetido nessa janela vira medo. Medo repetido vira a história de que “Pitbull não gosta de gente”, sendo que o que faltou foi exposição calma aos 2 meses.</p>
+        <h2 class="text-2xl font-bold text-stone-900">O que os meses 4 e 5 mostraram do mesmo filhote</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">Não misturo as idades. Aos 2 meses ela cabia no colo e errava xixi porque a bexiga era pequena. Aos 4 meses o colo tinha acabado. A gengiva coçava na troca de dentes e a boca ia para móvel se a sala estivesse vazia. Eu fechei a porta do quarto e pus o portão de pressão na cozinha. Ela ficava na sala enquanto eu trabalhava. Batia a pata na porta, uma vez, e largava. Eu não abria no barulho. Isso é o limite que o filhote de 2 meses ainda não precisava carregar no peito, e que o de 4 meses já testava com o corpo.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">A boca do mês 4 não se resolvia com bronca. O <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./kong-puppy">Kong Puppy</a> ia ao freezer com ração e uma camada de patê, trinta a quarenta minutos de focinho no tapete. Rodela de cenoura congelada aliviava a gengiva. O <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./clicker-para-adestramento-vale-a-pena">clicker</a> marcava o deitar com a boca no brinquedo, não o pulo na minha perna. Papelão e pano só comigo olhando. Aos 2 meses esse Kong ainda era grande demais para a sessão inteira. Aos 4, era o emprego da sala.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">No mês 5 a chegada tinha regra: quatro patas no chão, petisco na altura do focinho, depois o quintal ou o Kong. Sem festa no pulo. A <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./melhores-acessorios-adestramento-caes#guia-unificada">guia unificada</a> segurava o metro da porta, alça curta no tranco. O peitoral, e por que a coleira fina não é ancoragem quando o peito cresce, está na <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./guia-e-peitoral-filhote">ficha da guia e do peitoral</a>. Quando o veterinário liberou a calçada, o passeio foi barulho de cidade, não prova de força. Antes disso a rua não entrou “para gastar o Pitbull”.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">A Nina continuou do outro lado do muro. Aos 2 meses era cheiro. Aos 4 e 5 meses era distância, petisco quando a Maraca olhava para mim em vez de latir, e eu não soltava as duas para ver no que dava. O rótulo da raça não explicou esse muro. Explicou o ritmo: um corpo que cresce rápido perto de um cão menor que já chega tenso. O mapa da sala, que segurou cozinha e quarto enquanto isso acontecia, está em <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./limites-cao-em-quitinete">limites na quitinete</a>.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Firmeza diária sem transformar o filhote em caso de raça</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">O manejo que coube aos 2 meses cabe numa frase repetida: leve ao quintal nas janelas, pague o acerto, limpe o erro sem plateia, e não deixe a boca sem um objeto quando a gengiva começar a coçar. Não coube tapa, isolamento nem “mostrar quem manda” no pescoço de um cão de três quilos. Quem faz isso aos 2 meses chega aos 5 com um Pitbull que esconde o xixi e morde a mão porque a mão foi o brinquedo permitido no colo.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Eu separo o que é fase do que é planta da casa. Fase de 2 meses: sono, xixi curto, susto com panela, cheiro da Nina sem contato. Fase de 4 e 5 meses: portão, porta, Kong gelado, quatro patas na chegada, passeio de barulho quando o veterinário libera. As duas moram na mesma quitinete. Só não acontecem no mesmo dia. Quem lê as fotos da Maraca deitada entre cobertores e já prevê agressão está lendo o rótulo, não o filhote que tropeçava na própria pata branca no cimento.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Visita nessa idade fica no chão, não no colo como troféu. Filhote de 3 kg no braço da visita vira adulto de vinte quilos que sobe nas pessoas. O ensaio é agora: pessoa entra, quatro patas, petisco baixo, boca num brinquedo que ela não engole. Se a visita insiste em pegar no colo, a sessão acaba. A casa pequena não tem segundo ambiente para desfazer o hábito depois.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">O que eu repetia no fim do dia, ainda aos 2 meses, era curto de propósito. Uma ida ao cimento, um deitar no cobertor, a luz baixa. Sem aula longa. Sem plateia comentando a raça. A Maraca dormia enrolada, patas brancas para fora, e no dia seguinte o relógio recomeçava igual. Essa chatice é o adestramento que cabe nessa idade. O resto, portão, Kong e passeio de rua, espera o corpo e a liberação do veterinário, e eu conto isso separado, nos meses 4 e 5, para não parecer que um filhote de oito semanas já sustentava a rotina de um cão de peito largo.</p>
       <section>
         <h2 class="text-2xl font-bold text-stone-900 mb-6">Perguntas frequentes (FAQ)</h2>
         <div class="space-y-4">
@@ -251,7 +384,7 @@
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
       <div class="flex flex-col items-center gap-3 sm:items-start">
-        <p>© 2026 Guia do Adestramento. Todos os direitos reservados.</p>
+        <p>© 2026 Guia do Adestrador. Todos os direitos reservados.</p>
         
         <div class="flex items-center gap-4">
           <a href="https://www.linkedin.com/in/philipef-dev/" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-stone-900" aria-label="LinkedIn">LinkedIn</a>
@@ -270,6 +403,21 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+      spaceBetween: 8,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiperMain = new Swiper(".swiper-main", {
+      spaceBetween: 10,
+      autoHeight: true,
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      thumbs: { swiper: swiperThumbs },
+    });
+  </script>
   <script src="../scripts/scroll-to-top.js" defer></script>
 </body>
 </html>

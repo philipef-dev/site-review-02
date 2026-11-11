@@ -1,6 +1,6 @@
 # Planejamento SEO — Keyword Ideas do Ubersuggest
 
-**Blog:** Guia do Adestramento (`https://www.guiadoadestramento.com.br`)  
+**Blog:** Guia do Adestrador (`https://www.guiadoadestrador.com.br`)  
 **Fonte:** `ubersuggest adestrar_filhote.csv` (300 palavras-chave, semente “adestrar filhote”)  
 **Recorte deste plano:** SEO Difficulty (SD) **≤ 35** — quick wins  
 **Data da leitura:** 11 de outubro de 2026

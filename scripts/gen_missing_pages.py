@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera as páginas faltantes do Guia do Adestramento a partir do briefing."""
+"""Gera as páginas faltantes do Guia do Adestrador a partir do briefing."""
 from __future__ import annotations
 
 import json
@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
-BASE = "https://www.guiadoadestramento.com.br"
+BASE = "https://www.guiadoadestrador.com.br"
 YMYL_ASIDE = """        <aside class="mt-6 max-w-2xl rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-950" role="note">
           <p><strong>Nota editorial:</strong> Este conteúdo reflete a experiência prática de campo no treino do filhote. As orientações de saúde, vacinação e alimentação não substituem a consulta individualizada com um médico-veterinário.</p>
         </aside>
@@ -30,7 +30,7 @@ def org() -> dict:
     return {
         "@type": "Organization",
         "@id": f"{BASE}/#organization",
-        "name": "Guia do Adestramento",
+        "name": "Guia do Adestrador",
         "url": f"{BASE}/",
         "sameAs": SAME_AS,
     }
@@ -41,7 +41,7 @@ def website() -> dict:
         "@type": "WebSite",
         "@id": f"{BASE}/#website",
         "url": f"{BASE}/",
-        "name": "Guia do Adestramento",
+        "name": "Guia do Adestrador",
         "publisher": {"@id": f"{BASE}/#organization"},
     }
 
@@ -51,7 +51,7 @@ def person() -> dict:
         "@type": "Person",
         "@id": f"{BASE}/#philipe",
         "name": "Philipe",
-        "jobTitle": "Tutor e editor do Guia do Adestramento",
+        "jobTitle": "Tutor e editor do Guia do Adestrador",
         "email": "philipefdev@gmail.com",
         "address": {
             "@type": "PostalAddress",
@@ -110,7 +110,7 @@ def nav(prefix: str, active: str) -> str:
       <a href="/" class="font-semibold tracking-tight text-stone-900">
         <span class="inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-amber-950 text-sm">🐾</span>
-          <span>Guia do Adestramento</span>
+          <span>Guia do Adestrador</span>
         </span>
       </a>
       <div class="flex items-center gap-2">
@@ -145,7 +145,7 @@ def footer(prefix: str) -> str:
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
       <div class="flex flex-col items-center gap-3 sm:items-start">
-        <p>© 2026 Guia do Adestramento. Todos os direitos reservados.</p>
+        <p>© 2026 Guia do Adestrador. Todos os direitos reservados.</p>
         {SOCIAL}
       </div>
       {FOOTER_LINKS}
@@ -167,7 +167,7 @@ def shell(title: str, desc: str, canonical: str, graph: list, body: str, prefix:
   <title>{title}</title>
   <link rel="canonical" href="{canonical}" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
   <meta property="og:url" content="{canonical}">
@@ -458,7 +458,7 @@ def build_articles():
         "Pitbull 2 meses",
         "Características · Raça · Filhote",
         "Características de um Pitbull filhote de 2 meses",
-        "Características de um Pitbull filhote de 2 meses | Guia do Adestramento",
+        "Características de um Pitbull filhote de 2 meses | Guia do Adestrador",
         "Peso, patas grandes, cabeça, orelhas em rosa, pelagem Red Nose e a janela de socialização de 8 a 12 semanas — o que o corpo de um Pitbull filhote já antecipa.",
         "Com cerca de 8 semanas a Maraca já mostrava o recado da raça: 3 a 6 kg, patas grossas, cabeça começando a quadrar e uma janela de socialização que não espera o “quando ela crescer”.",
         [
@@ -493,7 +493,7 @@ def build_articles():
         "Temperamento",
         "Características · Comportamento",
         "Temperamento do Pitbull filhote: energia, boca e latido",
-        "Temperamento do Pitbull filhote: energia, mouthing e latido | Guia do Adestramento",
+        "Temperamento do Pitbull filhote: energia, mouthing e latido | Guia do Adestrador",
         "Alta energia, fase da mordedura, raça pouco latidora e rosnar no pote: o que é temperamento de Pitbull filhote e o que é falta de manejo na quitinete.",
         "A Maraca não late o dia todo. Ela morde, pula, explora e capota. Quem espera um alarme de corredor se surpreende. Quem espera um filhote quieto se frustra.",
         [
@@ -529,7 +529,7 @@ def build_articles():
         "Crescimento",
         "Características · Saúde",
         "Crescimento do Pitbull: peso, porte adulto e quando castrar",
-        "Crescimento do Pitbull: peso, escore corporal e castração | Guia do Adestramento",
+        "Crescimento do Pitbull: peso, escore corporal e castração | Guia do Adestrador",
         "Do filhote de ~3 kg à fêmea APBT de 14 a 23 kg, escore corporal em casa, quando castrar e o que muda no cio — com a Maraca como régua.",
         "Em um mês a Maraca pareceu outra cadela. Quem adia limite “porque ainda é bebê” acorda com 20 kg no sofá.",
         [
@@ -565,7 +565,7 @@ def build_articles():
         "Outros cães",
         "Características · Socialização",
         "Pitbull filhote e outros cães: como apresentar sem atropelo",
-        "Pitbull filhote e outros cães: Nina, Poodle e visitas | Guia do Adestramento",
+        "Pitbull filhote e outros cães: Nina, Poodle e visitas | Guia do Adestrador",
         "Pitbull vs Poodle, cão medroso do outro lado do muro, com quantos meses apresentar e como receber visita sem o filhote virar um míssil.",
         "A vizinha da Maraca é a Nina, Poodle média medrosa. Muro de 1,70 m. O problema nunca foi “Pitbull é bravo”. Foi ritmo de corpo contra cão que já chega tenso.",
         [
@@ -607,7 +607,7 @@ def build_howtos():
         "Xixi e cocô",
         "Cuidados · Banheiro",
         "Como ensinar o filhote a fazer xixi e cocô no lugar certo",
-        "Como ensinar filhote a fazer xixi e cocô no lugar certo | Guia do Adestramento",
+        "Como ensinar filhote a fazer xixi e cocô no lugar certo | Guia do Adestrador",
         "Quintal é banheiro, área é descanso. Pós-sono, pós-ração e pós-brincadeira. Por que Veja não apaga ureia e o que o Pipi Pode realmente faz.",
         "A Maraca urinava na área porque dormia lá. O alvo era o quintal de cimento. Sem briga. Com relógio.",
         [
@@ -643,7 +643,7 @@ def build_howtos():
         "Mordedura",
         "Cuidados · Dentição",
         "Como fazer o filhote parar de morder móveis, pés e sofá",
-        "Filhote mordendo tudo: móveis, pés e sofá | Guia do Adestramento",
+        "Filhote mordendo tudo: móveis, pés e sofá | Guia do Adestrador",
         "Não é pirraça: é gengiva de Pitbull. Substituição direcionada, pano congelado, papelão e quando o Kong entra — o que tirei da boca da Maraca na quitinete.",
         "Sofá, tapete, chinelo, cortina, rodo, parede, cueca. A lista da Maraca. A solução não foi grito. Foi objeto melhor na hora certa.",
         [
@@ -680,7 +680,7 @@ def build_howtos():
         "Pular",
         "Cuidados · Convívio",
         "Como ensinar o filhote a não pular nas pessoas",
-        "Como ensinar filhote a não pular nas pessoas | Guia do Adestramento",
+        "Como ensinar filhote a não pular nas pessoas | Guia do Adestrador",
         "Ignore o pulo, recompense as quatro patas, cuidado com a cabeça no chão e o que é fofo aos 3 kg vira problema aos 20 kg.",
         "A Maraca subia em mim porque era o caminho mais curto até o rosto. Lindinho agora. Impossível no adulto.",
         [
@@ -714,7 +714,7 @@ def build_howtos():
         "Quitinete",
         "Cuidados · Espaço",
         "Como criar um Pitbull em quitinete sem ele invadir quarto e cozinha",
-        "Pitbull em quitinete: limites, portão e 8 horas fora | Guia do Adestramento",
+        "Pitbull em quitinete: limites, portão e 8 horas fora | Guia do Adestrador",
         "Sala sim, cozinha e quarto não. Portão de pressão, o que deixar no chão em 8 h fora, choro na porta e chegada neutra — o que consolidou com a Maraca.",
         "Oito horas na sala sem invadir cozinha nem quarto. Isso não veio de milagre. Veio de mapa fixo e de não ceder “só hoje”.",
         [
@@ -751,7 +751,7 @@ def build_howtos():
         "Alimentação",
         "Cuidados · Ração",
         "Quanto de ração dar para filhote de Pitbull (e quando o cocô mole denuncia erro)",
-        "Quanto de ração dar para filhote de Pitbull | Guia do Adestramento",
+        "Quanto de ração dar para filhote de Pitbull | Guia do Adestrador",
         "Colheres, 3 refeições, jejum perigoso, granel vs saco, troca gradual e por que ração molhada no brinquedo amolece o cocô.",
         "Duas “mãos” de ração três vezes ao dia era demais no começo. Depois 5 colheres ficou pouco. O cocô foi o painel. Jejum de 12 h não.",
         [
@@ -787,7 +787,7 @@ def build_howtos():
         "Vacinas",
         "Cuidados · Veterinário",
         "Vacina V8, V10 e vermífugo no filhote: ordem, intervalo e o que esperar",
-        "Vacina V8, V10 e vermífugo no filhote | Guia do Adestramento",
+        "Vacina V8, V10 e vermífugo no filhote | Guia do Adestrador",
         "Diferença V8 e V10, quantas doses até a rua, vermífugo pelo peso, repetir em 15 dias, calombo da injeção e o que não aplicar no mesmo dia.",
         "A Maraca tomou V10 agitada como se nada tivesse acontecido. Calombo no local. Vermífugo não foi no mesmo dia. Rua ainda não.",
         [
@@ -825,7 +825,7 @@ def build_howtos():
         "Socialização",
         "Cuidados · Outros cães",
         "Como socializar Pitbull filhote com um cão medroso (e com visitas)",
-        "Como socializar Pitbull filhote com cão medroso | Guia do Adestramento",
+        "Como socializar Pitbull filhote com cão medroso | Guia do Adestrador",
         "Troca de cheiro, petisco no latido da vizinha, comando Deixa para lixo e rua só depois da V10 — o protocolo da Maraca com a Nina.",
         "Quem estava assustada, no fim, era a Maraca com o latido da Nina. O treino inverteu o filme que eu tinha na cabeça.",
         [
@@ -858,7 +858,7 @@ def build_howtos():
         "Enriquecimento",
         "Cuidados · Brinquedos",
         "Enriquecimento ambiental para filhote: papelão, pano congelado e rodízio",
-        "Enriquecimento ambiental para filhote: papelão e rodízio | Guia do Adestramento",
+        "Enriquecimento ambiental para filhote: papelão e rodízio | Guia do Adestrador",
         "Overdose de brinquedo agita. Regra dos 2 itens, cardápio do dia, pano com ração seca vs Kong molhado, e o que deixar quando você sai.",
         "A Maraca tinha bola recheável, galho de borracha, duas PET, papelão, vasilhas. Nada era novidade. Recolhi tudo. A cabeça acalmou.",
         [
@@ -894,7 +894,7 @@ def build_products():
             crumb="Kong Classic",
             kicker="Produtos · Mordedor",
             h1="Kong Classic ou Puppy: qual comprar em 2026?",
-            title="Kong Classic ou Puppy: qual comprar em 2026? | Guia do Adestramento",
+            title="Kong Classic ou Puppy: qual comprar em 2026? | Guia do Adestrador",
             desc="Puppy rosa/azul, Classic vermelho e Extreme preto: quando o Pitbull estoura o Puppy, tamanho M vs G e alternativas Odontopet/Benebone.",
             lead="O Puppy é a fase da Maraca. O Classic é o próximo recibo. O Extreme é se ela destruir o vermelho. O Senior roxo não entra na fila.",
             product_name="KONG Classic (transição a partir do Puppy)",
@@ -938,7 +938,7 @@ def build_products():
             crumb="Pipi Pode",
             kicker="Produtos · Sanitário",
             h1="Pipi Pode / Educa Cão funciona sozinho?",
-            title="Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestramento",
+            title="Pipi Pode / Educa Cão funciona sozinho? | Guia do Adestrador",
             desc="Atrativo sanitário Pipi Pode e Educa Cão: o que o olfato entende, por que não substitui rotina e enzimático, e o papel do tapete Durapads.",
             lead="O frasco ajuda o nariz. Não leva o filhote no quintal às 7h. Sem relógio, você só perfuma o erro.",
             product_name="Atrativo sanitário Pipi Pode / Educa Cão",
@@ -980,7 +980,7 @@ def build_products():
             crumb="Casinha",
             kicker="Produtos · Descanso",
             h1="Casinha de plástico nº 5 vale a pena para Pitbull filhote?",
-            title="Casinha de plástico nº 5 para Pitbull filhote | Guia do Adestramento",
+            title="Casinha de plástico nº 5 para Pitbull filhote | Guia do Adestrador",
             desc="Plástico vs madeira (pulga), Furacão Pet / Tánatela 2 em 1, número 4 vs 5 no crescimento e a caixa de sapato até a casinha chegar.",
             lead="A Maraca dormia na caixa de sapato com pano. A casinha de plástico é o upgrade: lava, não vira hotel de pulga, teto que vira caminha no calor.",
             product_name="Casinha plástica 2 em 1 nº 5 (Furacão Pet / Tánatela)",
@@ -1022,7 +1022,7 @@ def build_products():
             crumb="Portão pet",
             kicker="Produtos · Contenção",
             h1="Portão pet de pressão vale a pena em apartamento pequeno?",
-            title="Portão pet de pressão em apartamento | Guia do Adestramento",
+            title="Portão pet de pressão em apartamento | Guia do Adestrador",
             desc="Como bloquear sala e cozinha sem porta, altura de 70 a 85 cm, ferro de pressão vs papelão e extensor para vão largo.",
             lead="Da sala até a cozinha não havia porta. Papelão é treino para o Pitbull adulto. Portão de pressão é o que me deixou dormir.",
             product_name="Portão de segurança pet de pressão (ferro)",
@@ -1064,7 +1064,7 @@ def build_products():
             crumb="Guia e peitoral",
             kicker="Produtos · Passeio",
             h1="Guia e peitoral para filhote de 3 meses: o que comprar",
-            title="Guia e peitoral para filhote de 3 meses | Guia do Adestramento",
+            title="Guia e peitoral para filhote de 3 meses | Guia do Adestrador",
             desc="Guia de nylon 1,5 a 2 m, por que retrátil ensina a puxar, peitoral vs coleira no crescimento e o que a guia faz em casa até a V10.",
             lead="Rua ainda não. Guia em casa é segurança no corredor, não passeio de parque. Retrátil ensina o oposto do que eu quero.",
             product_name="Guia de nylon 1,5–2 m + peitoral ajustável",
@@ -1106,7 +1106,7 @@ def build_products():
             crumb="Ração",
             kicker="Produtos · Alimentação",
             h1="Melhor ração para filhote de Pitbull: NutriSano, Golden ou Premier?",
-            title="Melhor ração para filhote de Pitbull: NutriSano, Golden, Premier | Guia do Adestramento",
+            title="Melhor ração para filhote de Pitbull: NutriSano, Golden, Premier | Guia do Adestrador",
             desc="Por que Dog Chow Minis e granel falham, NutriSano/Multidog/Golden/Premier, saco 3 kg vs 15 kg e o cocô como medidor.",
             lead="A loja empurrou Dog Chow Minis porque tinha. O intestino da Maraca e o porte dela pediam filhotes de raça grande em saco fechado.",
             ymyl=True,
@@ -1149,7 +1149,7 @@ def build_products():
             crumb="Comedouro lento",
             kicker="Produtos · Alimentação",
             h1="Comedouro lento vale a pena para filhote que engole ração?",
-            title="Comedouro lento para filhote que engole ração | Guia do Adestramento",
+            title="Comedouro lento para filhote que engole ração | Guia do Adestrador",
             desc="Soluço e ar na barriga, bola recheável, Colmeia Buddy, Stark Pet, Pet Games, furo largo demais e vs Kong seco.",
             lead="A Maraca devorava e soluça. Furo largo da bola largava o grão de uma vez. Precisava de labirinto, não de copo com tampa furada larga.",
             product_name="Comedouro lento / bola recheável (Stark, Pet Games, Buddy Colmeia)",
@@ -1191,15 +1191,15 @@ def build_products():
             crumb="Guia Completo",
             kicker="Produtos · Curso",
             h1="Guia Completo de Adestramento Canino 2026: vale a pena?",
-            title="Guia Completo de Adestramento Canino 2026: vale a pena? | Guia do Adestramento",
+            title="Guia Completo de Adestramento Canino 2026: vale a pena? | Guia do Adestrador",
             desc="O que o diário da Maraca não cobre sozinho, xixi/limites/mordedura como método vs produto, garantia de 7 dias e curso vs Kong+enzimático vs aula particular.",
             lead="O diário resolve o chão da quitinete. O curso empacota progresso semana a semana, suporte e o que fazer quando o treino trava — sem milagre em 7 dias.",
             product_name="Guia Completo de Adestramento Canino",
-            brand="Guia do Adestramento",
+            brand="Guia do Adestrador",
             rating="4.9",
             review_body="O funil que eu uso no site: dica grátis (papelão, pano), produto que paga a conta (Kong, Herbalvet) e o programa para quem quer o método amarrado. Não substitui veterinário nem aula em caso de agressão.",
-            ml="https://www.guiadoadestramento.com.br/reviews/guia-completo-adestramento-canino",
-            amz="https://www.guiadoadestramento.com.br/reviews/guia-completo-adestramento-canino",
+            ml="https://www.guiadoadestrador.com.br/reviews/guia-completo-adestramento-canino",
+            amz="https://www.guiadoadestrador.com.br/reviews/guia-completo-adestramento-canino",
             price_amz="197.00",
             price_ml="197.00",
             pros=["Progressão semana a semana", "Linguagem de tutor, não de palco", "Encaixa no que já testei com a Maraca"],
@@ -1299,7 +1299,7 @@ def build_hub():
         {
             "@type": "ItemList",
             "@id": f"{BASE}/reviews#itemlist",
-            "name": "Reviews detalhados — Guia do Adestramento 2026",
+            "name": "Reviews detalhados — Guia do Adestrador 2026",
             "description": "Características, cuidados e produtos testados com a Maraca.",
             "url": f"{BASE}/reviews",
             "itemListOrder": "https://schema.org/ItemListUnordered",
@@ -1311,7 +1311,30 @@ def build_hub():
     <section class="bg-linear-to-b from-amber-50 to-stone-50 border-b border-amber-100">
       <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
         <h1 class="text-3xl font-bold tracking-tight text-stone-900">Minhas Avaliações</h1>
-        <p class="mt-3 max-w-2xl text-stone-600">Diário de campo com a Maraca, Pitbull Red Nose em quitinete. Sem teoria de palco.</p>
+        <p class="mt-3 max-w-2xl text-stone-600">Produtos que eu testei com a Maraca e compraria de novo. Mais abaixo, o diário de cuidados e da raça.</p>
+        <ul class="mt-8 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-3" aria-label="Como eu avalio os produtos de adestramento">
+          <li class="flex items-start gap-3 rounded-2xl border border-amber-200 bg-white p-4 shadow-sm">
+            <img src="img/produtos-testados-adestramento-filhote.png" alt="Selo de produtos de adestramento testados com filhote" width="48" height="48" class="h-12 w-12 shrink-0" decoding="async">
+            <div>
+              <p class="text-sm font-bold text-stone-900">Produtos testados</p>
+              <p class="mt-1 text-sm text-stone-600">Brinquedo, guia e ração que usei com a Maraca.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 rounded-2xl border border-amber-200 bg-white p-4 shadow-sm">
+            <img src="img/acessorios-adestramento-melhor-custo-beneficio.png" alt="Selo de acessórios de adestramento com melhor custo-benefício" width="48" height="48" class="h-12 w-12 shrink-0" decoding="async">
+            <div>
+              <p class="text-sm font-bold text-stone-900">Melhor custo-benefício</p>
+              <p class="mt-1 text-sm text-stone-600">O que aguenta filhote de porte grande e cabe no mês.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3 rounded-2xl border border-amber-200 bg-white p-4 shadow-sm">
+            <img src="img/avaliacoes-melhores-produtos-para-cachorro.png" alt="Selo de avaliações dos melhores produtos para cachorro" width="48" height="48" class="h-12 w-12 shrink-0" decoding="async">
+            <div>
+              <p class="text-sm font-bold text-stone-900">Avaliações reais</p>
+              <p class="mt-1 text-sm text-stone-600">O dia a dia na quitinete, cruzado com outros tutores.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
@@ -1319,7 +1342,7 @@ def build_hub():
     </div>
   </main>"""
     html = shell(
-        "Reviews | Guia do Adestramento",
+        "Reviews | Guia do Adestrador",
         "Características de Pitbull filhote, cuidados de adestramento e produtos testados na quitinete.",
         f"{BASE}/reviews",
         graph,
@@ -1352,7 +1375,7 @@ def inst_shell(title, desc, path, graph, h1, inner, active, robots=""):
   <title>{title}</title>
   <link rel="canonical" href="{BASE}{path}" />
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
   <meta property="og:url" content="{BASE}{path}">
@@ -1373,8 +1396,8 @@ def inst_shell(title, desc, path, graph, h1, inner, active, robots=""):
 
 def build_institutional():
     inst_shell(
-        "Sobre o projeto “Guia do Adestramento”",
-        "Quem escreve o Guia do Adestramento: Philipe, diário da Maraca em Volta Redonda, transparência de afiliados.",
+        "Sobre o projeto “Guia do Adestrador”",
+        "Quem escreve o Guia do Adestrador: Philipe, diário da Maraca em Volta Redonda, transparência de afiliados.",
         "/quem-somos",
         [
             person(),
@@ -1384,16 +1407,16 @@ def build_institutional():
                 "@type": "AboutPage",
                 "@id": f"{BASE}/quem-somos#webpage",
                 "url": f"{BASE}/quem-somos",
-                "name": "Quem Somos | Guia do Adestramento",
-                "description": "Conheça o Guia do Adestramento, o diário da Maraca e os critérios das reviews.",
+                "name": "Quem Somos | Guia do Adestrador",
+                "description": "Conheça o Guia do Adestrador, o diário da Maraca e os critérios das reviews.",
                 "inLanguage": "pt-BR",
                 "isPartOf": {"@id": f"{BASE}/#website"},
                 "mainEntity": {"@id": f"{BASE}/#philipe"},
             },
         ],
-        "Sobre o projeto “Guia do Adestramento”",
+        "Sobre o projeto “Guia do Adestrador”",
         """
-        <p>Criei o <strong>Guia do Adestramento</strong> para documentar o que funciona no chão — não no palco. A régua é a Maraca, Pitbull Red Nose filhote, em uma quitinete em <strong>Volta Redonda, RJ</strong>.</p>
+        <p>Criei o <strong>Guia do Adestrador</strong> para documentar o que funciona no chão — não no palco. A régua é a Maraca, Pitbull Red Nose filhote, em uma quitinete em <strong>Volta Redonda, RJ</strong>.</p>
         <h2 class="text-2xl font-semibold text-stone-900">Meu objetivo</h2>
         <p>Traduzir dentição, xixi, limites e produto em linguagem de quem volta do trabalho e encontra o sofá. Sem aversivo de grito e puxão como método.</p>
         <h2 class="text-2xl font-semibold text-stone-900">Como faço minhas recomendações</h2>
@@ -1411,7 +1434,7 @@ def build_institutional():
     )
 
     inst_shell(
-        "Metodologia | Guia do Adestramento",
+        "Metodologia | Guia do Adestrador",
         "Como o Philipe analisa adestramento e produtos: teste real com a Maraca, ética, segurança e custo-benefício.",
         "/metodologia",
         [
@@ -1422,7 +1445,7 @@ def build_institutional():
                 "@type": "WebPage",
                 "@id": f"{BASE}/metodologia#webpage",
                 "url": f"{BASE}/metodologia",
-                "name": "Metodologia | Guia do Adestramento",
+                "name": "Metodologia | Guia do Adestrador",
                 "description": "Como cada review de adestramento é feita: diário de campo, segurança e custo-benefício.",
                 "inLanguage": "pt-BR",
                 "isPartOf": {"@id": f"{BASE}/#website"},
@@ -1432,7 +1455,7 @@ def build_institutional():
                 "dateModified": "2026-09-11",
             },
         ],
-        "Guia do Adestramento — nossa metodologia de análise",
+        "Guia do Adestrador — nossa metodologia de análise",
         """
         <p>Não tenho laboratório. Tenho uma cadela, uma quitinete e o hábito de anotar o que a boca e o intestino respondem.</p>
         <blockquote class="border-l-4 border-amber-500 bg-amber-50 rounded-r-xl p-5 italic">Prefiro um pano congelado que funcionou a um slogan de “adestra em 7 dias”.</blockquote>
@@ -1461,8 +1484,8 @@ def build_institutional():
         <h2 class="text-xl font-bold text-stone-900">Enviar mensagem</h2>
         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6 rounded-2xl border border-stone-200 bg-white p-6">
           <input type="hidden" name="access_key" value="921cad7b-2476-41b0-ab4a-a68cb90c88e6">
-          <input type="hidden" name="subject" value="Contato — Guia do Adestramento">
-          <input type="hidden" name="redirect" value="https://www.guiadoadestramento.com.br/contato-obrigado">
+          <input type="hidden" name="subject" value="Contato — Guia do Adestrador">
+          <input type="hidden" name="redirect" value="https://www.guiadoadestrador.com.br/contato-obrigado">
           <input type="hidden" name="botcheck" value="">
           <div><label class="block text-sm font-bold mb-2" for="nome">Nome</label>
           <input class="w-full rounded-xl border border-stone-200 bg-stone-50 px-4 py-3" type="text" id="nome" name="name" autocomplete="name"></div>
@@ -1502,18 +1525,18 @@ def build_institutional():
             "@type": "ContactPage",
             "@id": f"{BASE}/contato#webpage",
             "url": f"{BASE}/contato",
-            "name": "Contato | Guia do Adestramento",
+            "name": "Contato | Guia do Adestrador",
             "description": "Fale com o Philipe em Volta Redonda, RJ.",
             "inLanguage": "pt-BR",
             "isPartOf": {"@id": f"{BASE}/#website"},
         },
     ]
     inst_shell(
-        "Guia do Adestramento — fale comigo",
+        "Guia do Adestrador — fale comigo",
         "Fale com o Philipe em Volta Redonda, RJ. E-mail, formulário ou WhatsApp — resposta em até 2 dias úteis.",
         "/contato",
         graph_c,
-        "Guia do Adestramento — fale comigo",
+        "Guia do Adestrador — fale comigo",
         contato_inner,
         "contato",
     )
@@ -1521,7 +1544,7 @@ def build_institutional():
     write(
         PUBLIC / "contato-obrigado.html",
         shell(
-            "Mensagem recebida | Guia do Adestramento",
+            "Mensagem recebida | Guia do Adestrador",
             "Recebemos sua mensagem. Resposta em até 2 dias úteis.",
             f"{BASE}/contato-obrigado",
             [
@@ -1551,8 +1574,8 @@ def build_institutional():
     )
 
     inst_shell(
-        "Política de Privacidade | Guia do Adestramento",
-        "Dados do formulário, cookies, Analytics e links de afiliados no Guia do Adestramento.",
+        "Política de Privacidade | Guia do Adestrador",
+        "Dados do formulário, cookies, Analytics e links de afiliados no Guia do Adestrador.",
         "/politica-de-privacidade",
         [
             org(),
@@ -1561,7 +1584,7 @@ def build_institutional():
                 "@type": "PrivacyPolicy",
                 "@id": f"{BASE}/politica-de-privacidade#webpage",
                 "url": f"{BASE}/politica-de-privacidade",
-                "name": "Política de Privacidade | Guia do Adestramento",
+                "name": "Política de Privacidade | Guia do Adestrador",
                 "description": "Como tratamos dados, cookies e afiliados.",
                 "isPartOf": {"@id": f"{BASE}/#website"},
                 "publisher": {"@id": f"{BASE}/#organization"},
@@ -1569,7 +1592,7 @@ def build_institutional():
                 "dateModified": "2026-09-11",
             },
         ],
-        "Política de Privacidade | Guia do Adestramento",
+        "Política de Privacidade | Guia do Adestrador",
         """
         <p>Operado por <strong>Philipe</strong>, Volta Redonda, RJ. Atualização: <strong>11 de setembro de 2026</strong>.</p>
         <h2 class="text-2xl font-medium text-stone-900 mb-3">Quais dados coleto</h2>
@@ -1592,8 +1615,8 @@ def build_institutional():
     )
 
     inst_shell(
-        "Termos e Condições | Guia do Adestramento",
-        "Termos de uso do Guia do Adestramento: conteúdo editorial, afiliados e limitação de responsabilidade.",
+        "Termos e Condições | Guia do Adestrador",
+        "Termos de uso do Guia do Adestrador: conteúdo editorial, afiliados e limitação de responsabilidade.",
         "/termos-e-condicoes",
         [
             org(),
@@ -1602,14 +1625,14 @@ def build_institutional():
                 "@type": "TermsOfService",
                 "@id": f"{BASE}/termos-e-condicoes#webpage",
                 "url": f"{BASE}/termos-e-condicoes",
-                "name": "Termos e Condições | Guia do Adestramento",
+                "name": "Termos e Condições | Guia do Adestrador",
                 "isPartOf": {"@id": f"{BASE}/#website"},
                 "publisher": {"@id": f"{BASE}/#organization"},
                 "datePublished": "2026-09-11",
                 "dateModified": "2026-09-11",
             },
         ],
-        "Termos e Condições | Guia do Adestramento",
+        "Termos e Condições | Guia do Adestrador",
         """
         <p>Ao usar o site você concorda com estes termos. Philipe, Volta Redonda, RJ. Atualização: <strong>11 de setembro de 2026</strong>.</p>
         <h2 class="text-2xl font-medium text-stone-900 mb-3">Sobre o nosso conteúdo</h2>
@@ -1919,14 +1942,14 @@ def build_home():
 
     <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
       <div class="rounded-3xl bg-amber-500 px-8 py-12 text-center sm:px-16">
-        <h2 class="text-3xl font-bold tracking-tight text-amber-950">Todas as análises do Guia do Adestramento</h2>
+        <h2 class="text-3xl font-bold tracking-tight text-amber-950">Todas as análises do Guia do Adestrador</h2>
         <p class="mx-auto mt-4 max-w-xl text-lg text-amber-950/80">Características da raça, cuidados do dia a dia e produtos testados com a Maraca.</p>
         <a href="/reviews" class="mt-8 inline-flex items-center justify-center rounded-full bg-stone-950 px-10 py-4 text-lg font-bold text-white hover:bg-black">Abrir o hub de reviews</a>
       </div>
     </section>
   </main>"""
     html = shell(
-        "Adestramento de Pitbull filhote na prática: o que funciona em casa (2026) | Guia do Adestramento",
+        "Adestramento de Pitbull filhote na prática: o que funciona em casa (2026) | Guia do Adestrador",
         "Diário da Maraca em Volta Redonda: xixi, mordedura, Kong, enzimático e limites em quitinete. Sem teoria de palco.",
         f"{BASE}/",
         graph,

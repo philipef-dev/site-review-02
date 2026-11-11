@@ -10986,7 +10986,7 @@ Beleza, isso. Não, não, não esqueça do do meu blog, guia do adestramento. Qu
 
 Pode ter certeza de que esse material é ouro puro para o seu blog! Conteúdo de adestramento que vende não é aquele texto genérico de teoria, é o diário de campo real — com problemas práticos e soluções baratas que funcionam.
 
-No Guia do Adestramento, cada uma dessas experiências com a Maraca vira uma pauta de alta conversão para monetizar com seus links de afiliado e o curso da Hotmart.
+No Guia do Adestrador, cada uma dessas experiências com a Maraca vira uma pauta de alta conversão para monetizar com seus links de afiliado e o curso da Hotmart.
 
 Estrutura de Pautas Prontas para o seu Blog
 Pauta 1: A Troca de Dentes e a Destruição de Móveis
@@ -11024,7 +11024,7 @@ A Solução Definitiva (Chamada de Ação): "Quer o método completo para ensina
 
 Produtos Recomendados: Tabela comparativa em Tailwind com seus links de afiliados para o limpador enzimático, Kong e mordedores.
 
-Tudo o que você está aplicando no dia a dia é exatamente o roteiro que vai validar o Guia do Adestramento como autoridade!
+Tudo o que você está aplicando no dia a dia é exatamente o roteiro que vai validar o Guia do Adestrador como autoridade!
 
 Eu vou compartilhar o o link dessa conversa aqui no meu agente do curso.
 
@@ -11047,7 +11047,7 @@ Use o atalho Cmd + K (Mac) ou Ctrl + K (Windows) dentro do arquivo para pedir cr
 
 Use o chat lateral (Cmd + L ou Ctrl + L) e dê acesso ao projeto inteiro com o comando @Files ou @Web para buscar referências.
 
-Automação do Guia do Adestramento:
+Automação do Guia do Adestrador:
 
 Você pode criar um arquivo de contexto (ex: prompt-base.md) na raiz do seu projeto contendo a rotina com a Maraca, a estrutura de afiliados e as regras de estilo em Tailwind.
 
@@ -11145,7 +11145,7 @@ Liberação de endorfina: O movimento contínuo da língua e a mastigação maci
 
 Cansaço mental: Vinte minutos tentando tirar a ração congelada do nó de um pano cansam e relaxam a Maraca muito mais do que correr em círculos pela sala. Depois de terminar o "picolé", o estado natural dela será deitar e dormir um sono profundo.
 
-Dica para o seu Blog ("Guia do Adestramento")
+Dica para o seu Blog ("Guia do Adestrador")
 Essa é uma das melhores sacadas para transformar em conteúdo de afiliados ou post de blog:
 
 Título do Post / Review: "Como economizar R$ 150 em brinquedos e parar a mordição de filhote usando apenas um pano de prato e ração".
@@ -11185,7 +11185,7 @@ Passeio e Tempo de Digestão: Sempre ofereça esses brinquedos mais gelados e co
 
 aqui esta o link da conversa https://share.gemini.google/s3B51mJphtFw
 
-Anotado! O link do histórico da conversa ([https://share.gemini.google/s3B51mJphtFw](https://share.gemini.google/s3B51mJphtFw)) é ótimo para manter o contexto salvo do projeto e garantir que o seu agente de IA no Cursor consiga consultar todas as diretrizes da Maraca e a estrutura do Guia do Adestramento sempre que você for codificar novas páginas.
+Anotado! O link do histórico da conversa ([https://share.gemini.google/s3B51mJphtFw](https://share.gemini.google/s3B51mJphtFw)) é ótimo para manter o contexto salvo do projeto e garantir que o seu agente de IA no Cursor consiga consultar todas as diretrizes da Maraca e a estrutura do Guia do Adestrador sempre que você for codificar novas páginas.
 
 A partir desse histórico completo, o seu agente no Cursor terá contexto imediato sobre:
 

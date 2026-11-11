@@ -6,16 +6,30 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../output.css" as="style">
   <link rel="stylesheet" href="../output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <style>
+    .swiper-main { width: 100%; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide { display: flex; align-items: center; justify-content: center; height: auto; background: #fafaf9; }
+    .swiper-main .swiper-slide img { image-orientation: from-image; display: block; width: auto; max-width: 100%; height: auto; max-height: 500px; margin-inline: auto; object-fit: contain; }
+    .swiper-thumbs { height: 80px; box-sizing: border-box; padding: 10px 0; }
+    .swiper-thumbs .swiper-slide { display: flex; align-items: center; justify-content: center; width: 20%; height: 100%; opacity: 0.4; cursor: pointer; }
+    .swiper-thumbs .swiper-slide-thumb-active { opacity: 1; border: 2px solid #d97706; border-radius: 6px; }
+    .swiper-thumbs .swiper-slide img { image-orientation: from-image; width: 100%; height: 100%; max-height: none; object-fit: contain; }
+    .swiper-button-next, .swiper-button-prev { color: #d97706; }
+    @media (max-width: 640px) { .swiper-main .swiper-slide img { max-height: 320px; } }
+  </style>
   <title>Peitoral modelo H e guia reforçada para Pitbull filhote (4 a 6 meses)</title>
-  <link rel="canonical" href="https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote" />
+  <link rel="canonical" href="https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote" />
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Guia do Adestramento">
+  <meta property="og:site_name" content="Guia do Adestrador">
   <meta property="og:title" content="Peitoral modelo H e guia reforçada para Pitbull filhote (4 a 6 meses)">
   <meta property="og:description" content="Para Pitbull filhote como a Maraca (4 a 6 meses): peitoral modelo H com fita 25–30 mm, costura em X e guia com mosquetão de aço. Fita 15 mm e fecho de plástico não seguram o tranco.">
-  <meta property="og:url" content="https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:url" content="https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote">
+  <meta property="og:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-1.webp">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Peitoral modelo H e guia reforçada para Pitbull filhote (4 a 6 meses)">
   <meta name="twitter:description" content="Para Pitbull filhote como a Maraca (4 a 6 meses): peitoral modelo H com fita 25–30 mm, costura em X e guia com mosquetão de aço. Fita 15 mm e fecho de plástico não seguram o tranco.">
+  <meta name="twitter:image" content="https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-1.webp">
   <meta name="description" content="Para Pitbull filhote como a Maraca (4 a 6 meses): peitoral modelo H com fita 25–30 mm, costura em X e guia com mosquetão de aço. Fita 15 mm e fecho de plástico não seguram o tranco.">
   <script type="application/ld+json">
 {
@@ -23,9 +37,17 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://www.guiadoadestramento.com.br/#organization",
-      "name": "Guia do Adestramento",
-      "url": "https://www.guiadoadestramento.com.br/",
+      "@id": "https://www.guiadoadestrador.com.br/#organization",
+      "name": "Guia do Adestrador",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.guiadoadestrador.com.br/#logo",
+        "url": "https://www.guiadoadestrador.com.br/imagens-marca/logo-guia-do-adestrador.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Guia do Adestrador"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -35,13 +57,13 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.guiadoadestramento.com.br/#philipe",
+      "@id": "https://www.guiadoadestrador.com.br/#philipe",
       "name": "Philipe Ferreira",
-      "jobTitle": "Tutor e editor do Guia do Adestramento",
+      "jobTitle": "Tutor e editor do Guia do Adestrador",
       "description": "Tutor da Maraca, Pitbull Red Nose, em Volta Redonda. Testa rotina e produto de filhote em quitinete. Não é médico-veterinário.",
-      "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
+      "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
       "email": "philipefdev@gmail.com",
-      "url": "https://www.guiadoadestramento.com.br/quem-somos",
+      "url": "https://www.guiadoadestrador.com.br/quem-somos",
       "sameAs": [
         "https://www.linkedin.com/in/philipef-dev/",
         "https://x.com/radarofertas_ph",
@@ -55,59 +77,79 @@
         "addressCountry": "BR"
       },
       "worksFor": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.guiadoadestramento.com.br/#website",
-      "url": "https://www.guiadoadestramento.com.br/",
-      "name": "Guia do Adestramento",
+      "@id": "https://www.guiadoadestrador.com.br/#website",
+      "url": "https://www.guiadoadestrador.com.br/",
+      "name": "Guia do Adestrador",
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote#webpage",
-      "url": "https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote#webpage",
+      "url": "https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote",
       "name": "Guia e peitoral para Pitbull filhote de 4 a 6 meses: fita larga, não a baratinha",
       "description": "Para Pitbull filhote como a Maraca (4 a 6 meses): peitoral modelo H com fita 25–30 mm, costura em X e guia com mosquetão de aço. Fita 15 mm e fecho de plástico não seguram o tranco.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-1.webp",
+        "width": 1200,
+        "height": 955
+      },
       "isPartOf": {
-        "@id": "https://www.guiadoadestramento.com.br/#website"
+        "@id": "https://www.guiadoadestrador.com.br/#website"
       },
       "publisher": {
-        "@id": "https://www.guiadoadestramento.com.br/#organization"
+        "@id": "https://www.guiadoadestrador.com.br/#organization"
+      },
+      "dateModified": "2026-11-07",
+      "author": {
+        "@id": "https://www.guiadoadestrador.com.br/#philipe"
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote#breadcrumb",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Início",
-          "item": "https://www.guiadoadestramento.com.br/"
+          "item": "https://www.guiadoadestrador.com.br/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Reviews",
-          "item": "https://www.guiadoadestramento.com.br/reviews"
+          "item": "https://www.guiadoadestrador.com.br/reviews"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Guia e peitoral",
-          "item": "https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote"
+          "item": "https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote"
         }
       ]
     },
     {
       "@type": "Product",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote#product",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote#product",
       "name": "Peitoral modelo H reforçado 25–30 mm + guia com mosquetão de aço",
+      "image": [
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-1.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-2.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-3.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-4.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-5.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-6.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-7.webp",
+        "https://www.guiadoadestrador.com.br/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-8.webp"
+      ],
       "brand": {
         "@type": "Brand",
         "name": "Genérico / peitoral H reforçado"
@@ -117,11 +159,11 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "@id": "https://www.guiadoadestramento.com.br/#philipe",
+          "@id": "https://www.guiadoadestrador.com.br/#philipe",
           "name": "Philipe Ferreira",
-          "jobTitle": "Tutor e editor do Guia do Adestramento",
-          "image": "https://www.guiadoadestramento.com.br/img/philipe_ferreira.webp",
-          "url": "https://www.guiadoadestramento.com.br/quem-somos"
+          "jobTitle": "Tutor e editor do Guia do Adestrador",
+          "image": "https://www.guiadoadestrador.com.br/imagens-marca/philipe-ferreira.webp",
+          "url": "https://www.guiadoadestrador.com.br/quem-somos"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -131,7 +173,7 @@
         "reviewBody": "Para a Maraca, Pitbull de 4 a 6 meses: peitoral modelo H reforçado com fita de 25 a 30 mm, costura em X e fivelas de alta resistência. Guia lisa 1,5 a 2 m com mosquetão de aço e trava. Fita de 15 mm e fecho de plástico simples não entram — estouram no primeiro tranco."
       },
       "offers": [
-                {
+        {
           "@type": "Offer",
           "url": "https://meli.la/1o6G2hz",
           "itemCondition": "https://schema.org/NewCondition",
@@ -139,13 +181,15 @@
           "seller": {
             "@type": "Organization",
             "name": "Mercado Livre"
-          }
+          },
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31"
         }
       ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.guiadoadestramento.com.br/reviews/guia-e-peitoral-filhote#faq",
+      "@id": "https://www.guiadoadestrador.com.br/reviews/guia-e-peitoral-filhote#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -183,7 +227,7 @@
     }
   ]
 }
-  </script>
+</script>
 <!-- AMAZON afiliado pausado: reativar quando o clique estiver bom
 {
           "@type": "Offer",
@@ -203,7 +247,7 @@
       <a href="../" class="font-semibold tracking-tight text-stone-900">
         <span class="inline-flex items-center gap-2">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-400 text-amber-950 text-sm">🐾</span>
-          <span>Guia do Adestramento</span>
+          <span>Guia do Adestrador</span>
         </span>
       </a>
       <div class="flex items-center gap-2">
@@ -262,11 +306,40 @@
 -->
             </div>
           </div>
-          <div class="flex items-center gap-2 border-t border-stone-100 bg-stone-50/60 px-5 py-3 text-xs text-stone-500"><img src="../img/philipe_ferreira.webp" alt="Foto de Philipe Ferreira" width="20" height="20" class="h-5 w-5 shrink-0 rounded-full border border-stone-300 object-cover"><span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:underline">Philipe Ferreira</a> • Atualizado em setembro de 2026</span></div>
+          <div class="flex items-center gap-2 border-t border-stone-100 bg-stone-50/60 px-5 py-3 text-xs text-stone-500"><img src="/imagens-marca/philipe-ferreira.webp" alt="Foto de Philipe Ferreira" width="20" height="20" class="h-5 w-5 shrink-0 rounded-full border border-stone-300 object-cover"><span>Por <a href="../quem-somos" class="font-semibold text-stone-700 hover:underline">Philipe Ferreira</a> • Atualizado em setembro de 2026</span></div>
         </div>
       </div>
     </section>
     <section class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <figure class="mb-10 overflow-hidden rounded-xl border border-stone-200 bg-white p-2 shadow-sm">
+        <div class="swiper swiper-main">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img fetchpriority="high" src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-1.webp" width="1200" height="955" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Golden retriever com peitoral rosa e guia, em pé de perfil"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-2.webp" loading="lazy" width="675" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Tutor segurando o peitoral rosa com a guia"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-3.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Infográfico do peitoral azul: fita, fivela e peito acolchoado"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-4.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Guia azul com mola anti-impacto e mosquetão"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-5.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Golden com peitoral azul e o quadro de tamanhos do P ao GG"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-6.webp" loading="lazy" width="1120" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Peitorais nas cores vermelho, preto, bege, azul e rosa"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-7.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Golden retriever de perfil com peitoral e guia azuis"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-8.webp" loading="lazy" width="1088" height="960" class="mx-auto h-auto w-auto max-h-[500px] max-w-full object-contain rounded-xl shadow-md" alt="Selo da loja sobre o envio do peitoral e da guia"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper swiper-thumbs mt-2">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-1.webp" loading="lazy" width="1200" height="955" class="mx-auto h-full w-full object-contain" alt="Miniatura do golden com peitoral rosa"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-2.webp" loading="lazy" width="675" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do peitoral rosa na mão"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-3.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do infográfico do peitoral azul"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-4.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura da guia com mola anti-impacto"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-5.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do peitoral azul e dos tamanhos"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-6.webp" loading="lazy" width="1120" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura dos peitorais coloridos"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-7.webp" loading="lazy" width="1200" height="1200" class="mx-auto h-full w-full object-contain" alt="Miniatura do golden com guia azul"></div>
+          <div class="swiper-slide"><img src="/imagens-produtos/guia-peitoral-filhote/guia-peitoral-filhote-8.webp" loading="lazy" width="1088" height="960" class="mx-auto h-full w-full object-contain" alt="Miniatura do selo de envio do peitoral"></div>
+          </div>
+        </div>
+        <figcaption class="px-2 pb-1 pt-2 text-sm text-stone-500">Peitoral com guia: cores, mola anti-impacto e tabela de tamanhos.</figcaption>
+      </figure>
       <div class="mb-10 overflow-hidden border border-stone-200 rounded-lg bg-white">
         <div class="bg-stone-100 px-4 py-3 border-b border-stone-200"><h2 class="font-bold text-stone-800 italic">Ficha técnica – peitoral modelo H + guia reforçada</h2></div>
         <div class="grid grid-cols-1 md:grid-cols-2 text-sm"><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Guia</span><span class="text-stone-600 w-1/2">Fita 25–30 mm, 1,5 a 2 m, mosquetão de aço com trava</span></div><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Evitar</span><span class="text-stone-600 w-1/2">Retrátil, fita 15 mm, fecho de plástico leve</span></div><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Peitoral</span><span class="text-stone-600 w-1/2">Modelo H reforçado, costura em X, fivela de alta resistência</span></div><div class="flex border-b border-stone-100 p-4"><span class="font-bold w-1/2 text-stone-900">Rua</span><span class="text-stone-600 w-1/2">Só após V10</span></div></div>
@@ -284,7 +357,25 @@
         <p class="mt-4 text-stone-700 leading-relaxed">Pescoço de Pitbull filhote não é ponto de ancoragem. O peitoral modelo H reparte a força no peito e nos ombros. Exija fita larga (25 a 30 mm), costuras reforçadas em X nos pontos de pressão e presilhas de metal ou polímero industrial com trava dupla. Coleira fina e fecho de plástico simples somem no tranco ou abrem. O peito explode até os 6 meses — compre ajustável e reforçado, não “definitivo barato”.</p>
         <h2 class="text-2xl font-bold text-stone-900">Passeio só depois da V10: o que a guia faz em casa até lá</h2>
         <p class="mt-4 text-stone-700 leading-relaxed">Ensaiar vestir o modelo H, andar até a porta, parar no sentar. Sem asfalto. Treine já com o equipamento que segura o arranque — fita larga e ferragem reforçada — para, quando o vet liberar, o conjunto não ser novidade nem ponto de falha.</p>
-        <section>
+        
+        <!-- diario-maraca -->
+<h2 class="text-2xl font-bold text-stone-900">O corredor foi a rua antes da rua</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">A Maraca não estreou o asfalto no dia em que o peitoral chegou. No mês 4 a rua ainda esperava o veterinário. O que eu tinha era o corredor da quitinete, o portão do quintal e um corpo que já puxava com o peito. Vestir o modelo H, caminhar até a porta, parar, <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./clicker-para-adestramento-vale-a-pena">clicker</a> no sentar, voltar. Três minutos. Sem plateia. A <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./melhores-acessorios-adestramento-caes#guia-unificada">guia unificada</a> curta, fita larga, mosquetão que trava. A fina de “filhote” eu não gastei dinheiro para ver abrir. Retrátil ficou fora, inclusive no quintal: o cordão ensina que puxar aumenta o mundo, e num Pitbull o mundo aumenta rápido demais para um fio.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">O pescoço não era ancoragem. Coleira de identificação pode existir. O tranco vai no <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./guia-e-peitoral-filhote">peitoral</a>, no peito e nos ombros, com costura que não abre no primeiro susto de moto. Eu ajustava com dois dedos de folga, não com a mão inteira. Folga demais vira fuga para trás. Folga de menos marca a axila. No mês 5, quando o passeio de barulho começou, o equipamento já não era novidade. Novidade era o portão do vizinho, o ônibus, a Nina do outro lado sem as duas se encontrarem. A guia segurava a distância. Não era prova de força.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Bexiga vazia antes de vestir. Aos 2 meses, sessão com a barriga cheia virava poça no corredor e o peitoral ficava associado ao erro. No mês 4 e no 5 a ordem era quintal, depois equipamento, depois sala. Chuva no cimento não cancelava o ensaio interno. Cancelava o quintal longo. Eu não “compensava” puxando ela na lama para cumprir passo. Um dia sem calçada é barato. Um dia de tranco premiado fica no corpo.</p>
+        <h2 class="text-2xl font-bold text-stone-900">Chegada, boca e o equipamento guardado</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">Eu não recebia a Maraca de guia na mão como se a coleira fosse a festa. Mês 5: quatro patas, petisco na altura do focinho, guia ainda frouxa ou já fora. Pulo não ganha comida. Em seguida, se a energia sobrava, o passeio curto de barulho ou o <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./kong-puppy">Kong Puppy</a> gelado. Rechear o Kong e sair puxando ao mesmo tempo mistura duas excitações. Uma de cada vez. O <a class="font-semibold text-amber-800 underline hover:text-amber-950" href="./nylabone-puppy-chew-toy">Nylabone</a> não substitui a guia e não vai na boca durante o passeio, para não virar disputa no meio da calçada.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Em casa, a guia não fica no chão como mordedor. No mês da gengiva ela roía o que estivesse largado. Fita mastigada arrebenta na semana seguinte, na hora em que a moto passa. Guardada no gancho, acima do focinho. O portão da cozinha fechado antes de eu soltar o mosquetão na volta. A ordem evita que o alívio de chegar vire invasão do fogão.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">Visita que segura a guia “só para sentir a força” não ajuda. Força de filhote de 4 e 5 meses já desloca adulto distraído no corredor estreito. Uma pessoa, uma guia, um critério. Criança não passeia a Maraca. O peitoral não é brinquedo de revezamento. Quando a sessão acaba, o descanso é no canto, sem equipamento, água fresca, pata limpa com pano morno se o cimento sujou. Álcool em gel no pelo está fora. Banho segue o intervalo de vinte a trinta dias, shampoo neutro, não no mesmo dia em que a axila ficou marcada por ajuste errado. Marca na pele é folga, não “fase”. E se a pele abrir, veterinário, sem palpite de pomada de gaveta.</p>
+
+
+        <h2 class="text-2xl font-bold text-stone-900">O ajuste que eu refaço porque o peito não espera</h2>
+        <p class="mt-4 text-stone-700 leading-relaxed">No mês 4 o peitoral folgava de um jeito. No mês 5 a fivela já mordia se eu não revisasse. Uma vez por semana, dois dedos, axila, peito, a tira que sobe no pescoço sem enforcar. Crescer não é “aguentar o aperto até comprar outro”. Aperto vira ferida, ferida vira lambida, lambida vira a página de pata, e o passeio para. Eu preferia furar um novo furo a empurrar a semana. A guia, a mesma, fita larga, eu passava na mão procurando fio solto. Fio solto arrebenta no susto, não no ensaio do corredor.</p>
+        <p class="mt-4 text-stone-700 leading-relaxed">O primeiro quarteirão de verdade foi curto de propósito. Porta, calçada, um barulho, volta, quatro patas no retorno, água. Sem encontrar cão. Sem correr porque ela puxou e eu cedi “para gastar”. Ceder no primeiro dia ensina a puxada que o mês inteiro de corredor tinha desmontado. Se o equipamento falhasse ali, a falha aparecia a dez metros de casa, não no meio da avenida. Foi assim que a fita larga se pagou: no tranco pequeno, perto da porta, com tempo de parar.</p>
+
+
+        <p class="mt-4 text-stone-700 leading-relaxed">Depois do quarteirão eu pendurava a guia no mesmo gancho, peitoral aberto em cima, não largado na almofada. No mês da boca, almofada com fivela é convite. Convite aceito uma vez vira hábito, e hábito na fivela é equipamento furado na semana em que a moto passa de novo. O gancho fica alto. A sessão acaba no corpo livre. Água, canto, porta da cozinha conferida. Essa volta chata é parte do passeio tanto quanto a calçada. Sem ela, o treino de rua se desfaz nos três minutos dentro de casa, que é onde ela mais vive.</p>
+<section>
           <h2 class="text-2xl font-bold text-stone-900 mb-6">Perguntas frequentes (FAQ)</h2>
           <div class="space-y-4">        <details class="group rounded-2xl border border-stone-200 bg-white p-6 shadow-sm open:border-amber-200">
           <summary class="cursor-pointer list-none font-semibold text-stone-900 [&::-webkit-details-marker]:hidden">Qual comprimento e largura de guia para Pitbull filhote?</summary>
@@ -313,7 +404,7 @@
   <footer class="border-t border-stone-200 bg-stone-50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
       <div class="flex flex-col items-center gap-3 sm:items-start">
-        <p>© 2026 Guia do Adestramento. Todos os direitos reservados.</p>
+        <p>© 2026 Guia do Adestrador. Todos os direitos reservados.</p>
         
         <div class="flex items-center gap-4">
           <a href="https://www.linkedin.com/in/philipef-dev/" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-stone-900" aria-label="LinkedIn">LinkedIn</a>
@@ -332,6 +423,24 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiperThumbs = new Swiper(".swiper-thumbs", {
+      spaceBetween: 8,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiperMain = new Swiper(".swiper-main", {
+      spaceBetween: 10,
+      autoHeight: true,
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      thumbs: { swiper: swiperThumbs },
+    });
+    swiperMain.on("slideChange", function () {
+      swiperThumbs.slideTo(swiperMain.activeIndex);
+    });
+  </script>
   <script src="../scripts/scroll-to-top.js" defer></script>
 </body>
 </html>
