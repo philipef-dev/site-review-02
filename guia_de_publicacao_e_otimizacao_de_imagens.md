@@ -64,8 +64,7 @@ Abra a ferramenta de substituição global na sua IDE (Ctrl + Shift + F ou Cmd +
    * De: `Guia do Adestramento`
    * Para: `Guia do Adestrador`
 2. **Atualizar a URL Base nos Metadados:**
-   * De: `https://guiadoadestramento.com.br`
-   * Para: `https://guiadoadestrador.com.br`
+   * URL canônica: `https://www.guiadoadestrador.com.br`
 3. **Verificar os elementos de SEO:**
    * `title`
    * `meta description`
@@ -105,8 +104,8 @@ git push origin main
 
 ## 📌 ETAPA 6: Pós-Lançamento e Reindexação
 
-1. **Testar o Site no Ar:** Acesse `https://guiadoadestrador.com.br` e confira se todas as imagens carregam rápido e sem erros 404.
+1. **Testar o Site no Ar:** Acesse `https://www.guiadoadestrador.com.br` e confira se todas as imagens carregam rápido e sem erros 404.
 2. **Google Search Console (GSC):**
-   * Crie uma nova propriedade no Search Console para `https://guiadoadestrador.com.br`.
-   * Envie o seu sitemap (ex: `https://guiadoadestrador.com.br/sitemap.xml`).
+   * Crie uma nova propriedade no Search Console para `https://www.guiadoadestrador.com.br`.
+   * Envie o seu sitemap (ex: `https://www.guiadoadestrador.com.br/sitemap.xml`).
    * Solicite a indexação manual da página inicial e dos artigos principais.
