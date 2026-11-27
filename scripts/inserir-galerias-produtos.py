@@ -29,7 +29,7 @@ PAGES = {
     "comedouro-lento": {
         "html": "public/reviews/comedouro-lento.html",
         "product": "Comedouro lento / bola recheável (Stark, Pet Games, Buddy Colmeia)",
-        "caption": "Comedouro labirinto Pet Games de silicone laranja, com sulcos, medidas e ventosas.",
+        "caption": "Comedouro lento azul de plástico no quintal, com sulcos em labirinto e o cão comendo no chão.",
     },
     "guia-peitoral-filhote": {
         "html": "public/reviews/guia-e-peitoral-filhote.html",
@@ -98,6 +98,10 @@ ALTS = {
     "comedouro-lento-labirinto-5.webp": ("Medidas do comedouro labirinto: 20 cm por 20 cm", "Miniatura das medidas de 20 cm"),
     "comedouro-lento-labirinto-6.webp": ("Comedouro labirinto laranja com ração espalhada nos sulcos", "Miniatura do labirinto com ração"),
     "comedouro-lento-labirinto-7.webp": ("Base do comedouro labirinto com ventosas antiderrapantes", "Miniatura das ventosas do comedouro"),
+    "comedouro-lento-1.webp": ("Comedouro lento azul de plástico visto de cima, com sulcos em labirinto e um osso no centro", "Miniatura do comedouro lento azul visto de cima"),
+    "comedouro-lento-2.webp": ("Comedouro lento azul no chão do quintal, com o labirinto de sulcos e um brinquedo de pneu ao fundo", "Miniatura do comedouro lento azul no quintal"),
+    "comedouro-lento-3.webp": ("Mão segurando o comedouro lento azul, com as paredes do labirinto e o osso no meio", "Miniatura do comedouro lento azul na mão"),
+    "comedouro-lento-4.webp": ("Cão comendo no comedouro lento azul no chão do quintal, ao lado da casinha", "Miniatura do cão comendo no comedouro lento"),
     "guia-peitoral-filhote-1.webp": ("Golden retriever com peitoral rosa e guia, em pé de perfil", "Miniatura do golden com peitoral rosa"),
     "guia-peitoral-filhote-2.webp": ("Tutor segurando o peitoral rosa com a guia", "Miniatura do peitoral rosa na mão"),
     "guia-peitoral-filhote-3.webp": ("Infográfico do peitoral azul: fita, fivela e peito acolchoado", "Miniatura do infográfico do peitoral azul"),
