@@ -109,3 +109,17 @@ git push origin main
    * Crie uma nova propriedade no Search Console para `https://www.guiadoadestrador.com.br`.
    * Envie o seu sitemap (ex: `https://www.guiadoadestrador.com.br/sitemap.xml`).
    * Solicite a indexação manual da página inicial e dos artigos principais.
+
+
+   
+...............................................   
+   
+   
+   ETAPA 1 — CAPTURA E OTIMIZAÇÃO DE IMAGENS (VIA TERMINAL LINUX):
+1. Crie a pasta `public/imagens-produtos/[NOME-DA-PASTA]/` (caso não exista).
+2. Acesse a URL do anúncio fornecida, baixe as fotos principais do produto (4 a 6 fotos) e salve nessa pasta.
+3. No terminal, use `convert` (ImageMagick) ou `cwebp` para processar todas as imagens:
+   - Redimensione para largura máxima de 1000px (mantendo proporção).
+   - Converta para `.webp` com qualidade 78 (`cwebp -q 78`).
+   - Renomeie sequencialmente: `[nome-do-produto]-1.webp`, `[nome-do-produto]-2.webp`, etc.
+   - Remova os arquivos originais (.jpg/.png) da pasta.
